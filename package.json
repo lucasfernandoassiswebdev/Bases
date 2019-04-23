@@ -1,0 +1,19 @@
+{
+  "name": "bases",
+  "version": "1.0.0",
+  "description": "Classes base para auxiliar a criação, manutenção e evolução de projetos NodeJs com Typescript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Fernando de Assis",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.16.4",
+    "http-status": "^1.3.2",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^5.5.2",
+    "typeorm": "^0.2.16"
+  }
+}
