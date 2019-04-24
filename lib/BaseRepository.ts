@@ -16,9 +16,8 @@ export abstract class BaseRepository<T> implements IRepository<T> {
     public page: Page;
 
     constructor(entityClass: any) {
-        createConnection().then((data) => {            
-            this.repository = data.getRepository(entityClass);
-        });
+        const connection = getConnection();
+        this.repository = connection.getRepository(entityClass);
         this.page = new Page();
     }
 
