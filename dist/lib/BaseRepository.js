@@ -8,13 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const typeorm_1 = require("typeorm");
 const Page_1 = require("./Page");
 class BaseRepository {
-    constructor(entityClass) {
-        const connection = typeorm_1.getConnection();
-        console.log('connection: ', connection);
-        console.log('classe: ', entityClass);
+    constructor(entityClass, connection) {
         this.repository = connection.getRepository(entityClass);
         this.page = new Page_1.default();
     }

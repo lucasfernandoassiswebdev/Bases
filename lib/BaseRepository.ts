@@ -1,4 +1,4 @@
-import { Repository, getConnection, EntityManager } from 'typeorm';
+import { Repository, EntityManager } from 'typeorm';
 import Page from './Page';
 
 export interface IRepository<T> {
@@ -15,10 +15,7 @@ export abstract class BaseRepository<T> implements IRepository<T> {
     public repository: Repository<T>;
     public page: Page;
 
-    constructor(entityClass: any) {
-        const connection = getConnection();
-        console.log('connection: ', connection);
-        console.log('classe: ', entityClass);
+    constructor(entityClass: any, connection: any) {                
         this.repository = connection.getRepository(entityClass);
         this.page = new Page();
     }
