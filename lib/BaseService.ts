@@ -4,6 +4,7 @@ import Page from './Page';
 
 export interface IService<T> {
     find(params: any, transaction?: EntityManager): Promise<T[]>;
+    findOne(params: any, transaction?: EntityManager): Promise<T>;
     findById(id: number, transaction?: EntityManager): Promise<T>;
     findAll(pagina: number, limite: number): Promise<Page>;
     save(params: any, transaction?: EntityManager): Promise<T>;
@@ -17,6 +18,10 @@ export class BaseService<T> implements IService<T> {
 
     public find = async (params: any, transaction?: EntityManager): Promise<T[]> => {
         return await this.repository.find(params, transaction);
+    }
+
+    public findOne = async (params: any, transaction?: EntityManager): Promise<T> => {
+        return await this.repository.findOne(params, transaction);
     }
 
     public findById = async (id: number, transaction?: EntityManager): Promise<T> => {

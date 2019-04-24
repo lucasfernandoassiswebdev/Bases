@@ -4,6 +4,7 @@ import Page from './Page';
 export interface IRepository<T> {
     save(entity: any, transaction?: EntityManager): Promise<T>;
     find(params: Object, transaction?: EntityManager): Promise<T[]>;
+    findOne(params: Object, transaction?: EntityManager): Promise<T>;
     findById(id: number, transaction?: EntityManager): Promise<T>;
     findAll(pagina: number, limite: number): Promise<Page>;
     remove(id: number, transaction?: EntityManager): Promise<T>;
@@ -24,12 +25,18 @@ export abstract class BaseRepository<T> implements IRepository<T> {
         return await typeof transaction !== 'undefined'
             ? transaction.save(entity)
             : this.repository.save(entity);
-    }    
+    }
 
     public async find(params: Object, transaction?: EntityManager): Promise<T[]> {
         return typeof transaction !== 'undefined'
             ? transaction.find(this.repository.metadata.target as any, params as any) as Promise<T[]>
             : this.repository.find(params);
+    }
+
+    public async findOne(params: Object, transaction?: EntityManager): Promise<T> {
+        return typeof transaction !== 'undefined'
+            ? transaction.findOne(this.repository.metadata.target as any, params as any) as Promise<T>
+            : this.repository.findOne(params);
     }
 
     public async findById(id: number, transaction?: EntityManager): Promise<T> {
