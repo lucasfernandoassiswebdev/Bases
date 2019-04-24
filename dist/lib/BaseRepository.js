@@ -13,6 +13,8 @@ const Page_1 = require("./Page");
 class BaseRepository {
     constructor(entityClass) {
         const connection = typeorm_1.getConnection();
+        console.log('connection: ', connection);
+        console.log('classe: ', entityClass);
         this.repository = connection.getRepository(entityClass);
         this.page = new Page_1.default();
     }
