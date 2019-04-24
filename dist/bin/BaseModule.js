@@ -1,10 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const BaseController_1 = require("../lib/BaseController");
+exports.BaseController = BaseController_1.BaseController;
 const BaseMongoRepository_1 = require("../lib/BaseMongoRepository");
+exports.BaseMongoRepository = BaseMongoRepository_1.BaseMongoRepository;
 const BaseMongoService_1 = require("../lib/BaseMongoService");
+exports.BaseMongoService = BaseMongoService_1.BaseMongoService;
 const BaseRepository_1 = require("../lib/BaseRepository");
+exports.BaseRepository = BaseRepository_1.BaseRepository;
 const BaseService_1 = require("../lib/BaseService");
+exports.BaseService = BaseService_1.BaseService;
 const Handlers_1 = require("../lib/Handlers");
+exports.Handlers = Handlers_1.default;
 const Page_1 = require("../lib/Page");
-exports.default = { BaseController: BaseController_1.BaseController, BaseMongoRepository: BaseMongoRepository_1.BaseMongoRepository, BaseMongoService: BaseMongoService_1.BaseMongoService, BaseRepository: BaseRepository_1.BaseRepository, BaseService: BaseService_1.BaseService, Handlers: Handlers_1.default, Page: Page_1.default };
+exports.Page = Page_1.default;

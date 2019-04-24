@@ -4,11 +4,11 @@ import Handlers from './Handlers';
 import { BaseService } from './BaseService';
 
 export interface IController {
-    find(req: Request, res: Response);    
-    findOne(req: Request, res: Response);    
+    find(req: Request, res: Response);
+    findOne(req: Request, res: Response);
     findById(req: Request, res: Response);
     findAll(req: Request, res: Response);
-    save(req: Request, res: Response);    
+    save(req: Request, res: Response);
     delete(req: Request, res: Response);
 }
 
@@ -21,7 +21,7 @@ export class BaseController<T> implements IController {
             .then(_.partial(Handlers.onSuccess, res))
             .catch(_.partial(Handlers.onError, res, "Erro ao buscar dados"));
     }
-    
+
     findOne = (req: Request, res: Response) => {
         this.service.findOne(req.params)
             .then(_.partial(Handlers.onSuccess, res))
@@ -44,7 +44,7 @@ export class BaseController<T> implements IController {
         this.service.save(req.body)
             .then(_.partial(Handlers.onSuccess, res))
             .catch(_.partial(Handlers.onError, res, "Erro salvar dados"));
-    }    
+    }
 
     delete = (req: Request, res: Response) => {
         try {

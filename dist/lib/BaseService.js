@@ -14,6 +14,9 @@ class BaseService {
         this.find = (params, transaction) => __awaiter(this, void 0, void 0, function* () {
             return yield this.repository.find(params, transaction);
         });
+        this.findOne = (params, transaction) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repository.findOne(params, transaction);
+        });
         this.findById = (id, transaction) => __awaiter(this, void 0, void 0, function* () {
             return yield this.repository.findById(id, transaction);
         });

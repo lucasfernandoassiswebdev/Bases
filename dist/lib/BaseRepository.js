@@ -30,6 +30,13 @@ class BaseRepository {
                 : this.repository.find(params);
         });
     }
+    findOne(params, transaction) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return typeof transaction !== 'undefined'
+                ? transaction.findOne(this.repository.metadata.target, params)
+                : this.repository.findOne(params);
+        });
+    }
     findById(id, transaction) {
         return __awaiter(this, void 0, void 0, function* () {
             return typeof transaction !== 'undefined'
