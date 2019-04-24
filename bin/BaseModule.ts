@@ -6,4 +6,4 @@ import { BaseService } from '../lib/BaseService';
 import Handlers from '../lib/Handlers';
 import Page from '../lib/Page';
 
-export default { BaseController, BaseMongoRepository, BaseMongoService, BaseRepository, BaseService, Handlers, Page }
+export { BaseController, BaseMongoRepository, BaseMongoService, BaseRepository, BaseService, Handlers, Page }
