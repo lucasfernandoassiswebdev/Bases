@@ -16,7 +16,8 @@ class BaseController {
                 .catch(_.partial(Handlers_1.default.onError, res, "Erro ao buscar dados"));
         };
         this.findById = (req, res) => {
-            this.service.findById(req.params.id)
+            let id = Number.parseInt(req.params.id);
+            this.service.findById(id)
                 .then(_.partial(Handlers_1.default.onSuccess, res))
                 .catch(_.partial(Handlers_1.default.onError, res, "Erro ao buscar dados"));
         };
