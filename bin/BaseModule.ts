@@ -1,9 +1,15 @@
-import { BaseController } from '../lib/BaseController';
-import { BaseMongoRepository } from '../lib/BaseMongoRepository';
-import { BaseMongoService } from '../lib/BaseMongoService';
-import { BaseRepository } from '../lib/BaseRepository';
-import { BaseService } from '../lib/BaseService';
-import Handlers from '../lib/Handlers';
-import Page from '../lib/Page';
+import { RepositorioMongo } from '../lib/Bases/RepositorioMongo';
+import { ServicoMongo } from '../lib/Bases/ServicoMongo';
+import { Repositorio } from '../lib/Bases/Repositorio';
+import { Servico } from '../lib/Bases/Servico';
+import Handlers from '../lib/Manipuladores';
+import Page from '../lib/Pagina';
 
-export { BaseController, BaseMongoRepository, BaseMongoService, BaseRepository, BaseService, Handlers, Page }
+export {
+    RepositorioMongo,
+    ServicoMongo,
+    Repositorio,
+    Handlers,
+    Servico,    
+    Page
+}

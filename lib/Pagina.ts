@@ -1,5 +1,5 @@
 
-export class Pageable {
+export class Paginavel {
     sort: any;
     offset: number;
     pageSize: number;
@@ -8,9 +8,9 @@ export class Pageable {
     paged: boolean;
 }
 
-export class Page {
+export class Pagina {
     content: any;
-    pageable: Pageable;
+    pageable: Paginavel;
     last: boolean;
     totalPages: number;
     totalElements: number;
@@ -21,4 +21,4 @@ export class Page {
     sort: any;
 }
 
-export default Page;
+export default Pagina;
