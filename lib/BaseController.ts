@@ -35,7 +35,10 @@ export class BaseController<T> implements IController {
     }
 
     findAll = (req: Request, res: Response) => {
-        this.service.findAll(req.params.pagina, req.params.limite)
+        let pagina = Number.parseInt(req.params.pagina);
+        let limite = Number.parseInt(req.params.limite);
+
+        this.service.findAll(pagina, limite)
             .then(_.partial(Handlers.onSuccess, res))
             .catch(_.partial(Handlers.onError, res, "Erro ao buscar dados"));
     }

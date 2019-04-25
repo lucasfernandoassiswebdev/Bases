@@ -21,7 +21,9 @@ class BaseController {
                 .catch(_.partial(Handlers_1.default.onError, res, "Erro ao buscar dados"));
         };
         this.findAll = (req, res) => {
-            this.service.findAll(req.params.pagina, req.params.limite)
+            let pagina = Number.parseInt(req.params.pagina);
+            let limite = Number.parseInt(req.params.limite);
+            this.service.findAll(pagina, limite)
                 .then(_.partial(Handlers_1.default.onSuccess, res))
                 .catch(_.partial(Handlers_1.default.onError, res, "Erro ao buscar dados"));
         };
