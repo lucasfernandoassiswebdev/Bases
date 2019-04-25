@@ -2,7 +2,7 @@
   "name": "bases",
   "version": "1.0.0",
   "description": "Classes base para auxiliar a criação, manutenção e evolução de projetos NodeJs com Typescript",
-  "main": "dist/bin/BaseModule.js",
+  "main": "bin/BaseModule.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
