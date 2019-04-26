@@ -10,7 +10,7 @@ export interface IController<T> {
 export default class Controller<T> implements IController<T> {
 
     /**
-     * 
+     * Expõe para a aplicação as rotas marcadas pelo Controller
      * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
      * @param servico Servico<T> 
      * @param rotaBase <string> 
