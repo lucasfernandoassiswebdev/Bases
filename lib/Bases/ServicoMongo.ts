@@ -17,30 +17,59 @@ export class ServicoMongo<T extends Document> implements IServicoMongo<T> {
 
     constructor(private repositorio: RepositorioMongo<T>) { }
 
-    async buscar(params): Promise<T[]> {
-        return await this.repositorio.buscar(params);
+    /**
+     * 
+     * @param params <Object> Objeto com os parâmetros da busca a ser realizada
+     * @returns Promise<T[]> 
+     */
+    async buscar(parametros: Object): Promise<T[]> {
+        return await this.repositorio.buscar(parametros);
     }
 
-    async buscarUm(params): Promise<T> {
-        return await this.repositorio.buscarUm(params);
+    /**
+     * 
+     * @param params <Object> Parametros da busca
+     * @returns Promise<T> Primeiro objeto encontrado
+     */
+    async buscarUm(parametros: Object): Promise<T> {
+        return await this.repositorio.buscarUm(parametros);
     }
 
+    /**
+     * Retorna o objeto do id passado como parâmetro
+     * @param id <string> ID do objeto a ser retornado     
+     * @returns Promise<T> Objeto encontrado 
+     */
     async buscarPoId(id: string): Promise<T> {
         return await this.repositorio.buscarPorId(id);
     }
 
+    /**
+     * Retorna todos os documentos do Model
+     * @returns Promise<T[]>
+     */
     async buscarTodos(): Promise<T[]> {
         return await this.repositorio.buscar({});
     }
 
-    async salvar(object: T): Promise<T> {
+    /**
+     * Persiste o objeto passado como parâmetro na base
+     * @param objeto <T> Objeto a ser salvo
+     * @returns Promise<T> Objeto criado
+     */
+    async salvar(objeto: T): Promise<T> {
         try {
-            return await this.repositorio.salvar(object);
+            return await this.repositorio.salvar(objeto);
         } catch (error) {
             console.error(error);
         }
     }
 
+    /**
+     * Persiste os objetos passados como parâmetro na base
+     * @param items <T[]> Objetos a serem persistidos
+     * @returns Promise<T[]> Objeto criados
+     */
     async salvarLista(items: T[]): Promise<T[]> {
         try {
             let createdItems: Array<T>;
@@ -54,10 +83,20 @@ export class ServicoMongo<T extends Document> implements IServicoMongo<T> {
         }
     }
 
-    async atualizar(object: T): Promise<T> {
-        return await this.repositorio.atualizar(object);
+    /**
+     * Atualiza os dados do objeto passado como parâmetro
+     * @param objeto <T> Objeto com os dados atualizados 
+     * @returns Promise<T> Objeto atualizado
+     */
+    async atualizar(objeto: T): Promise<T> {
+        return await this.repositorio.atualizar(objeto);
     }
 
+    /**
+     * Atualiza os dados dos objetos passado como parâmetro
+     * @param items <T[]> Objetos a atualizados a serem salvos
+     * @returns Promise<T[]> Objetos atualizados
+     */
     async atualizarLista(items: T[]): Promise<T[]> {
         let itensCriados: Array<T>;
         items.forEach(async (item) => {
@@ -67,10 +106,31 @@ export class ServicoMongo<T extends Document> implements IServicoMongo<T> {
         return itensCriados;
     }
 
-    remover(_id: string): void {
-        this.repositorio.remover(_id, (erro: any, resultado: any) => {
+    /**
+     * Remove o objeto desejado do banco
+     * @param id <string> ID do objeto a ser removido
+     * @param callback <Function> Função coms os parâmetros erro(any) e resultado(any)
+     * @returns void
+     */
+    remover(id: string): void {
+        this.repositorio.remover(id, (erro: any, resultado: any) => {
             if (erro)
                 console.error(erro);
+        });
+    }
+
+    /**
+     * Remove os objetos desejados do banco
+     * @param ids <string[]> IDs do objetos a serem removidos
+     * @param callback <Function> Função coms os parâmetros erro(any) e resultado(any)
+     * @returns void
+     */
+    removerVarios(ids: string[]): void {
+        ids.forEach((id) => {
+            this.repositorio.remover(id, (erro: any, resultado: any) => {
+                if (erro)
+                    console.error(erro);
+            });
         });
     }
 }

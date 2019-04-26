@@ -15,35 +15,70 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
     public repositorio: Repository<T>;
     public pagina: Pagina;
 
+    /**
+     * Inicia a classe criando o repositório da classe genérica informada
+     * @param classeEntidade TypeORM Model
+     * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
+     */
     constructor(classeEntidade: any, conexao: any) {
         this.repositorio = conexao.getRepository(classeEntidade);
         this.pagina = new Pagina();
     }
 
-    public async salvar(objeto: any, transacao?: EntityManager): Promise<T> {
+    /**
+     * 
+     * @param objeto <T> Objeto a ser salvo
+     * @param transacao <EntityManager>
+     * @returns Promise<T> Objeto criado
+     */
+    public async salvar(objeto: T, transacao?: EntityManager): Promise<T> {
         return await typeof transacao !== 'undefined'
             ? transacao.save(objeto)
             : this.repositorio.save(objeto);
     }
 
+    /**
+     * 
+     * @param parametros <Object> Objeto com os dados a serem utilizados como parâmetro na busca
+     * @param transacao <EntityManager>
+     * @returns Promise<T[]> Objetos encontrados
+     */
     public async buscar(parametros: Object, transacao?: EntityManager): Promise<T[]> {
         return typeof transacao !== 'undefined'
             ? transacao.find(this.repositorio.metadata.target as any, parametros as any) as Promise<T[]>
             : this.repositorio.find(parametros);
     }
 
+    /**
+     * Retorna o primeiro objeto encontrado de acordo com os parâmetros fornecidos
+     * @param parametros <Object> parametros utilizados na busca(Object)
+     * @param transacao <EntityManager>
+     * @returns Promise<T> Objeto encontrado
+     */
     public async buscarUm(parametros: Object, transacao?: EntityManager): Promise<T> {
         return typeof transacao !== 'undefined'
             ? transacao.findOne(this.repositorio.metadata.target as any, parametros as any) as Promise<T>
             : this.repositorio.findOne(parametros);
     }
 
+    /**
+     * Retorna o objeto do ID fornecido
+     * @param id ID do objeto a ser encontrado
+     * @param transacao <EntityManager>
+     * @returns Promise<T>
+     */
     public async buscarPorId(id: number, transacao?: EntityManager): Promise<T> {
         return typeof transacao !== 'undefined'
             ? transacao.findOne(this.repositorio.metadata.target as any, { where: { id } } as any) as Promise<T>
             : this.repositorio.findOne({ where: { id } });
     }
 
+    /**
+     * Retorna a página desejada
+     * @param pagina <number>
+     * @param limite <number>
+     * @returns Promise<Pagina>
+     */
     public async buscarTodos(pagina: number, limite: number): Promise<Pagina> {
         try {
             if (!Number.isInteger(limite) || !Number.isInteger(pagina)) {
@@ -68,6 +103,12 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
         }
     }
 
+    /**
+     * 
+     * @param id <number> 
+     * @param transacao <EntityManager>
+     * @returns Promise<T>
+     */
     public async remover(id: number, transacao?: EntityManager): Promise<T> {
         if (typeof transacao !== 'undefined') {
             const itemToRemove: T = await transacao.findOne(this.repositorio.target as any, { where: { id } } as any) as T;
