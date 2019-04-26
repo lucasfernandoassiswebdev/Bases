@@ -1,7 +1,7 @@
 import Autenticacao from '../lib/Segurança/Token/Autenticacao';
 import Criptografia from '../lib/Segurança/Criptografia';
 import Manipuladores from '../lib/Manipuladores';
-import Page from '../lib/Pagina';
+import Pagina from '../lib/Pagina';
 import { Repositorio } from '../lib/Bases/Repositorio';
 import { RepositorioMongo } from '../lib/Bases/RepositorioMongo';
 import { Servico } from '../lib/Bases/Servico';
@@ -12,7 +12,7 @@ export {
     Autenticacao,
     Criptografia,
     Manipuladores,
-    Page,
+    Pagina,
     Repositorio,
     RepositorioMongo,
     Servico,
