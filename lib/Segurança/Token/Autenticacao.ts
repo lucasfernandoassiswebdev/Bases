@@ -49,7 +49,7 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
-    public configurar(servico: any, chaveCriptografia: string): Object {
+    public configurar(servico: any, chaveCriptografia: string): any {
         let opts = {
             secretOrKey: chaveCriptografia,
             jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt')
