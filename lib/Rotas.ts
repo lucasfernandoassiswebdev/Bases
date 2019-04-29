@@ -7,10 +7,11 @@ class Rotas {
      * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
      * @param auth <any> Classe que irá autenticar as rotas necessárias
      * @param rotas <any[]> Classes rotas que expõe/mapeam as rotas na APi
+     * @param connection <any> Conexão com o banco
      */
-    public iniciarRotas = async (app: Application, auth: any, rotas: any[]) => {
+    public iniciarRotas = async (app: Application, auth: any, rotas: any[], connection: any) => {
         await rotas.forEach(async (rota) => {
-            rota.exporRotas(app, auth);
+            rota.exporRotas(app, auth, connection);
         });
     }
 }
