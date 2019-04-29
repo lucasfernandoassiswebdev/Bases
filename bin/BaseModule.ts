@@ -10,7 +10,7 @@ import { Servico } from '../lib/Bases/Servico';
 import { ServicoMongo } from '../lib/Bases/ServicoMongo';
 import TokenRotas from '../lib/Segurança/Token/TokenRotas';
 
-export {
+export default {
     Autenticacao,
     Criptografia,
     Controller,
