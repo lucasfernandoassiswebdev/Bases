@@ -10,9 +10,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 class Rotas {
     constructor() {
-        this.iniciarRotas = (app, auth, rotas) => __awaiter(this, void 0, void 0, function* () {
+        /**
+         * Método que percorre e inicia as rotas da API
+         * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
+         * @param auth <any> Classe que irá autenticar as rotas necessárias
+         * @param rotas <any[]> Classes rotas que expõe/mapeam as rotas na APi
+         * @param conexao <any> Conexão com o banco
+         */
+        this.iniciarRotas = (app, auth, rotas, conexao) => __awaiter(this, void 0, void 0, function* () {
             yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {
-                rota.exporRotas(app, auth);
+                rota.exporRotas(app, auth, conexao);
             }));
         });
     }
