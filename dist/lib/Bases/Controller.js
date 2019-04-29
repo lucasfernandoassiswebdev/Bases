@@ -13,54 +13,96 @@ const Manipuladores_1 = require("../Manipuladores");
 class Controller {
     /**
      *
-     * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
-     * @param servico Servico<T>
-     * @param rotaBase <string>
-     * @param auth <any> Classe que irá autenticar as rotas quando necessário
+     * @param servico Servico<T> Serviço correspondente a classe do módulo
      */
-    obterRotas(app, servico, rotaBase, auth) {
-        app.route(`/$${rotaBase}/buscar`).all(auth.authenticate()).get((req, res) => __awaiter(this, void 0, void 0, function* () {
-            servico.buscar(req.params)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
-        }));
-        app.route(`/$${rotaBase}/buscarUm`).all(auth.authenticate()).get((req, res) => {
-            servico.buscarUm(req.params)
+    constructor(servico) {
+        this.servico = servico;
+        /**
+         * Deve conter uma QueryString(URL) com os dados para a busca
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns Lista de objetos encontrados de acordo com os parâmetros fornecidos
+         */
+        this.buscar = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            yield this.servico.buscar(req.query)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
-        app.route(`/$${rotaBase}/buscarPorId/:id`).all(auth.authenticate()).get((req, res) => {
+        /**
+         * Deve conter uma QueryString(URL) com os dados para a busca
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns Promise<T> Primeiro objeto encontrado de acordo com os parâmetros fornecidos
+         */
+        this.buscarUm = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            yield this.servico.buscarUm(req.params)
+                .then(_.partial(Manipuladores_1.default.sucesso, res))
+                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+        });
+        /**
+         * Deve conter na URL o parâmetro "ID" para a busca do objeto desejado
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns Promise<T> Objeto com o ID informado
+         */
+        this.buscarPorId = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!req.params.id)
+                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(id) não foram fornecidos");
             let id = Number.parseInt(req.params.id);
-            servico.buscarPorId(id)
+            yield this.servico.buscarPorId(id)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
-        app.route(`/$${rotaBase}/:pagina/:limite`).all(auth.authenticate()).get((req, res) => {
+        /**
+         * Busca todos os objetos na página desejada
+         * É necessário fornecer na URL os parâmetros de página e limite
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns Promise<T[]> Retorna os objetos encontrados na página informada
+         */
+        this.buscarTodos = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!req.params.pagina || !req.params.limite)
+                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
             let pagina = Number.parseInt(req.params.pagina);
             let limite = Number.parseInt(req.params.limite);
-            servico.buscarTodos(pagina, limite)
+            yield this.servico.buscarTodos(pagina, limite)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
-        app.route(`/$${rotaBase}/salvar`).all(auth.authenticate()).post((req, res) => {
-            servico.salvar(req.body)
+        /**
+         * Salva o objeto<T> passado no corpo da requisição
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns <T> Retorna os dados do objeto criado
+         */
+        this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            yield this.servico.salvar(req.params)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro salvar dados"));
+                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
         });
-        app.route(`/$${rotaBase}/atualizar`).all(auth.authenticate()).put((req, res) => {
-            servico.salvar(req.body)
+        /**
+         * Salva a lista de objetos<T[]> passados no corpo da requisição
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         * @returns <T[]> Retorna a lista de dados dos objetos criados
+         */
+        this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            yield this.servico.salvarLista(req.params)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro atualizar dados"));
+                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
         });
-        app.route(`/$${rotaBase}/:id`).all(auth.authenticate()).delete((req, res) => {
-            try {
-                let id = Number.parseInt(req.params.id);
-                servico.remover(id);
-                res.status(204).send();
-            }
-            catch (e) {
-                _.partial(Manipuladores_1.default.erro, res, "Erro excluir dados");
-            }
+        /**
+         * Remove o objeto do ID passado como parâmetro na URL
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         */
+        this.remover = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!req.params.id)
+                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(id) não foram fornecidos");
+            let id = Number.parseInt(req.params.id);
+            yield this.servico.remover(id)
+                .then(_.partial(Manipuladores_1.default.sucesso, res))
+                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
         });
     }
 }

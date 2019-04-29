@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class Servico {
     /**
      *
-     * @param repositorio <Repositorio<T>
+     * @param repositorio Repositorio<T>
      */
     constructor(repositorio) {
         this.repositorio = repositorio;
