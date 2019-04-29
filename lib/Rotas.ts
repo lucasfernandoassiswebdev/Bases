@@ -11,9 +11,13 @@ class Rotas {
      * @param conexao <any> Conexão com o banco
      */
     public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[], conexao: any) => {
-        await rotas.forEach(async (rota) => {
-            rota.exporRotas(app, aut, conexao);
-        });
+        for (let item of rotas) {
+            item.exporRotas(app, aut, conexao);
+        }
+
+        // await rotas.forEach(async (rota) => {
+        //     rota.exporRotas(app, aut, conexao);
+        // });
     }
 }
 

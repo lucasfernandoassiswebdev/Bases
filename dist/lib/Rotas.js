@@ -18,9 +18,12 @@ class Rotas {
          * @param conexao <any> Conexão com o banco
          */
         this.iniciarRotas = (app, aut, rotas, conexao) => __awaiter(this, void 0, void 0, function* () {
-            yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {
-                rota.exporRotas(app, aut, conexao);
-            }));
+            for (let item of rotas) {
+                item.exporRotas(app, aut, conexao);
+            }
+            // await rotas.forEach(async (rota) => {
+            //     rota.exporRotas(app, aut, conexao);
+            // });
         });
     }
 }
