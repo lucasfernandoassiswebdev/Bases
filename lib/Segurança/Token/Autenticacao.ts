@@ -72,8 +72,8 @@ class Autenticacao {
         }));
 
         return {
-            initialize: () => passport.initialize(),
-            authenticate: () => passport.authenticate('jwt', { session: false })
+            iniciar: () => passport.initialize(),
+            autenticar: () => passport.authenticate('jwt', { session: false })
         }
     }
 }

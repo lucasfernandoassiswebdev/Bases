@@ -6,6 +6,7 @@ import Pagina from '../lib/Pagina';
 import { Repositorio } from '../lib/Bases/Repositorio';
 import { RepositorioMongo } from '../lib/Bases/RepositorioMongo';
 import Rotas from '../lib/Rotas';
+import RotasInterface from '../lib/RotasInterface';
 import { Servico } from '../lib/Bases/Servico';
 import { ServicoMongo } from '../lib/Bases/ServicoMongo';
 import TokenRotas from '../lib/Segurança/Token/TokenRotas';
@@ -17,6 +18,7 @@ export {
     Manipuladores,
     Pagina,
     Rotas,
+    RotasInterface,
     Repositorio,
     RepositorioMongo,
     Servico,
