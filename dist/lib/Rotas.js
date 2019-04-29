@@ -13,13 +13,13 @@ class Rotas {
         /**
          * Método que percorre e inicia as rotas da API
          * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
-         * @param auth <any> Classe que irá autenticar as rotas necessárias
+         * @param aut <any> Classe que irá autenticar as rotas necessárias
          * @param rotas <any[]> Classes rotas que expõe/mapeam as rotas na APi
          * @param conexao <any> Conexão com o banco
          */
-        this.iniciarRotas = (app, auth, rotas, conexao) => __awaiter(this, void 0, void 0, function* () {
+        this.iniciarRotas = (app, aut, rotas, conexao) => __awaiter(this, void 0, void 0, function* () {
             yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {
-                rota.exporRotas(app, auth, conexao);
+                rota.exporRotas(app, aut, conexao);
             }));
         });
     }
