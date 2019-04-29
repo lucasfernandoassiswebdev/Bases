@@ -1,4 +1,5 @@
 import { Application } from 'express';
+import RotasInterface from './RotasInterface';
 
 class Rotas {
 
@@ -9,7 +10,7 @@ class Rotas {
      * @param rotas <any[]> Classes rotas que expõe/mapeam as rotas na APi
      * @param conexao <any> Conexão com o banco
      */
-    public iniciarRotas = async (app: Application, auth: any, rotas: any[], conexao: any) => {
+    public iniciarRotas = async (app: Application, auth: any, rotas: RotasInterface[], conexao: any) => {
         await rotas.forEach(async (rota) => {
             rota.exporRotas(app, auth, conexao);
         });
