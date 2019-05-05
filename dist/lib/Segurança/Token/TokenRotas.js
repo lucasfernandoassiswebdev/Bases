@@ -33,7 +33,7 @@ class TokenRotas {
             }
         });
     }
-    exporRotas(app, aut) {
+    exporRotas(app) {
         app.route('/token').post(this.auth);
     }
 }

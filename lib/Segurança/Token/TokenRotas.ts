@@ -27,7 +27,7 @@ export default class TokenRotas implements RotasInterface {
         }
     };
 
-    public exporRotas(app: Application, aut: any): void {
+    public exporRotas(app: Application): void {
         app.route('/token').post(this.auth);
     }
 }
