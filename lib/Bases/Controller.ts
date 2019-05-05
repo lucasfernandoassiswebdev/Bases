@@ -137,7 +137,7 @@ export default class Controller<T> implements IController {
     private criptografaSenhas = async (objeto: T): Promise<T> => {
         await Util.executeasyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
             if (propriedade.startsWith("senha"))
-                Object[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
+                objeto[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
         });
 
         return objeto;

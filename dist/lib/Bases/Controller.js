@@ -118,7 +118,7 @@ class Controller {
         this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
             yield Util_1.default.executeasyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
                 if (propriedade.startsWith("senha"))
-                    Object[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
+                    objeto[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
             }));
             return objeto;
         });
