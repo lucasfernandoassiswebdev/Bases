@@ -31,6 +31,9 @@ class TokenRotas {
             }
         });
     }
+    exporRotas(app, aut, conexao) {
+        app.route('/token').post(this.auth);
+    }
 }
 exports.TokenRotas = TokenRotas;
 exports.default = new TokenRotas();

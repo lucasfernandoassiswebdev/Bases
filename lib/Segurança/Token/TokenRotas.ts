@@ -1,8 +1,9 @@
-import { Request, Response } from 'express';
+import { Application, Request, Response } from 'express';
 import * as _ from 'lodash';
 import Autenticacao from './Autenticacao';
+import { RotasInterface } from '../../../bin/BaseModule';
 
-export class TokenRotas {
+export class TokenRotas implements RotasInterface {
 
     /**
      * 
@@ -23,6 +24,10 @@ export class TokenRotas {
                 .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
         }
     };
+
+    public exporRotas(app: Application, aut: any, conexao: any): void {
+        app.route('/token').post(this.auth);
+    }
 }
 
 export default new TokenRotas();
