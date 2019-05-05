@@ -53,7 +53,7 @@ class Autenticacao {
     }
     /**
      * Configura a estratégia de autenticação da API
-     * @param servico <any> Classe que extenda Servico<T>
+     * @param servico <any> Classe que extenda Servico<T>, deve conter o método "buscarPorId"
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
@@ -64,7 +64,7 @@ class Autenticacao {
         };
         /** Service passado deve obrigatoriamente ter o método findById */
         passport.use(new passport_jwt_1.Strategy(opts, (jwtPayload, done) => {
-            servico.findById(jwtPayload.id).then(user => {
+            servico.buscarPorId(jwtPayload.id).then(user => {
                 if (user) {
                     return done(null, {
                         id: user.id,
