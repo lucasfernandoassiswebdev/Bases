@@ -11,7 +11,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const _ = require("lodash");
 const Autenticacao_1 = require("./Autenticacao");
 class TokenRotas {
-    constructor() {
+    constructor(servico) {
+        this.servico = servico;
         /**
          * Método que autentica as rotas necessárias
          * @param req <Request> (express)
@@ -19,21 +20,20 @@ class TokenRotas {
          * @param servico <any> Classe que extenda Servico<T>
          * @returns <Response> (express)
          */
-        this.auth = (req, res, servico) => __awaiter(this, void 0, void 0, function* () {
+        this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const credenciais = {
                 email: req.body.email,
                 password: req.body.password
             };
             if (credenciais.email) {
-                yield servico.buscarPorEmail(credenciais.email)
+                yield this.servico.buscarPorEmail(credenciais.email)
                     .then(_.partial(Autenticacao_1.default.sucessoAutenticacao, res, credenciais))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
             }
         });
     }
-    exporRotas(app, aut, conexao) {
+    exporRotas(app, aut) {
         app.route('/token').post(this.auth);
     }
 }
-exports.TokenRotas = TokenRotas;
-exports.default = new TokenRotas();
+exports.default = TokenRotas;
