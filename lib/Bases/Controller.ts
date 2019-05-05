@@ -103,8 +103,8 @@ export default class Controller<T> implements IController {
      * @returns <T[]> Retorna a lista de dados dos objetos criados
      */
     public salvarLista = async (req: Request, res: Response) => {
-        req.body.forEach((item: Object) => {
-            item = this.criptografaSenhas(item);
+        await req.body.forEach(async (item: Object) => {
+            item = await this.criptografaSenhas(item);
         });
 
         await this.servico.salvarLista(req.body)
@@ -128,10 +128,10 @@ export default class Controller<T> implements IController {
             .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
     }
 
-    private criptografaSenhas = (objeto: any): Object => {
-        Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
+    private criptografaSenhas = async (objeto: any): Promise<Object> => {
+        await Object.getOwnPropertyNames(objeto).forEach(async (propriedade) => {
             if (propriedade.startsWith("senha"))
-                Object[propriedade] = Criptografia.criptografar(objeto[propriedade]);
+                Object[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
         });
 
         return objeto;

@@ -89,9 +89,9 @@ class Controller {
          * @returns <T[]> Retorna a lista de dados dos objetos criados
          */
         this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            req.body.forEach((item) => {
-                item = this.criptografaSenhas(item);
-            });
+            yield req.body.forEach((item) => __awaiter(this, void 0, void 0, function* () {
+                item = yield this.criptografaSenhas(item);
+            }));
             yield this.servico.salvarLista(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
@@ -109,13 +109,13 @@ class Controller {
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });
-        this.criptografaSenhas = (objeto) => {
-            Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
+        this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
+            yield Object.getOwnPropertyNames(objeto).forEach((propriedade) => __awaiter(this, void 0, void 0, function* () {
                 if (propriedade.startsWith("senha"))
-                    Object[propriedade] = Criptografia_1.default.criptografar(objeto[propriedade]);
-            });
+                    Object[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
+            }));
             return objeto;
-        };
+        });
     }
 }
 exports.default = Controller;
