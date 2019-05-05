@@ -28,7 +28,7 @@ class TokenRotas {
             };
             if (credenciais.email) {
                 yield this.servico.buscarPorEmail(credenciais.email)
-                    .then((user) => _.partial(Autenticacao_1.default.sucessoAutenticacao, res, credenciais.senha, user, this.chaveCriptografia))
+                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
             }
         });

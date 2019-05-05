@@ -42,12 +42,14 @@ class Autenticacao {
      * @returns <Response> (express)
      */
     sucessoAutenticacao(res, senha, usuario, chaveCriptografia) {
-        if (Criptografia_1.default.senhaConfere(senha, usuario.senha))
-            res.json({
-                token: this.gerarToken({ id: usuario.id }, chaveCriptografia)
-            });
-        else
-            res.sendStatus(HttpStatus.UNAUTHORIZED);
+        return __awaiter(this, void 0, void 0, function* () {
+            if (Criptografia_1.default.senhaConfere(senha, usuario.senha))
+                res.json({
+                    token: yield this.gerarToken({ id: usuario.id }, chaveCriptografia)
+                });
+            else
+                res.sendStatus(HttpStatus.UNAUTHORIZED);
+        });
     }
     /**
      * Configura a estratégia de autenticação da API

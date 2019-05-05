@@ -34,10 +34,10 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Response> (express)
      */
-    public sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {        
+    public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {        
         if (Criptografia.senhaConfere(senha, usuario.senha))
             res.json({
-                token: this.gerarToken({ id: usuario.id }, chaveCriptografia)
+                token: await this.gerarToken({ id: usuario.id }, chaveCriptografia)
             });
         else
             res.sendStatus(HttpStatus.UNAUTHORIZED);

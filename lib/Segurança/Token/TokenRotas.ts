@@ -22,7 +22,7 @@ export default class TokenRotas implements RotasInterface {
 
         if (credenciais.email) {
             await this.servico.buscarPorEmail(credenciais.email)
-                .then((user: any) => _.partial(Autenticacao.sucessoAutenticacao, res, credenciais.senha, user, this.chaveCriptografia))
+                .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
                 .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
         }
     };
