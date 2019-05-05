@@ -105,9 +105,9 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
 
     /**
      * 
-     * @param id <number> 
+     * @param id <number> ID do objeto a ser removido
      * @param transacao <EntityManager>
-     * @returns Promise<T>
+     * @returns Promise<T> Retorna o objeto removido
      */
     public async remover(id: number, transacao?: EntityManager): Promise<T> {
         if (typeof transacao !== 'undefined') {

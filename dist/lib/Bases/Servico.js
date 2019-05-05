@@ -87,7 +87,7 @@ class Servico {
          *
          * @param id <number> ID do objeto a ser removido
          * @param transacao <EntityManager>
-         * @returns Promise<T>
+         * @returns Promise<T> Retorna o objeto removido
          */
         this.remover = (id, transacao) => __awaiter(this, void 0, void 0, function* () {
             return yield this.repositorio.remover(id, transacao);

@@ -125,7 +125,7 @@ export default class Controller<T> implements IController {
 
         await this.servico.remover(id)
             .then(_.partial(Manipuladores.sucesso, res))
-            .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar dados fornecidos"));
+            .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
     }
 
     private criptografaSenhas = (objeto: any): Object => {

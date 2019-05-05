@@ -102,9 +102,9 @@ class Repositorio {
     }
     /**
      *
-     * @param id <number>
+     * @param id <number> ID do objeto a ser removido
      * @param transacao <EntityManager>
-     * @returns Promise<T>
+     * @returns Promise<T> Retorna o objeto removido
      */
     remover(id, transacao) {
         return __awaiter(this, void 0, void 0, function* () {

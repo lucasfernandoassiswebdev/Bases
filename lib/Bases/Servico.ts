@@ -97,7 +97,7 @@ export class Servico<T> implements IServico<T> {
      * 
      * @param id <number> ID do objeto a ser removido
      * @param transacao <EntityManager>
-     * @returns Promise<T>
+     * @returns Promise<T> Retorna o objeto removido
      */
     public remover = async (id: number, transacao?: EntityManager): Promise<T> => {
         return await this.repositorio.remover(id, transacao);

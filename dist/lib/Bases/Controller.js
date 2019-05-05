@@ -107,7 +107,7 @@ class Controller {
             let id = Number.parseInt(req.params.id);
             yield this.servico.remover(id)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
+                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });
         this.criptografaSenhas = (objeto) => {
             Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
