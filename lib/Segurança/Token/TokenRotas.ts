@@ -6,7 +6,7 @@ import { RotasInterface } from '../../../bin/BaseModule';
 export class TokenRotas implements RotasInterface {
 
     /**
-     * 
+     * Método que autentica as rotas necessárias
      * @param req <Request> (express)
      * @param res <Response> (express)
      * @param servico <any> Classe que extenda Servico<T>

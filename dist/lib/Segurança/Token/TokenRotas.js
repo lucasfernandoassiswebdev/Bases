@@ -13,7 +13,7 @@ const Autenticacao_1 = require("./Autenticacao");
 class TokenRotas {
     constructor() {
         /**
-         *
+         * Método que autentica as rotas necessárias
          * @param req <Request> (express)
          * @param res <Response> (express)
          * @param servico <any> Classe que extenda Servico<T>
