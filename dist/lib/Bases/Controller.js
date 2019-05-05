@@ -112,9 +112,7 @@ class Controller {
         this.criptografaSenhas = (objeto) => {
             Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
                 if (propriedade.startsWith("senha"))
-                    Object.defineProperty(objeto, `${propriedade}`, {
-                        value: Criptografia_1.default.criptografar(objeto[propriedade])
-                    });
+                    Object[propriedade] = Criptografia_1.default.criptografar(objeto[propriedade]);
             });
             return objeto;
         };
