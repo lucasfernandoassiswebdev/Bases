@@ -85,7 +85,7 @@ class Servico {
         });
         /**
          *
-         * @param id <number>
+         * @param id <number> ID do objeto a ser removido
          * @param transacao <EntityManager>
          * @returns Promise<T>
          */

@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import * as _ from 'lodash';
 import Manipuladores from '../Manipuladores';
 import { Servico } from './Servico';
+import Criptografia from '../Segurança/Criptografia';
 
 export interface IController {
     buscar(req: Request, res: Response): any;
@@ -88,6 +89,8 @@ export default class Controller<T> implements IController {
      * @returns <T> Retorna os dados do objeto criado
      */
     public salvar = async (req: Request, res: Response) => {
+        req.body = this.criptografaSenhas(req.body);
+
         await this.servico.salvar(req.body)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar dados fornecidos"));
@@ -100,6 +103,10 @@ export default class Controller<T> implements IController {
      * @returns <T[]> Retorna a lista de dados dos objetos criados
      */
     public salvarLista = async (req: Request, res: Response) => {
+        req.body.forEach((item: Object) => {
+            item = this.criptografaSenhas(item);
+        });
+
         await this.servico.salvarLista(req.body)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar lista de dados fornecidos"));
@@ -119,5 +126,14 @@ export default class Controller<T> implements IController {
         await this.servico.remover(id)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar dados fornecidos"));
+    }
+
+    private criptografaSenhas = (objeto: any): Object => {
+        Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
+            if (propriedade.startsWith("senha"))
+                objeto.propriedade = Criptografia.criptografar(objeto.propriedade);
+        });
+
+        return objeto;
     }
 }

@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const _ = require("lodash");
 const Manipuladores_1 = require("../Manipuladores");
+const Criptografia_1 = require("../Seguran\u00E7a/Criptografia");
 class Controller {
     /**
      *
@@ -76,6 +77,7 @@ class Controller {
          * @returns <T> Retorna os dados do objeto criado
          */
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            req.body = this.criptografaSenhas(req.body);
             yield this.servico.salvar(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
@@ -87,6 +89,9 @@ class Controller {
          * @returns <T[]> Retorna a lista de dados dos objetos criados
          */
         this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            req.body.forEach((item) => {
+                item = this.criptografaSenhas(item);
+            });
             yield this.servico.salvarLista(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
@@ -104,6 +109,13 @@ class Controller {
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
         });
+        this.criptografaSenhas = (objeto) => {
+            Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
+                if (propriedade.startsWith("senha"))
+                    objeto.propriedade = Criptografia_1.default.criptografar(objeto.propriedade);
+            });
+            return objeto;
+        };
     }
 }
 exports.default = Controller;
