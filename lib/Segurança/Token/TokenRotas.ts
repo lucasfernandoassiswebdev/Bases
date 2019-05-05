@@ -5,7 +5,7 @@ import { RotasInterface } from '../../../bin/BaseModule';
 
 export default class TokenRotas implements RotasInterface {
 
-    constructor(private servico: any) { }
+    constructor(private servico: any, private chaveCriptografia: string) { }
 
     /**
      * Método que autentica as rotas necessárias
@@ -17,12 +17,12 @@ export default class TokenRotas implements RotasInterface {
     auth = async (req: Request, res: Response) => {
         const credenciais = {
             email: req.body.email,
-            password: req.body.password
+            senha: req.body.senha
         };
 
         if (credenciais.email) {
             await this.servico.buscarPorEmail(credenciais.email)
-                .then(_.partial(Autenticacao.sucessoAutenticacao, res, credenciais))
+                .then((user: any) => _.partial(Autenticacao.sucessoAutenticacao, res, credenciais.senha, user, this.chaveCriptografia))
                 .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
         }
     };

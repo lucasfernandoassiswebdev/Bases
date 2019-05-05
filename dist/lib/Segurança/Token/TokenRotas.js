@@ -11,8 +11,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const _ = require("lodash");
 const Autenticacao_1 = require("./Autenticacao");
 class TokenRotas {
-    constructor(servico) {
+    constructor(servico, chaveCriptografia) {
         this.servico = servico;
+        this.chaveCriptografia = chaveCriptografia;
         /**
          * Método que autentica as rotas necessárias
          * @param req <Request> (express)
@@ -23,11 +24,11 @@ class TokenRotas {
         this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const credenciais = {
                 email: req.body.email,
-                password: req.body.password
+                senha: req.body.senha
             };
             if (credenciais.email) {
                 yield this.servico.buscarPorEmail(credenciais.email)
-                    .then(_.partial(Autenticacao_1.default.sucessoAutenticacao, res, credenciais))
+                    .then((user) => _.partial(Autenticacao_1.default.sucessoAutenticacao, res, credenciais.senha, user, this.chaveCriptografia))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
             }
         });
