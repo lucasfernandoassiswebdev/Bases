@@ -9,18 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 class Util {
-    asyncForEachF(array, callback) {
+    /**
+     *
+     * @param array Array<any>
+     * @param callback <Function>
+     */
+    asyncForEach(array, callback) {
         return __awaiter(this, void 0, void 0, function* () {
             for (let index = 0; index < array.length; index++) {
                 yield callback(array[index], index, array);
             }
         });
     }
-    asyncForEach(array, callback) {
-        () => __awaiter(this, void 0, void 0, function* () {
-            yield this.asyncForEachF(array, () => __awaiter(this, void 0, void 0, function* () {
-                yield callback();
-            }));
+    /**
+     * Função para utilização de forEach() com async await
+     * @param array Array<any> Array a ser percorrido
+     * @param funcao <Function> Fução a ser executada em cada item do array
+     * @param callback <Function> Função de callback a ser executada após o array ser percorrido
+     */
+    executeasyncForEach(array, funcao, callback) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.asyncForEach(array, funcao);
+            if (callback)
+                callback();
         });
     }
 }
