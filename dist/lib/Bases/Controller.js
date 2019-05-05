@@ -77,7 +77,7 @@ class Controller {
          * @returns <T> Retorna os dados do objeto criado
          */
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            req.body = this.criptografaSenhas(req.body);
+            req.body = yield this.criptografaSenhas(req.body);
             yield this.servico.salvar(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
