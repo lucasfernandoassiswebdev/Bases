@@ -131,7 +131,9 @@ export default class Controller<T> implements IController {
     private criptografaSenhas = (objeto: any): Object => {
         Object.getOwnPropertyNames(objeto).forEach((propriedade) => {
             if (propriedade.startsWith("senha"))
-                objeto.propriedade = Criptografia.criptografar(objeto.propriedade);
+                Object.defineProperty(objeto, `${propriedade}`, {
+                    value: Criptografia.criptografar(objeto[propriedade])
+                });
         });
 
         return objeto;
