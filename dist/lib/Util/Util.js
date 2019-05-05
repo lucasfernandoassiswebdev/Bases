@@ -16,7 +16,7 @@ class Util {
             }
         });
     }
-    asyncForEsach(array, callback) {
+    asyncForEach(array, callback) {
         () => __awaiter(this, void 0, void 0, function* () {
             yield this.asyncForEachF(array, () => __awaiter(this, void 0, void 0, function* () {
                 yield callback();

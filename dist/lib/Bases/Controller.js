@@ -11,6 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const _ = require("lodash");
 const Manipuladores_1 = require("../Manipuladores");
 const Criptografia_1 = require("../Seguran\u00E7a/Criptografia");
+const Util_1 = require("../Util/Util");
 class Controller {
     /**
      *
@@ -110,7 +111,7 @@ class Controller {
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });
         this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
-            yield Object.getOwnPropertyNames(objeto).forEach((propriedade) => __awaiter(this, void 0, void 0, function* () {
+            Util_1.default.asyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
                 if (propriedade.startsWith("senha"))
                     Object[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
             }));

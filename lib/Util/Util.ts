@@ -5,8 +5,8 @@ class Util {
             await callback(array[index], index, array);
         }
     }
-
-    public asyncForEsach(array: Array<any>, callback: Function) {
+    
+    public asyncForEach(array: Array<any>, callback: Function) {
         async () => {
             await this.asyncForEachF(array, async () => {
                 await callback();

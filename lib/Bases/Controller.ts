@@ -3,6 +3,7 @@ import * as _ from 'lodash';
 import Manipuladores from '../Manipuladores';
 import { Servico } from './Servico';
 import Criptografia from '../Segurança/Criptografia';
+import Util from '../Util/Util';
 
 export interface IController {
     buscar(req: Request, res: Response): any;
@@ -129,7 +130,7 @@ export default class Controller<T> implements IController {
     }
 
     private criptografaSenhas = async (objeto: T): Promise<T> => {
-        await Object.getOwnPropertyNames(objeto).forEach(async (propriedade) => {
+        Util.asyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
             if (propriedade.startsWith("senha"))
                 Object[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
         });
