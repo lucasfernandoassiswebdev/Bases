@@ -110,8 +110,13 @@ class Controller {
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });
+        /**
+         * Criptografa as propriedades do objeto que comecem com a palavra "senha"
+         * @param objeto <T> objeto em que as propriedades serão criptografadas
+         * @returns Promise<T> objeto com as propriedades criptografadas
+         */
         this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
-            Util_1.default.asyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
+            yield Util_1.default.executeasyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
                 if (propriedade.startsWith("senha"))
                     Object[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
             }));

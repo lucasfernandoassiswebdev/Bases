@@ -129,8 +129,13 @@ export default class Controller<T> implements IController {
             .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
     }
 
+    /**
+     * Criptografa as propriedades do objeto que comecem com a palavra "senha"
+     * @param objeto <T> objeto em que as propriedades serão criptografadas
+     * @returns Promise<T> objeto com as propriedades criptografadas
+     */
     private criptografaSenhas = async (objeto: T): Promise<T> => {
-        Util.asyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
+        await Util.executeasyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
             if (propriedade.startsWith("senha"))
                 Object[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
         });
