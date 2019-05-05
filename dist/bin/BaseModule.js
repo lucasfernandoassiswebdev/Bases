@@ -22,3 +22,5 @@ const ServicoMongo_1 = require("../lib/Bases/ServicoMongo");
 exports.ServicoMongo = ServicoMongo_1.ServicoMongo;
 const TokenRotas_1 = require("../lib/Seguran\u00E7a/Token/TokenRotas");
 exports.TokenRotas = TokenRotas_1.default;
+const Util_1 = require("../lib/Util/Util");
+exports.Util = Util_1.default;

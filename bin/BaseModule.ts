@@ -10,6 +10,7 @@ import RotasInterface from '../lib/RotasInterface';
 import { Servico } from '../lib/Bases/Servico';
 import { ServicoMongo } from '../lib/Bases/ServicoMongo';
 import TokenRotas from '../lib/Segurança/Token/TokenRotas';
+import Util from '../lib/Util/Util';
 
 export {
     Autenticacao,
@@ -23,5 +24,6 @@ export {
     RepositorioMongo,
     Servico,
     ServicoMongo,
-    TokenRotas
+    TokenRotas,
+    Util
 }
