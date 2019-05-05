@@ -76,7 +76,7 @@ class Controller {
          * @returns <T> Retorna os dados do objeto criado
          */
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            yield this.servico.salvar(req.params)
+            yield this.servico.salvar(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
         });
@@ -87,7 +87,7 @@ class Controller {
          * @returns <T[]> Retorna a lista de dados dos objetos criados
          */
         this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            yield this.servico.salvarLista(req.params)
+            yield this.servico.salvarLista(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
         });

@@ -88,7 +88,7 @@ export default class Controller<T> implements IController {
      * @returns <T> Retorna os dados do objeto criado
      */
     public salvar = async (req: Request, res: Response) => {
-        await this.servico.salvar(req.params)
+        await this.servico.salvar(req.body)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar dados fornecidos"));
     }
@@ -100,7 +100,7 @@ export default class Controller<T> implements IController {
      * @returns <T[]> Retorna a lista de dados dos objetos criados
      */
     public salvarLista = async (req: Request, res: Response) => {
-        await this.servico.salvarLista(req.params)
+        await this.servico.salvarLista(req.body)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao salvar lista de dados fornecidos"));
     }
