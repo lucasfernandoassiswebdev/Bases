@@ -1110,8 +1110,8 @@
         "signature": "907855637493f267ecc83590ad26894b8bfa65f466b6428fa19e7f2e4271741b"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
-        "version": "6537ebe22509655ca90fcfaf6a90d59ef3e06af209601b02e287eff99c61b5ef",
-        "signature": "a0c486e252b607b0f77aee1e23650f244c44b2315e10b2bd078b9b2261b5f7b3"
+        "version": "9b974620286f52912d4e11aea8512d1dddd6bd396c6d1c4a99730aca3a705cc1",
+        "signature": "9728ea253a063e0552869877ede691c80404b86123afe4f48de66888805e9daa"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": {
         "version": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561",
@@ -4969,9 +4969,12 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/naming-strategy/DefaultNamingStrategy.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/util/PromiseUtils.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
@@ -5019,9 +5022,6 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"
     ]

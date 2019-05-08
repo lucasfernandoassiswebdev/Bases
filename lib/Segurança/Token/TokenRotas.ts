@@ -14,7 +14,7 @@ export default class TokenRotas implements RotasInterface {
      * @param servico <any> Classe que extenda Servico<T>
      * @returns <Response> (express)
      */
-    auth = async (req: Request, res: Response) => {
+    private auth = async (req: Request, res: Response) => {
         const credenciais = {
             email: req.body.email,
             senha: req.body.senha
