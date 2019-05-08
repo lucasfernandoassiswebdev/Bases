@@ -14,7 +14,6 @@ class Repositorio {
     /**
      * Inicia a classe criando o repositório da classe genérica informada
      * @param classeEntidade TypeORM Model
-     * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
      */
     constructor(classeEntidade) {
         this.repositorio = typeorm_1.getConnection().getRepository(classeEntidade);

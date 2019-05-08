@@ -15,7 +15,6 @@ class Rotas {
          * @param app <Application> (express) Aplicação onde as rotas serão mapeadas
          * @param aut <any> Classe que irá autenticar as rotas necessárias
          * @param rotas <RotasInterface[]> Classes rotas que expõe/mapeam as rotas na APi
-         * @param conexao <any> Conexão com o banco
          */
         this.iniciarRotas = (app, aut, rotas) => __awaiter(this, void 0, void 0, function* () {
             yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {

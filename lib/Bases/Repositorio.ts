@@ -17,8 +17,7 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
 
     /**
      * Inicia a classe criando o repositório da classe genérica informada
-     * @param classeEntidade TypeORM Model
-     * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
+     * @param classeEntidade TypeORM Model     
      */
     constructor(classeEntidade: any) {
         this.repositorio = getConnection().getRepository(classeEntidade);
