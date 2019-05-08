@@ -20,7 +20,7 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
      * @param classeEntidade TypeORM Model
      * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
      */
-    constructor(classeEntidade: any, conexao: any) {
+    constructor(classeEntidade: any) {
         this.repositorio = getConnection().getRepository(classeEntidade);
         this.pagina = new Pagina();
     }

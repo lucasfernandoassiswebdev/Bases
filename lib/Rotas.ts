@@ -10,9 +10,9 @@ class Rotas {
      * @param rotas <RotasInterface[]> Classes rotas que expõe/mapeam as rotas na APi
      * @param conexao <any> Conexão com o banco
      */
-    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[], conexao: any) => {
+    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[]) => {
         await rotas.forEach(async (rota) => {
-            rota.exporRotas(app, aut, conexao);
+            rota.exporRotas(app, aut);
         });
     }
 }

@@ -16,7 +16,7 @@ class Repositorio {
      * @param classeEntidade TypeORM Model
      * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
      */
-    constructor(classeEntidade, conexao) {
+    constructor(classeEntidade) {
         this.repositorio = typeorm_1.getConnection().getRepository(classeEntidade);
         this.pagina = new Pagina_1.default();
     }
