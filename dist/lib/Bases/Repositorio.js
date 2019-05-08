@@ -16,7 +16,7 @@ class Repositorio {
      * @param classeEntidade TypeORM Model
      */
     constructor(classeEntidade) {
-        this.repositorio = typeorm_1.getConnection().getRepository(classeEntidade);
+        this.repositorio = typeorm_1.getRepository(classeEntidade);
         this.pagina = new Pagina_1.default();
     }
     /**

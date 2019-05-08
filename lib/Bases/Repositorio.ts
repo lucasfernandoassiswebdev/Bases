@@ -1,4 +1,4 @@
-import { Repository, EntityManager, getConnection } from 'typeorm';
+import { Repository, EntityManager, getRepository } from 'typeorm';
 import Pagina from '../Pagina';
 
 export interface IRepositorio<T> {
@@ -19,8 +19,8 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
      * Inicia a classe criando o repositório da classe genérica informada
      * @param classeEntidade TypeORM Model     
      */
-    constructor(classeEntidade: any) {
-        this.repositorio = getConnection().getRepository(classeEntidade);
+    constructor(classeEntidade: any) {        
+        this.repositorio = getRepository(classeEntidade);
         this.pagina = new Pagina();
     }
 
