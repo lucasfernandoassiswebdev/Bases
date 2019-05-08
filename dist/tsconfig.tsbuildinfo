@@ -114,8 +114,8 @@
         "signature": "e1e4f25a5afa4a149cc77926ff5c9e50b524c187c0b21aafaf5c1f4e454e3ce5"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts": {
-        "version": "ea11133a7bb2362c378e6ea087648e51efbd7c229b9416918b2095a2cb3e24ce",
-        "signature": "4404eb7aeceb0c36cf9bf34a2d92153b9d1098998da858dac7e1e7c30972c4df"
+        "version": "2b8a365aece789a21b62b6f6be66712b90aff73729025836cebe1883d06d6a49",
+        "signature": "ff0ed5e2c1f1ea66ab9589a8de36d60d5747c5f050dd6d70ad10b79be8af9f2a"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Pagina.ts": {
         "version": "e7637b49cb58fa966413f8427f9f167c92d5ce877a5b481506d0efbfa2fb934e",
@@ -125,9 +125,17 @@
         "version": "f3c7cfbcc0df0409d07393ff286e345bb95b41ae01325a3e3d5194dce209e3e4",
         "signature": "e274e15b88663c4d58fb0bce4e83029f6cd0a508e515cc4be4d0ab1361fab161"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
-        "version": "eb75b80e7851440e5708605a0846972e565dbeefd471729cf10af26bf90ae4ca",
-        "signature": "c10293b603f773610c477e9fc1b9de2a8dbfe815316f3b23491f6ada4157aeb5"
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": {
+        "version": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737",
+        "signature": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": {
+        "version": "4a1e0b9318051a5aa40f19bc76e370f39cecdca1a7b3c0f84ab8d0580bf0c1f1",
+        "signature": "b7662f79783135d98f6b06eda859892a9f5b1e13af8b902e0ba7f955263e6040"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
+        "version": "9babb0e539fc9438aaa1d2de1b9a678edcb1374cd59fb1b0ccdd30700b8b55aa",
+        "signature": "2959fba66d1e3832d1179f74026a5cc0bf2684866632ae11e60f76d025f5b773"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -1070,28 +1078,20 @@
         "signature": "6d152fbea5ba8000f6ce64ed48f704e3fe6fc72cc13fff53e82f446ca476c1e1"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts": {
-        "version": "f21fe5cb5f1b12f71a37c504c248bfbd25fb28e2525f84f422e2d5860afd0b19",
-        "signature": "2f030142b796cf6f02429141bf86aa4496c540408b4a17e5b28f198d3b55716a"
+        "version": "68bf0fa3b0b38d7559c402ef7e69b67be3a2a8ec3d52b631e247c3d90134c61f",
+        "signature": "5731c6ef25f562997d98d8aec8584d20dc9a4bdf9f7fc8cc05433feed784df41"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts": {
-        "version": "c797534faa57d3669fae3f202f7da485c20092e03c27a671b10535df64bcd283",
-        "signature": "27bd00851d8c1c50cb4769c8a388e6e0ec4f94a52359a2766e641cd77b978e8d"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": {
-        "version": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737",
-        "signature": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": {
-        "version": "4a1e0b9318051a5aa40f19bc76e370f39cecdca1a7b3c0f84ab8d0580bf0c1f1",
-        "signature": "b7662f79783135d98f6b06eda859892a9f5b1e13af8b902e0ba7f955263e6040"
+        "version": "afdbe53d11021f9170a1dab8bcb7d68c841605e8072899d96f60afd240f96eac",
+        "signature": "f1033a50f8d712bd5efa3fe44350a29837291d3293f8712e8720ecc2abdc53be"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts": {
         "version": "8014010ece50ff040b92c75f0e5f658272bdd27a6eb6718545c1e6e72265d4fc",
         "signature": "2bfefbb0f3229b0e7854f07ea2350cb82b926f52d2f2d8220204f7a149fb8739"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts": {
-        "version": "eab0216370894f33b121d8c41f1a2d077ad6c6e667761cf334d41bd043705e11",
-        "signature": "b5094ce72463e0f9128d294b27d2aeabb38c16a005c6dbb757fd807fd5b884b4"
+        "version": "aca529a338a3d07d099bd88a863e34a61a938773382a74c4080b2570ab57ff9c",
+        "signature": "17db271f71bf116fb6a6ccc4abaa85466380b6a72897c77b1e6c000511e14473"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts": {
         "version": "8e94374c7580078b296d923f8731463e800b69499211aec23fd12978e1f2ff8a",
@@ -1101,17 +1101,17 @@
         "version": "a4adeeb3f0e4af7da05f4ac0b5cacb684bc5ddf3aad0092488beaae48a81a450",
         "signature": "fcd120f9edb24b1c4998089f64e233808e861bcbe635694f198103a0b4718d18"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
-        "version": "9babb0e539fc9438aaa1d2de1b9a678edcb1374cd59fb1b0ccdd30700b8b55aa",
-        "signature": "2959fba66d1e3832d1179f74026a5cc0bf2684866632ae11e60f76d025f5b773"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
+        "version": "1144288142931247760f82367d3c4e4ae7066a3a2243fdeeb03b17edc12fdef1",
+        "signature": "c5512c9390a2ed874ee230cca25d175ae1352f6bb9c05ceec21a9c94449eeae6"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": {
         "version": "9edab4aadf80b2973a50848cf6a39b13b9a263db14e5312c71eac2a255ef62c8",
         "signature": "907855637493f267ecc83590ad26894b8bfa65f466b6428fa19e7f2e4271741b"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
-        "version": "1144288142931247760f82367d3c4e4ae7066a3a2243fdeeb03b17edc12fdef1",
-        "signature": "c5512c9390a2ed874ee230cca25d175ae1352f6bb9c05ceec21a9c94449eeae6"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
+        "version": "c6cdad35fe7294998c0528f2f2d424f518f3a32e2ad3b6948326074727b73143",
+        "signature": "f103bc8d5e294ae4aa3a564c7ef8322c7be33a40942bb194afa1af34496db5f8"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": {
         "version": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561",
@@ -1437,8 +1437,19 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3063,15 +3074,6 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
@@ -3093,10 +3095,9 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3117,8 +3118,8 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
@@ -3450,9 +3451,6 @@
       "/usr/local/lib/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/table/TableColumn.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts"
@@ -4416,6 +4414,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
@@ -4431,8 +4432,8 @@
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
@@ -4730,10 +4731,11 @@
       "/usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/usr/local/lib/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Pagina.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/reflect-metadata/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/table/TableColumn.d.ts",
@@ -4969,8 +4971,6 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/naming-strategy/DefaultNamingStrategy.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/util/PromiseUtils.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts",
@@ -5018,12 +5018,13 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts"
     ]
   },
   "version": "3.4.5"

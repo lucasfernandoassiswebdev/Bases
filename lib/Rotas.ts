@@ -1,5 +1,6 @@
 import { Application } from 'express';
 import RotasInterface from './RotasInterface';
+import { Controller } from '../bin/BaseModule';
 
 class Rotas {
 
@@ -9,9 +10,13 @@ class Rotas {
      * @param aut <any> Classe que irá autenticar as rotas necessárias
      * @param rotas <RotasInterface[]> Classes rotas que expõe/mapeam as rotas na APi     
      */
-    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[]) => {
+    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[], ...controllers: any) => {
         await rotas.forEach(async (rota) => {
             rota.exporRotas(app, aut);
+        });
+
+        controllers.forEach((controller: any) => {
+            controller.iniciarRepositorio();
         });
     }
 }

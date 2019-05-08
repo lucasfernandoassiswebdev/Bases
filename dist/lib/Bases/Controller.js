@@ -123,5 +123,11 @@ class Controller {
             return objeto;
         });
     }
+    /**
+     * Inicia o Repositório de acordo com T
+     */
+    iniciarRepositorio() {
+        this.servico.iniciarRepositorio();
+    }
 }
 exports.default = Controller;

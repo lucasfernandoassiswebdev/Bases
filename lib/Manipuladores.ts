@@ -31,11 +31,11 @@ class Manipuladores {
      * @param res <Response> (express)
      * @param next <NextFunction>
      */
-    manipuladorErroApi(err: ErrorRequestHandler, req: Request, res: Response, next?: NextFunction) {
-        console.error(`API error handler foi executado: ${err}`);
+    manipuladorErroApi(erro: ErrorRequestHandler, req: Request, res: Response, next?: NextFunction) {
+        console.error(`API error handler foi executado: ${erro}`);
         res.status(500).json({
             errorCode: 'ERR-001',
-            message: 'Erro interno do servidor'
+            message: `Erro interno do servidor\n${erro}`
         });
 
         if (next)
@@ -51,7 +51,7 @@ class Manipuladores {
         console.log(`DB error handler foi executado: ${erro}`);
         res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
             code: 'ERR-02',
-            message: 'DB Error'
+            message: `DB Error\n${erro}`
         });
     }
 }

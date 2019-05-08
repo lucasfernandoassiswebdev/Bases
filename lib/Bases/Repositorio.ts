@@ -23,6 +23,9 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
         this.pagina = new Pagina();
     }
 
+    /**
+     * Inicia a variável repositório
+     */
     public iniciarRepositorio(): void {
         this.repositorio = getRepository(this.classeEntidade);
     }

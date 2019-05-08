@@ -18,7 +18,16 @@ export class Servico<T> implements IServico<T> {
      * 
      * @param repositorio Repositorio<T>
      */
-    constructor(private repositorio: Repositorio<T>) { }
+    constructor(private repositorio: Repositorio<T>) { 
+        
+    }
+
+    /**
+     * Método que inicia o repositório
+     */
+    public iniciarRepositorio(): void {
+        this.repositorio.iniciarRepositorio();
+    }
 
     /**
      * 

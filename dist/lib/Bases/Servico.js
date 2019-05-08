@@ -93,5 +93,11 @@ class Servico {
             return yield this.repositorio.remover(id, transacao);
         });
     }
+    /**
+     * Método que inicia o repositório
+     */
+    iniciarRepositorio() {
+        this.repositorio.iniciarRepositorio();
+    }
 }
 exports.Servico = Servico;

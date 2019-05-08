@@ -24,6 +24,13 @@ export default class Controller<T> implements IController {
     constructor(public servico: Servico<T>) { }
 
     /**
+     * Inicia o Repositório de acordo com T
+     */
+    public iniciarRepositorio(): void {
+        this.servico.iniciarRepositorio();
+    }
+
+    /**
      * Deve conter uma QueryString(URL) com os dados para a busca
      * @param req <Request> (express) 
      * @param res <Response> (express)

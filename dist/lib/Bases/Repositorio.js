@@ -19,6 +19,9 @@ class Repositorio {
         this.classeEntidade = classeEntidade;
         this.pagina = new Pagina_1.default();
     }
+    /**
+     * Inicia a variável repositório
+     */
     iniciarRepositorio() {
         this.repositorio = typeorm_1.getRepository(this.classeEntidade);
     }
