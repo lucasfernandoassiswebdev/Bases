@@ -5,7 +5,7 @@ import { Request, Response } from 'express';
 import Criptografia from '../Criptografia';
 import * as jwt from 'jwt-simple';
 
-class Autenticacao {
+export default class Autenticacao {
 
     /**
      * 
@@ -55,7 +55,7 @@ class Autenticacao {
             jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt')
         };
 
-        /** Service passado deve obrigatoriamente ter o método findById */
+        /** Service passado deve obrigatoriamente ter o método buscarPorId */
         passport.use(new Strategy(opts, (jwtPayload, done) => {
             servico.buscarPorId(jwtPayload.id).then(user => {
                 if (user) {
@@ -77,5 +77,3 @@ class Autenticacao {
         }
     }
 }
-
-export default new Autenticacao();

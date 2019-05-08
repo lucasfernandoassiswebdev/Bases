@@ -62,7 +62,7 @@ class Autenticacao {
             secretOrKey: chaveCriptografia,
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderWithScheme('jwt')
         };
-        /** Service passado deve obrigatoriamente ter o método findById */
+        /** Service passado deve obrigatoriamente ter o método buscarPorId */
         passport.use(new passport_jwt_1.Strategy(opts, (jwtPayload, done) => {
             servico.buscarPorId(jwtPayload.id).then(user => {
                 if (user) {
@@ -82,4 +82,4 @@ class Autenticacao {
         };
     }
 }
-exports.default = new Autenticacao();
+exports.default = Autenticacao;
