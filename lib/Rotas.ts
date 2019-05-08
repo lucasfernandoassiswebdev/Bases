@@ -10,13 +10,12 @@ class Rotas {
      * @param aut <any> Classe que irá autenticar as rotas necessárias
      * @param rotas <RotasInterface[]> Classes rotas que expõe/mapeam as rotas na APi     
      */
-    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[], ...controllers: any) => {
+    public iniciarRotas = async (app: Application, aut: any, rotas: RotasInterface[]) => {
         await rotas.forEach(async (rota) => {
             rota.exporRotas(app, aut);
-        });
-
-        controllers.forEach((controller: any) => {
-            controller.iniciarRepositorio();
+            rota.exporControllers().forEach((controller: any) => {
+                controller.iniciarRepositorio();
+            });
         });
     }
 }

@@ -16,13 +16,13 @@ class Rotas {
          * @param aut <any> Classe que irá autenticar as rotas necessárias
          * @param rotas <RotasInterface[]> Classes rotas que expõe/mapeam as rotas na APi
          */
-        this.iniciarRotas = (app, aut, rotas, ...controllers) => __awaiter(this, void 0, void 0, function* () {
+        this.iniciarRotas = (app, aut, rotas) => __awaiter(this, void 0, void 0, function* () {
             yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {
                 rota.exporRotas(app, aut);
+                rota.exporControllers().forEach((controller) => {
+                    controller.iniciarRepositorio();
+                });
             }));
-            controllers.forEach((controller) => {
-                controller.iniciarRepositorio();
-            });
         });
     }
 }

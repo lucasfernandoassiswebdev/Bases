@@ -36,5 +36,8 @@ class TokenRotas {
     exporRotas(app) {
         app.route('/token').post(this.auth);
     }
+    exporControllers() {
+        return [];
+    }
 }
 exports.default = TokenRotas;

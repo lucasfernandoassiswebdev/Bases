@@ -30,4 +30,8 @@ export default class TokenRotas implements RotasInterface {
     public exporRotas(app: Application): void {
         app.route('/token').post(this.auth);
     }
+
+    public exporControllers(): any[] {
+        return [];
+    }
 }
