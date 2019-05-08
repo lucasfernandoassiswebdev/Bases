@@ -8,6 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const typeorm_1 = require("typeorm");
 const Pagina_1 = require("../Pagina");
 class Repositorio {
     /**
@@ -16,7 +17,7 @@ class Repositorio {
      * @param conexao Conexão gerada pelo typeorm a partir do "createConnection"
      */
     constructor(classeEntidade, conexao) {
-        this.repositorio = conexao.getRepository(classeEntidade);
+        this.repositorio = typeorm_1.getConnection().getRepository(classeEntidade);
         this.pagina = new Pagina_1.default();
     }
     /**
