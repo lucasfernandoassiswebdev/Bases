@@ -17,12 +17,14 @@ export abstract class Repositorio<T> implements IRepositorio<T> {
 
     /**
      * Inicia a classe criando o repositório da classe genérica informada
-     * @param repositorio Repository<T>
+     * @param classeEntidade <any> classe do Repositório
      */
-    constructor(repositorio: Repository<T>) {
-        //this.repositorio = getRepository(classeEntidade);
-        this.repositorio = repositorio;
+    constructor(private classeEntidade: any) {                
         this.pagina = new Pagina();
+    }
+
+    public iniciarRepositorio(): void {
+        this.repositorio = getRepository(this.classeEntidade);
     }
 
     /**

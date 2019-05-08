@@ -1070,8 +1070,8 @@
         "signature": "6d152fbea5ba8000f6ce64ed48f704e3fe6fc72cc13fff53e82f446ca476c1e1"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts": {
-        "version": "68a9a7fd693269727074881fa481b48c5acde6d2ad9fe9283537c339937e6572",
-        "signature": "c43e67235b1966cacbd1ac3ab23a827cd76bacf762efce85e882fecfbe7d7a86"
+        "version": "f21fe5cb5f1b12f71a37c504c248bfbd25fb28e2525f84f422e2d5860afd0b19",
+        "signature": "2f030142b796cf6f02429141bf86aa4496c540408b4a17e5b28f198d3b55716a"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts": {
         "version": "c797534faa57d3669fae3f202f7da485c20092e03c27a671b10535df64bcd283",
@@ -1102,16 +1102,16 @@
         "signature": "fcd120f9edb24b1c4998089f64e233808e861bcbe635694f198103a0b4718d18"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
-        "version": "82194535bc23f0b8c6c591c9ba8aa2eecd364d443828f90831b79f40045f540f",
-        "signature": "0e7160fb99c4f6ef492d06402ad0cad486cd8bdd921a9d015f85b2c0645d995f"
+        "version": "9babb0e539fc9438aaa1d2de1b9a678edcb1374cd59fb1b0ccdd30700b8b55aa",
+        "signature": "2959fba66d1e3832d1179f74026a5cc0bf2684866632ae11e60f76d025f5b773"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": {
         "version": "9edab4aadf80b2973a50848cf6a39b13b9a263db14e5312c71eac2a255ef62c8",
         "signature": "907855637493f267ecc83590ad26894b8bfa65f466b6428fa19e7f2e4271741b"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
-        "version": "e74d64444eb3e1142da22a41ed002a8489a2ebb8c8ad3e90612d20b8eedbe007",
-        "signature": "9728ea253a063e0552869877ede691c80404b86123afe4f48de66888805e9daa"
+        "version": "1144288142931247760f82367d3c4e4ae7066a3a2243fdeeb03b17edc12fdef1",
+        "signature": "c5512c9390a2ed874ee230cca25d175ae1352f6bb9c05ceec21a9c94449eeae6"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": {
         "version": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561",
@@ -4969,12 +4969,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/naming-strategy/DefaultNamingStrategy.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/util/PromiseUtils.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
@@ -5021,6 +5018,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"

@@ -8,16 +8,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const typeorm_1 = require("typeorm");
 const Pagina_1 = require("../Pagina");
 class Repositorio {
     /**
      * Inicia a classe criando o repositório da classe genérica informada
-     * @param repositorio Repository<T>
+     * @param classeEntidade <any> classe do Repositório
      */
-    constructor(repositorio) {
-        //this.repositorio = getRepository(classeEntidade);
-        this.repositorio = repositorio;
+    constructor(classeEntidade) {
+        this.classeEntidade = classeEntidade;
         this.pagina = new Pagina_1.default();
+    }
+    iniciarRepositorio() {
+        this.repositorio = typeorm_1.getRepository(this.classeEntidade);
     }
     /**
      *

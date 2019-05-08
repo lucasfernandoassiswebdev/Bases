@@ -5,7 +5,7 @@ import { Request, Response } from 'express';
 import Criptografia from '../Criptografia';
 import * as jwt from 'jwt-simple';
 
-export default class Autenticacao {
+class Autenticacao {
 
     /**
      * 
@@ -77,3 +77,5 @@ export default class Autenticacao {
         }
     }
 }
+
+export default new Autenticacao();

@@ -82,4 +82,4 @@ class Autenticacao {
         };
     }
 }
-exports.default = Autenticacao;
+exports.default = new Autenticacao();

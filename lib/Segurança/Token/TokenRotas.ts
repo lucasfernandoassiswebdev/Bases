@@ -11,7 +11,7 @@ export default class TokenRotas implements RotasInterface {
      * Método que autentica as rotas necessárias
      * @param req <Request> (express)
      * @param res <Response> (express)
-     * @param servico <any> Classe que extenda Servico<T>
+     * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarPorEmail"
      * @returns <Response> (express)
      */
     private auth = async (req: Request, res: Response) => {
@@ -22,8 +22,8 @@ export default class TokenRotas implements RotasInterface {
 
         if (credenciais.email) {
             await this.servico.buscarPorEmail(credenciais.email)
-                .then((usuario: any) => new Autenticacao().sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
-                .catch(_.partial(new Autenticacao().falhaAutenticacao, req, res));
+                .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
+                .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
         }
     };
 

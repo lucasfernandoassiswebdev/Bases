@@ -18,7 +18,7 @@ class TokenRotas {
          * Método que autentica as rotas necessárias
          * @param req <Request> (express)
          * @param res <Response> (express)
-         * @param servico <any> Classe que extenda Servico<T>
+         * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarPorEmail"
          * @returns <Response> (express)
          */
         this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
@@ -28,8 +28,8 @@ class TokenRotas {
             };
             if (credenciais.email) {
                 yield this.servico.buscarPorEmail(credenciais.email)
-                    .then((usuario) => new Autenticacao_1.default().sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
-                    .catch(_.partial(new Autenticacao_1.default().falhaAutenticacao, req, res));
+                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
+                    .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
             }
         });
     }
