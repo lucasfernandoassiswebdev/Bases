@@ -1122,8 +1122,8 @@
         "signature": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts": {
-        "version": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a",
-        "signature": "138476cfdccbb9e2c7e06602bc216af843a56c4f3469a79106bc660ba94bd66a"
+        "version": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561",
+        "signature": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts": {
         "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
@@ -1146,8 +1146,8 @@
         "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts": {
-        "version": "a15466cfe77b4f8bcd936634d3d2828ee340819c3f136d31f87d6084e86994d0",
-        "signature": "a15466cfe77b4f8bcd936634d3d2828ee340819c3f136d31f87d6084e86994d0"
+        "version": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f",
+        "signature": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts": {
         "version": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
@@ -1162,8 +1162,8 @@
         "signature": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts": {
-        "version": "cff7f1ff41519a28adfedb85b9d91325e13d7993bebcfd0dd9ce30c3ed1240bb",
-        "signature": "cff7f1ff41519a28adfedb85b9d91325e13d7993bebcfd0dd9ce30c3ed1240bb"
+        "version": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c",
+        "signature": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts": {
         "version": "10c5b29dccf29ea7f9aea324ab09b0e2237d6506bd8e28538963b28855819616",
@@ -1254,8 +1254,8 @@
         "signature": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts": {
-        "version": "c3b57b0566d885091d45cfd44e274d5393e0bc398afe158199309b2dbea3b87e",
-        "signature": "c3b57b0566d885091d45cfd44e274d5393e0bc398afe158199309b2dbea3b87e"
+        "version": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12",
+        "signature": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts": {
         "version": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
@@ -1282,8 +1282,8 @@
         "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts": {
-        "version": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45",
-        "signature": "ce6b191c382ee19f23678b8c364484627bcf424e8f408357a2f5530fb8d52a45"
+        "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
+        "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts": {
         "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
@@ -1311,7 +1311,6 @@
         "node"
       ],
       "watch": true,
-      "diagnostics": true,
       "configFilePath": "/home/lucas/Documentos/NodeProjects/Bases/tsconfig.json"
     },
     "referencedMap": {
