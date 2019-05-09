@@ -1,6 +1,6 @@
 import * as passport from 'passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
-import * as HttpStatus from 'http-status';
+import HttpStatus from 'http-status';
 import { Request, Response } from 'express';
 import Criptografia from '../Criptografia';
 import * as jwt from 'jwt-simple';
