@@ -22,6 +22,7 @@ const passport_jwt_1 = require("passport-jwt");
 const http_status_1 = __importDefault(require("http-status"));
 const Criptografia_1 = __importDefault(require("../Criptografia"));
 const jwt = __importStar(require("jwt-simple"));
+const passport = __importStar(require("passport"));
 class Autenticacao {
     constructor() {
         /**
@@ -66,7 +67,7 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
-    configurar(passport, servico, chaveCriptografia) {
+    configurar(servico, chaveCriptografia) {
         let opts = {
             secretOrKey: chaveCriptografia,
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderWithScheme('jwt')
