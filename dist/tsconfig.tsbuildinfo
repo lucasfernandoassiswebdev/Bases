@@ -1296,12 +1296,12 @@
       "incremental": true,
       "target": 2,
       "module": 1,
-      "declaration": true,
       "lib": [
         "lib.es5.d.ts",
         "lib.es2015.d.ts",
         "lib.dom.d.ts"
       ],
+      "declaration": true,
       "outDir": "/home/lucas/Documentos/NodeProjects/Bases/dist",
       "esModuleInterop": true,
       "typeRoots": [
@@ -1311,6 +1311,7 @@
         "node"
       ],
       "watch": true,
+      "diagnostics": true,
       "configFilePath": "/home/lucas/Documentos/NodeProjects/Bases/tsconfig.json"
     },
     "referencedMap": {
