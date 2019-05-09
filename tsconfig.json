@@ -4,6 +4,7 @@
         "experimentalDecorators": true,
         "incremental": true,
         "target": "ES6",
+        "declaration": true,
         "lib": [
             "es5",
             "es6",
