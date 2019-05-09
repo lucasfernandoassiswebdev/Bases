@@ -1,6 +1,7 @@
 import { Application } from 'express';
 
 export default interface RotasInterface {
+    
     /**
      * Interface para as classes que irão expor as rotas necessárias para a API
      * @param app <Application> (express)

@@ -1,6 +1,5 @@
 import { Application } from 'express';
 import RotasInterface from './RotasInterface';
-import { Controller } from '../bin/BaseModule';
 
 class Rotas {
 

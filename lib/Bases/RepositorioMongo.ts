@@ -1,4 +1,4 @@
-import { Query, Types, Model, Document } from 'mongoose';
+import { Types, Model, Document } from 'mongoose';
 
 export interface IRepositorioMongo<T> {
     buscar(options: Object): Promise<T[]>;

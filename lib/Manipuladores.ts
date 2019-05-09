@@ -1,5 +1,5 @@
 import { Request, Response, ErrorRequestHandler, NextFunction } from 'express';
-import * as HttpStatus from 'http-status';
+import HttpStatus from 'http-status';
 
 class Manipuladores {
 
