@@ -17,8 +17,7 @@
             "./node_modules/@types"
         ],
         "types": [
-            "node",
-            "dist"
+            "node"
         ]
     },
     "include": [
