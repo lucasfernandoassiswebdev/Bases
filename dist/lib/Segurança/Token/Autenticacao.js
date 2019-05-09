@@ -20,7 +20,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const passport = __importStar(require("passport"));
 const passport_jwt_1 = require("passport-jwt");
-const HttpStatus = __importStar(require("http-status"));
+const http_status_1 = __importDefault(require("http-status"));
 const Criptografia_1 = __importDefault(require("../Criptografia"));
 const jwt = __importStar(require("jwt-simple"));
 class Autenticacao {
@@ -41,7 +41,7 @@ class Autenticacao {
      * @param res <Response> (express)
      */
     falhaAutenticacao(req, res) {
-        res.sendStatus(HttpStatus.UNAUTHORIZED);
+        res.sendStatus(http_status_1.default.UNAUTHORIZED);
     }
     /**
      * Retorna o token gerado no corpo da resposta
@@ -58,7 +58,7 @@ class Autenticacao {
                     token: yield this.gerarToken({ id: usuario.id }, chaveCriptografia)
                 });
             else
-                res.sendStatus(HttpStatus.UNAUTHORIZED);
+                res.sendStatus(http_status_1.default.UNAUTHORIZED);
         });
     }
     /**

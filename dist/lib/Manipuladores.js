@@ -1,13 +1,9 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const HttpStatus = __importStar(require("http-status"));
+const http_status_1 = __importDefault(require("http-status"));
 class Manipuladores {
     /**
      *
@@ -17,7 +13,7 @@ class Manipuladores {
      * @returns Status 500 - Internal Server Error
      */
     erro(res, message, err) {
-        res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({ payload: err });
+        res.status(http_status_1.default.INTERNAL_SERVER_ERROR).json({ payload: err });
     }
     /**
      *
@@ -26,7 +22,7 @@ class Manipuladores {
      * @returns Status 200 - OK
      */
     sucesso(res, data) {
-        res.status(HttpStatus.OK).json({ result: data });
+        res.status(http_status_1.default.OK).json({ result: data });
     }
     /**
      *
@@ -51,7 +47,7 @@ class Manipuladores {
      */
     manipuladorErroDB(res, erro) {
         console.log(`DB error handler foi executado: ${erro}`);
-        res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        res.status(http_status_1.default.INTERNAL_SERVER_ERROR).json({
             code: 'ERR-02',
             message: `DB Error\n${erro}`
         });

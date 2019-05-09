@@ -26,21 +26,21 @@ export default class Controller<T> implements IController {
      * @param res <Response> (express)
      * @returns Lista de objetos encontrados de acordo com os parâmetros fornecidos
      */
-    buscar: (req: any, res: any) => Promise<void>;
+    buscar: (req: Request, res: Response) => Promise<void>;
     /**
      * Deve conter uma QueryString(URL) com os dados para a busca
      * @param req <Request> (express)
      * @param res <Response> (express)
      * @returns Promise<T> Primeiro objeto encontrado de acordo com os parâmetros fornecidos
      */
-    buscarUm: (req: any, res: any) => Promise<void>;
+    buscarUm: (req: Request, res: Response) => Promise<void>;
     /**
      * Deve conter na URL o parâmetro "ID" para a busca do objeto desejado
      * @param req <Request> (express)
      * @param res <Response> (express)
      * @returns Promise<T> Objeto com o ID informado
      */
-    buscarPorId: (req: any, res: any) => Promise<void>;
+    buscarPorId: (req: Request, res: Response) => Promise<void>;
     /**
      * Busca todos os objetos na página desejada
      * É necessário fornecer na URL os parâmetros de página e limite
@@ -48,27 +48,27 @@ export default class Controller<T> implements IController {
      * @param res <Response> (express)
      * @returns Promise<T[]> Retorna os objetos encontrados na página informada
      */
-    buscarTodos: (req: any, res: any) => Promise<void>;
+    buscarTodos: (req: Request, res: Response) => Promise<void>;
     /**
      * Salva o objeto<T> passado no corpo da requisição
      * @param req <Request> (express)
      * @param res <Response> (express)
      * @returns <T> Retorna os dados do objeto criado
      */
-    salvar: (req: any, res: any) => Promise<void>;
+    salvar: (req: Request, res: Response) => Promise<void>;
     /**
      * Salva a lista de objetos<T[]> passados no corpo da requisição
      * @param req <Request> (express)
      * @param res <Response> (express)
      * @returns <T[]> Retorna a lista de dados dos objetos criados
      */
-    salvarLista: (req: any, res: any) => Promise<void>;
+    salvarLista: (req: Request, res: Response) => Promise<void>;
     /**
      * Remove o objeto do ID passado como parâmetro na URL
      * @param req <Request> (express)
      * @param res <Response> (express)
      */
-    remover: (req: any, res: any) => Promise<void>;
+    remover: (req: Request, res: Response) => Promise<void>;
     /**
      * Criptografa as propriedades do objeto que comecem com a palavra "senha"
      * @param objeto <T> objeto em que as propriedades serão criptografadas

@@ -9,10 +9,7 @@
   },
   "author": "Lucas Fernando de Assis",
   "license": "ISC",
-  "dependencies": {
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
     "@types/lodash": "^4.14.124",

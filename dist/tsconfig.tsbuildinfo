@@ -109,12 +109,216 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": {
+        "version": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561",
+        "signature": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts": {
+        "version": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
+        "signature": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts": {
+        "version": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561",
+        "signature": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts": {
+        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
+        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts": {
+        "version": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00",
+        "signature": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts": {
+        "version": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
+        "signature": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts": {
+        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts": {
+        "version": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
+        "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts": {
+        "version": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f",
+        "signature": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts": {
+        "version": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
+        "signature": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts": {
+        "version": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677",
+        "signature": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts": {
+        "version": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
+        "signature": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts": {
+        "version": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c",
+        "signature": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts": {
+        "version": "10c5b29dccf29ea7f9aea324ab09b0e2237d6506bd8e28538963b28855819616",
+        "signature": "10c5b29dccf29ea7f9aea324ab09b0e2237d6506bd8e28538963b28855819616"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts": {
+        "version": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8",
+        "signature": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts": {
+        "version": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07",
+        "signature": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts": {
+        "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
+        "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts": {
+        "version": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e",
+        "signature": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts": {
+        "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
+        "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts": {
+        "version": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
+        "signature": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts": {
+        "version": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
+        "signature": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts": {
+        "version": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36",
+        "signature": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
+        "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts": {
+        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
+        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts": {
+        "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
+        "signature": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts": {
+        "version": "b610b39b7d42b8e8359875ce77c3149d657bbaa6c9058beb655af805efb581b3",
+        "signature": "b610b39b7d42b8e8359875ce77c3149d657bbaa6c9058beb655af805efb581b3"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts": {
+        "version": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
+        "signature": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts": {
+        "version": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
+        "signature": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts": {
+        "version": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65",
+        "signature": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts": {
+        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
+        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts": {
+        "version": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083",
+        "signature": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts": {
+        "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
+        "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts": {
+        "version": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
+        "signature": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts": {
+        "version": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7",
+        "signature": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts": {
+        "version": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12",
+        "signature": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts": {
+        "version": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
+        "signature": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts": {
+        "version": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
+        "signature": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts": {
+        "version": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402",
+        "signature": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts": {
+        "version": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
+        "signature": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts": {
+        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts": {
+        "version": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
+        "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts": {
+        "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
+        "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts": {
+        "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
+        "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts": {
+        "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
+        "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts": {
+        "version": "d1e81dc16bb5a4c4ba7cfcf11df969a44a70d0a61c8a568ee5e88e1a042e1b9e",
+        "signature": "d1e81dc16bb5a4c4ba7cfcf11df969a44a70d0a61c8a568ee5e88e1a042e1b9e"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts": {
+        "version": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
+        "signature": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts": {
+        "version": "b27dd918d8c3f10270cadea529c69e3a9b37ce59db0852945a39068cc5c10fff",
+        "signature": "b27dd918d8c3f10270cadea529c69e3a9b37ce59db0852945a39068cc5c10fff"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts": {
+        "version": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82",
+        "signature": "c3be42b83b5f57ae2f65280fa395f6d31f61304ac1a29b7b406b6a0e71da8c82"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts": {
+        "version": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2",
+        "signature": "1b7919dbb6b43ff272f38f6f6522fb9f4e9e854356b2932a36aa4674f4a2fcf2"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts": {
+        "version": "434d7d3188d85bd46c64dcc8268422ffdfdd19fdbc98ec01446d650414fcaa0b",
+        "signature": "434d7d3188d85bd46c64dcc8268422ffdfdd19fdbc98ec01446d650414fcaa0b"
+      },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts": {
         "version": "e1e4f25a5afa4a149cc77926ff5c9e50b524c187c0b21aafaf5c1f4e454e3ce5",
         "signature": "e1e4f25a5afa4a149cc77926ff5c9e50b524c187c0b21aafaf5c1f4e454e3ce5"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts": {
-        "version": "2b8a365aece789a21b62b6f6be66712b90aff73729025836cebe1883d06d6a49",
+        "version": "250954b0b891aa90bf57c91eaa6e5390d1b3ecde5319ffbc746f02bcf99cf68d",
         "signature": "ff0ed5e2c1f1ea66ab9589a8de36d60d5747c5f050dd6d70ad10b79be8af9f2a"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Pagina.ts": {
@@ -122,20 +326,64 @@
         "signature": "a24133ea504f9d75966a72605e1ec4379ac8e8dfc81dc6d022669c8825e80954"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts": {
-        "version": "abacd603d962ac64234e6fd2a7bbaa3edb820731664d9bb0dcb26bbaf0e06c76",
+        "version": "da590143eb8c082bfabd510f68a4743b364b7e2ce476ecaa832c8cefa1af9dde",
         "signature": "60e749a4b634a7daefe0bae7bcbaf6b75b4ee2f487cbd847c842c110120afded"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": {
-        "version": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737",
-        "signature": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
+        "version": "b655e577d544a2582b964c9da8f468317412a13eff13fd7e8c146293e2462f8d",
+        "signature": "ad642691ef4eb2db3f70feebef82e7049cd619b7696c7c68984bddf633bb0697"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": {
-        "version": "4a1e0b9318051a5aa40f19bc76e370f39cecdca1a7b3c0f84ab8d0580bf0c1f1",
-        "signature": "b7662f79783135d98f6b06eda859892a9f5b1e13af8b902e0ba7f955263e6040"
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts": {
+        "version": "826e226ef4293d2e692c796d7cc81c94f353c57fd6016685b79d68134e5df047",
+        "signature": "826e226ef4293d2e692c796d7cc81c94f353c57fd6016685b79d68134e5df047"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
-        "version": "9babb0e539fc9438aaa1d2de1b9a678edcb1374cd59fb1b0ccdd30700b8b55aa",
-        "signature": "2959fba66d1e3832d1179f74026a5cc0bf2684866632ae11e60f76d025f5b773"
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts": {
+        "version": "24f73778cc712f3d2ff4b69227957577487118bd41652b63c5f913ba12f7631a",
+        "signature": "24f73778cc712f3d2ff4b69227957577487118bd41652b63c5f913ba12f7631a"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts": {
+        "version": "1be7bfa036a1f7055eb9e2a28e88fd044ee43e5aa0f2bea4111b131d55d4e41f",
+        "signature": "1be7bfa036a1f7055eb9e2a28e88fd044ee43e5aa0f2bea4111b131d55d4e41f"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts": {
+        "version": "6e88e36ca6d6953fde31898701899e61239b22f09906d5970caac88107a4b01a",
+        "signature": "6e88e36ca6d6953fde31898701899e61239b22f09906d5970caac88107a4b01a"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts": {
+        "version": "8d0b0656ffc2f973bdea853fc00a3f99122db54fd7a0e13bf87d6f358fbc3c6e",
+        "signature": "8d0b0656ffc2f973bdea853fc00a3f99122db54fd7a0e13bf87d6f358fbc3c6e"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts": {
+        "version": "213590e0f4f916d3be462f03cf3373ac760895f010cf2a08707931b0aaf35a6d",
+        "signature": "213590e0f4f916d3be462f03cf3373ac760895f010cf2a08707931b0aaf35a6d"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts": {
+        "version": "90e654b460f8ff7a3ff73ec54996290afebf00c8acc0fc634961af1509416db5",
+        "signature": "90e654b460f8ff7a3ff73ec54996290afebf00c8acc0fc634961af1509416db5"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts": {
+        "version": "81fdef0cbc4aeed4e29f7ed43d7b768ebe39e068da55c95bd710f47be289d6ac",
+        "signature": "81fdef0cbc4aeed4e29f7ed43d7b768ebe39e068da55c95bd710f47be289d6ac"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts": {
+        "version": "5b862cc75ad50ea22d5a94c8e8be788541d831689b0533abeb280f638e0e7328",
+        "signature": "5b862cc75ad50ea22d5a94c8e8be788541d831689b0533abeb280f638e0e7328"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts": {
+        "version": "e4db201366aed6e8ec28c4f9e998729477b0825ae7e517441e8000f192b8b033",
+        "signature": "e4db201366aed6e8ec28c4f9e998729477b0825ae7e517441e8000f192b8b033"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts": {
+        "version": "20fb7144dd7a3e5007cc44e96c843879216fd082bf5761bd420715d645eb683e",
+        "signature": "20fb7144dd7a3e5007cc44e96c843879216fd082bf5761bd420715d645eb683e"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts": {
+        "version": "026742bab94860543fde035a6bfd5d5103fab08afbdacf9a207a44b2bb6fccba",
+        "signature": "026742bab94860543fde035a6bfd5d5103fab08afbdacf9a207a44b2bb6fccba"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts": {
+        "version": "eaa8d56bff006bd59e748e0af3354f32a934f58db4835e0f1026e091087a49bf",
+        "signature": "eaa8d56bff006bd59e748e0af3354f32a934f58db4835e0f1026e091087a49bf"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -1085,209 +1333,73 @@
         "version": "afdbe53d11021f9170a1dab8bcb7d68c841605e8072899d96f60afd240f96eac",
         "signature": "f1033a50f8d712bd5efa3fe44350a29837291d3293f8712e8720ecc2abdc53be"
       },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": {
+        "version": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737",
+        "signature": "097b44bdd47c7241b6c75d0d36f897cdb56e18b28728677272322033454bb737"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcrypt/index.d.ts": {
+        "version": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba",
+        "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": {
+        "version": "4a1e0b9318051a5aa40f19bc76e370f39cecdca1a7b3c0f84ab8d0580bf0c1f1",
+        "signature": "b7662f79783135d98f6b06eda859892a9f5b1e13af8b902e0ba7f955263e6040"
+      },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts": {
         "version": "8014010ece50ff040b92c75f0e5f658272bdd27a6eb6718545c1e6e72265d4fc",
         "signature": "2bfefbb0f3229b0e7854f07ea2350cb82b926f52d2f2d8220204f7a149fb8739"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts": {
         "version": "aca529a338a3d07d099bd88a863e34a61a938773382a74c4080b2570ab57ff9c",
-        "signature": "17db271f71bf116fb6a6ccc4abaa85466380b6a72897c77b1e6c000511e14473"
+        "signature": "7f71be6af386d5a296555e37bc0809e41829f199642bde5d49b0105a9652d7a4"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": {
+        "version": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253",
+        "signature": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts": {
+        "version": "a447742424199a7100f019895d5b4a14825775cc39c8f012ce7e4f21901133a3",
+        "signature": "a447742424199a7100f019895d5b4a14825775cc39c8f012ce7e4f21901133a3"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts": {
+        "version": "d6104ad76db3e10c854c96c6733536d839f4619095dd9e24d87546acf40bd406",
+        "signature": "d6104ad76db3e10c854c96c6733536d839f4619095dd9e24d87546acf40bd406"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts": {
-        "version": "8e94374c7580078b296d923f8731463e800b69499211aec23fd12978e1f2ff8a",
+        "version": "599b444e080cff288a0cb1e0c55e46cab007befaba1908a89caaf5759018d0c5",
         "signature": "870becf303379c15d7bf3991a231d7cbc65d0d84d37f6a27baa751517720f03c"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts": {
         "version": "a4adeeb3f0e4af7da05f4ac0b5cacb684bc5ddf3aad0092488beaae48a81a450",
         "signature": "fcd120f9edb24b1c4998089f64e233808e861bcbe635694f198103a0b4718d18"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
-        "version": "1057ff498c5384cf5c6a0bbb30332d383675b1bba731a93a8e02cc7846812177",
-        "signature": "e43263c417f7a3d9f544379dd4bee2f1c38e7aa9677174a2d72bf32101dbd820"
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts": {
+        "version": "d28897ce8805732025d37e0acb24accd2903396d5c6a880b1cc3c2307f5ba7a2",
+        "signature": "d28897ce8805732025d37e0acb24accd2903396d5c6a880b1cc3c2307f5ba7a2"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts": {
+        "version": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52",
+        "signature": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2",
+        "signature": "daef0ff8d0878f91f68abfdb51e82a5df5b5bc9fc665202e0bd45ddefe640fa2"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts": {
+        "version": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498",
+        "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
+      },
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
+        "version": "963f6c9daea80f8e37120cd15145fe2fe32e22024eb4b52e729b4b7321e005bf",
+        "signature": "2959fba66d1e3832d1179f74026a5cc0bf2684866632ae11e60f76d025f5b773"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": {
         "version": "9edab4aadf80b2973a50848cf6a39b13b9a263db14e5312c71eac2a255ef62c8",
         "signature": "907855637493f267ecc83590ad26894b8bfa65f466b6428fa19e7f2e4271741b"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
-        "version": "a2feab3cff6d4f6cc7d01f5f0cc96fffab3d93bbbbd926a0da74f901ce4b076c",
-        "signature": "c10293b603f773610c477e9fc1b9de2a8dbfe815316f3b23491f6ada4157aeb5"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": {
-        "version": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561",
-        "signature": "3af134c0480536f901a30692d216bd29712a3869fe38a7be066ea1eef34a8561"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts": {
-        "version": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
-        "signature": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts": {
-        "version": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561",
-        "signature": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts": {
-        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
-        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts": {
-        "version": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00",
-        "signature": "c5a3c14cb11afb48d405562e6843145caa67c60be9738f408cd7977ce30a0b00"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts": {
-        "version": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
-        "signature": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts": {
-        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
-        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts": {
-        "version": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
-        "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts": {
-        "version": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f",
-        "signature": "a9ccdfa12ea56a5dc82a34df1820f820934ebb8af0f96324952be06e7484201f"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts": {
-        "version": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
-        "signature": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts": {
-        "version": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677",
-        "signature": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts": {
-        "version": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
-        "signature": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts": {
-        "version": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c",
-        "signature": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts": {
-        "version": "10c5b29dccf29ea7f9aea324ab09b0e2237d6506bd8e28538963b28855819616",
-        "signature": "10c5b29dccf29ea7f9aea324ab09b0e2237d6506bd8e28538963b28855819616"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts": {
-        "version": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8",
-        "signature": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts": {
-        "version": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07",
-        "signature": "28fdca6c7a3d5dd62c738461051ef345b50d167efab39dceb2fcc9a079db1b07"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts": {
-        "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
-        "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts": {
-        "version": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e",
-        "signature": "7f71142177d3c98370b31751e3d320c9743ed28eee215acb88d8e0d2a31e321e"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts": {
-        "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
-        "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts": {
-        "version": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
-        "signature": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts": {
-        "version": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
-        "signature": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts": {
-        "version": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36",
-        "signature": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts": {
-        "version": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
-        "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts": {
-        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
-        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts": {
-        "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
-        "signature": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts": {
-        "version": "b610b39b7d42b8e8359875ce77c3149d657bbaa6c9058beb655af805efb581b3",
-        "signature": "b610b39b7d42b8e8359875ce77c3149d657bbaa6c9058beb655af805efb581b3"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts": {
-        "version": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
-        "signature": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts": {
-        "version": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
-        "signature": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts": {
-        "version": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65",
-        "signature": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts": {
-        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
-        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts": {
-        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
-        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts": {
-        "version": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083",
-        "signature": "8fd6756e8a6fac64089e19e4fbe822bcfafa62f79b237172288eaa1379e84083"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts": {
-        "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
-        "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts": {
-        "version": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
-        "signature": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts": {
-        "version": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7",
-        "signature": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts": {
-        "version": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12",
-        "signature": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts": {
-        "version": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
-        "signature": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts": {
-        "version": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
-        "signature": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts": {
-        "version": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402",
-        "signature": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts": {
-        "version": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
-        "signature": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts": {
-        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
-        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts": {
-        "version": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
-        "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts": {
-        "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
-        "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1"
-      },
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts": {
-        "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
-        "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
+        "version": "1057ff498c5384cf5c6a0bbb30332d383675b1bba731a93a8e02cc7846812177",
+        "signature": "e43263c417f7a3d9f544379dd4bee2f1c38e7aa9677174a2d72bf32101dbd820"
       }
     },
     "options": {
@@ -1422,11 +1534,320 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1436,22 +1857,221 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": [
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3076,11 +3696,27 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcrypt/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcrypt/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
@@ -3088,18 +3724,70 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3120,9 +3808,73 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/usr/local/lib/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3391,68 +4143,10 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts"
-      ]
-    },
-    "exportedModulesMap": {
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/usr/local/lib/node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/table/TableColumn.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts"
@@ -4411,13 +5105,11 @@
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
@@ -4434,274 +5126,308 @@
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts": [
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts": [
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcrypt/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts": [
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -4732,13 +5458,52 @@
       "/usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
       "/usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/usr/local/lib/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/http-status/lib/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Pagina.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/reflect-metadata/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/schema-builder/table/TableColumn.d.ts",
@@ -4976,57 +5741,46 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/range-parser/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express-serve-static-core/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mime/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/serve-static/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/connect/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/body-parser/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/date.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/function.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/lang.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/math.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/number.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/object.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/seq.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/string.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/util.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcrypt/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/RepositorioMongo.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/ServicoMongo.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/globals.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/assert.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/async_hooks.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/buffer.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/child_process.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/cluster.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/console.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/constants.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/crypto.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dgram.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/dns.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/domain.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/events.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/fs.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/http2.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/https.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/inspector.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/module.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/net.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/os.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/path.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/perf_hooks.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/process.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/punycode.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/querystring.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/readline.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/repl.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/stream.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/string_decoder.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/timers.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tls.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/trace_events.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/tty.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/url.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/v8.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/vm.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/worker_threads.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/zlib.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/base.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/globals.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"
     ]
   },
   "version": "3.4.5"
