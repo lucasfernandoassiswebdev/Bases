@@ -4,19 +4,21 @@
         "experimentalDecorators": true,
         "incremental": true,
         "target": "ES6",
+        "module": "commonjs",
         "declaration": true,
         "lib": [
             "es5",
             "es6",
             "dom"
         ],
-        "module": "commonjs",
         "outDir": "dist",
+        "esModuleInterop": true,
         "typeRoots": [
             "./node_modules/@types"
         ],
         "types": [
-            "node"
+            "node",
+            "dist"
         ]
     },
     "include": [
