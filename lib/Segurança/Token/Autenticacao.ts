@@ -3,7 +3,6 @@ import HttpStatus from 'http-status';
 import { Request, Response } from 'express';
 import Criptografia from '../Criptografia';
 import * as jwt from 'jwt-simple';
-import * as passport from 'passport';
 
 class Autenticacao {
 
@@ -49,7 +48,7 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
-    public configurar(servico: any, chaveCriptografia: string): any {
+    public configurar(passport: any, servico: any, chaveCriptografia: string): any {
         let opts = {
             secretOrKey: chaveCriptografia,
             jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt')
