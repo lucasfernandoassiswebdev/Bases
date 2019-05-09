@@ -28,7 +28,7 @@ declare class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
-    configurar(servico: any, chaveCriptografia: string): any;
+    configurar(passport: any, servico: any, chaveCriptografia: string): any;
 }
 declare const _default: Autenticacao;
 export default _default;

@@ -7,6 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -14,11 +17,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const passport = __importStar(require("passport"));
 const passport_jwt_1 = require("passport-jwt");
 const http_status_1 = __importDefault(require("http-status"));
 const Criptografia_1 = __importDefault(require("../Criptografia"));
@@ -67,7 +66,7 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Object> Objeto com métodos de inicialização e autenticação da estratégia de validação de Token da API
      */
-    configurar(servico, chaveCriptografia) {
+    configurar(passport, servico, chaveCriptografia) {
         let opts = {
             secretOrKey: chaveCriptografia,
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderWithScheme('jwt')
