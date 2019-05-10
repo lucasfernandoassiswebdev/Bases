@@ -74,5 +74,5 @@ export default class Controller<T> implements IController {
      * @param objeto <T> objeto em que as propriedades serão criptografadas
      * @returns Promise<T> objeto com as propriedades criptografadas
      */
-    private criptografaSenhas;
+    criptografaSenhas: (objeto: T) => Promise<T>;
 }
