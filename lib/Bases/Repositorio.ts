@@ -10,7 +10,7 @@ export interface IRepositorio<T> {
     remover(id: number, transaction?: EntityManager): Promise<T>;
 }
 
-export abstract class Repositorio<T> implements IRepositorio<T> {
+export default abstract class Repositorio<T> implements IRepositorio<T> {
 
     public repositorio: Repository<T>;
     public pagina: Pagina;

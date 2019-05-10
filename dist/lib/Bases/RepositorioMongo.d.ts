@@ -7,7 +7,7 @@ export interface IRepositorioMongo<T> {
     atualizar: (object: T) => Promise<T>;
     remover: (_id: string, callback: (error: any, result: any) => void) => void;
 }
-export declare class RepositorioMongo<T extends Document> implements IRepositorioMongo<T> {
+export default abstract class RepositorioMongo<T extends Document> implements IRepositorioMongo<T> {
     private repositorio;
     /**
      * Inicia a classe criando o repositorio da classe modelo passada como argumento

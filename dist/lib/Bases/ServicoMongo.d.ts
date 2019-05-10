@@ -1,4 +1,4 @@
-import { RepositorioMongo } from './RepositorioMongo';
+import RepositorioMongo from './RepositorioMongo';
 import { Document } from 'mongoose';
 export interface IServicoMongo<T extends Document> {
     buscar(params: any): Promise<T[]>;
@@ -11,7 +11,7 @@ export interface IServicoMongo<T extends Document> {
     atualizarLista(params: any[]): Promise<T[]>;
     remover(params: any): void;
 }
-export declare class ServicoMongo<T extends Document> implements IServicoMongo<T> {
+export default abstract class ServicoMongo<T extends Document> implements IServicoMongo<T> {
     private repositorio;
     constructor(repositorio: RepositorioMongo<T>);
     /**

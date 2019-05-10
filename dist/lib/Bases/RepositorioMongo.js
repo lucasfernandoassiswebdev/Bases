@@ -70,4 +70,4 @@ class RepositorioMongo {
         return mongoose_1.Types.ObjectId.createFromHexString(id);
     }
 }
-exports.RepositorioMongo = RepositorioMongo;
+exports.default = RepositorioMongo;

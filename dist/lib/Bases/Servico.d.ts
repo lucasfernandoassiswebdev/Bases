@@ -1,4 +1,4 @@
-import { Repositorio } from './Repositorio';
+import Repositorio from './Repositorio';
 import { EntityManager } from 'typeorm';
 import Page from '../Pagina';
 export interface IServico<T> {
@@ -10,7 +10,7 @@ export interface IServico<T> {
     salvarLista(params: any[], transaction?: EntityManager): Promise<T[]>;
     remover(params: any, transaction?: EntityManager): void;
 }
-export declare class Servico<T> implements IServico<T> {
+export default abstract class Servico<T> implements IServico<T> {
     private repositorio;
     /**
      *

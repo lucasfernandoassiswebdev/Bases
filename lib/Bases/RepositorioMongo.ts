@@ -9,7 +9,7 @@ export interface IRepositorioMongo<T> {
     remover: (_id: string, callback: (error: any, result: any) => void) => void;
 }
 
-export class RepositorioMongo<T extends Document> implements IRepositorioMongo<T> {
+export default abstract class RepositorioMongo<T extends Document> implements IRepositorioMongo<T> {
 
     private repositorio: any;
 

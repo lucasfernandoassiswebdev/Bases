@@ -136,4 +136,4 @@ class ServicoMongo {
         });
     }
 }
-exports.ServicoMongo = ServicoMongo;
+exports.default = ServicoMongo;

@@ -8,7 +8,7 @@ export interface IRepositorio<T> {
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
     remover(id: number, transaction?: EntityManager): Promise<T>;
 }
-export declare abstract class Repositorio<T> implements IRepositorio<T> {
+export default abstract class Repositorio<T> implements IRepositorio<T> {
     private classeEntidade;
     repositorio: Repository<T>;
     pagina: Pagina;

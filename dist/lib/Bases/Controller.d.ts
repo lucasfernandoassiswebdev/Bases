@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Servico } from './Servico';
+import Servico from './Servico';
 export interface IController {
     buscar(req: Request, res: Response): any;
     buscarUm(req: Request, res: Response): any;
@@ -9,7 +9,7 @@ export interface IController {
     salvarLista(req: Request, res: Response): any;
     remover(req: Request, res: Response): any;
 }
-export default class Controller<T> implements IController {
+export default abstract class Controller<T> implements IController {
     servico: Servico<T>;
     /**
      *

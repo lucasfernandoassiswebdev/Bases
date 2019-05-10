@@ -1,4 +1,4 @@
-import { RepositorioMongo } from './RepositorioMongo';
+import RepositorioMongo from './RepositorioMongo';
 import { Document } from 'mongoose';
 
 export interface IServicoMongo<T extends Document> {
@@ -13,7 +13,7 @@ export interface IServicoMongo<T extends Document> {
     remover(params: any): void;
 }
 
-export class ServicoMongo<T extends Document> implements IServicoMongo<T> {
+export default abstract class ServicoMongo<T extends Document> implements IServicoMongo<T> {
 
     constructor(private repositorio: RepositorioMongo<T>) { }
 

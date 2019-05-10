@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import * as _ from 'lodash';
 import Manipuladores from '../Manipuladores';
-import { Servico } from './Servico';
+import Servico from './Servico';
 import Criptografia from '../Segurança/Criptografia';
 import Util from '../Util/Util';
 
@@ -15,7 +15,7 @@ export interface IController {
     remover(req: Request, res: Response): any;
 }
 
-export default class Controller<T> implements IController {
+export default abstract class Controller<T> implements IController {
 
     /**
      * 

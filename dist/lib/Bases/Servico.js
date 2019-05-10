@@ -100,4 +100,4 @@ class Servico {
         this.repositorio.iniciarRepositorio();
     }
 }
-exports.Servico = Servico;
+exports.default = Servico;

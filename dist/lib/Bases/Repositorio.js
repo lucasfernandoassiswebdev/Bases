@@ -128,4 +128,4 @@ class Repositorio {
         });
     }
 }
-exports.Repositorio = Repositorio;
+exports.default = Repositorio;
