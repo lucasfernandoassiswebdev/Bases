@@ -30,6 +30,7 @@ export default new ExampleController();
 A classe Controller exporta alguns métodos default para uso, são eles: **buscar**, **buscarUm**, **buscarPorId**, **buscarTodos**, **salvar**, **salvarLista**, **remover** e **criptografaSenhas**.
 
 Por padrão, os métodos **salvar** e **salvarLista** caso não sobrescritos, irão criptografar todas as propriedades do objeto recebido que comecem com a palavra **"senha"**. 
+
 O construtor de **Controller** recebe uma classe que extenda **Servico**.
 
 ### Serviço
