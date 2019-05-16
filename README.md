@@ -6,7 +6,7 @@ Você pode conferir um projeto funcional que implementa em exemplos as funcional
 ## Instalação
 Para utilizar o projeto basta adicioná-lo como dependência ao seu projeto com o seguinte comando:
 ```bash
-npm install https://github.com/lucasfernandoassiswebdev/Bases --save**
+npm install https://github.com/lucasfernandoassiswebdev/Bases --save
 ```
 
 ## Uso
