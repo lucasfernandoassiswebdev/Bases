@@ -1,3 +1,5 @@
+import Criptografia from '../Segurança/Criptografia';
+
 class Util {
 
     /**
@@ -22,6 +24,20 @@ class Util {
 
         if (callback)
             callback();
+    }
+
+    /**
+     * Criptografa as propriedades do objeto que comecem com a palavra "senha"
+     * @param objeto <T> objeto em que as propriedades serão criptografadas
+     * @returns Promise<T> objeto com as propriedades criptografadas
+     */
+    public criptografaSenhas = async (objeto: any): Promise<any> => {
+        await this.executeasyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
+            if (propriedade.startsWith("senha"))
+                objeto[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
+        });
+
+        return objeto;
     }
 }
 

@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import * as _ from 'lodash';
 import Manipuladores from '../Manipuladores';
 import Servico from './Servico';
-import Criptografia from '../Segurança/Criptografia';
 import Util from '../Util/Util';
 
 export interface IController {
@@ -97,7 +96,7 @@ export default abstract class Controller<T> implements IController {
      * @returns <T> Retorna os dados do objeto criado
      */
     public salvar = async (req: Request, res: Response) => {
-        req.body = await this.criptografaSenhas(req.body);
+        req.body = await Util.criptografaSenhas(req.body);
 
         await this.servico.salvar(req.body)
             .then(_.partial(Manipuladores.sucesso, res))
@@ -112,7 +111,7 @@ export default abstract class Controller<T> implements IController {
      */
     public salvarLista = async (req: Request, res: Response) => {
         await req.body.forEach(async (item: T) => {
-            item = await this.criptografaSenhas(item);
+            item = await Util.criptografaSenhas(item);
         });
 
         await this.servico.salvarLista(req.body)
@@ -134,19 +133,5 @@ export default abstract class Controller<T> implements IController {
         await this.servico.remover(id)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
-    }
-
-    /**
-     * Criptografa as propriedades do objeto que comecem com a palavra "senha"
-     * @param objeto <T> objeto em que as propriedades serão criptografadas
-     * @returns Promise<T> objeto com as propriedades criptografadas
-     */
-    public criptografaSenhas = async (objeto: T): Promise<T> => {
-        await Util.executeasyncForEach(Object.getOwnPropertyNames(objeto), async (propriedade) => {
-            if (propriedade.startsWith("senha"))
-                objeto[propriedade] = await Criptografia.criptografar(objeto[propriedade]);
-        });
-
-        return objeto;
-    }
+    }    
 }
