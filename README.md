@@ -30,7 +30,7 @@ export default new ExampleController();
 A classe Controller exporta alguns métodos default para uso, são eles: **buscar**, **buscarUm**, **buscarPorId**, **buscarTodos**, **salvar**, **salvarLista**, **remover** e **criptografaSenhas**.
 
 Por padrão, os métodos **salvar** e **salvarLista** caso não sobrescritos, irão criptografar todas as propriedades do objeto recebido que comecem com a palavra **"senha"**. 
-
+O construtor de **Controller** recebe uma classe que extenda **Servico**.
 
 ### Serviço
 
@@ -49,6 +49,7 @@ export default new ServiceExample();
 ```
 
 A classe **Servico** exporta os mesmos métodos default que **Controller**, porém, nesta proposta de arquitetura, caso hajam regras de negócio a serem tratadas, os métodos devem ser sobrescritos e implementados aqui.
+O construtor de **Servico** recebe uma classe que extenda **Repositorio**.
 
 ### Repositório
 
@@ -67,6 +68,7 @@ export default new UsuarioRepositorio();
 ```
 
 **Repositorio** exporta os mesmos métodos default que **Servico**, a forma como as operações no banco devem ser realizadas está documentada nos métodos da classe.
+O construtor de **Repositorio** recebe por padrão uma **Entity** do [TypeORM](https://typeorm.io/#/entities) e irá realizar as operações no banco de dados com base na classe fornecida.
 
 ### Rotas e Autenticação via JWT
 A padronização de rotas se dá através da interface **RotasInterface**, os arquivos de rota de cada módulo da API deverão expor as rotas a serem mapeadas na API da seguinte forma:
