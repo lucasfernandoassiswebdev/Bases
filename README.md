@@ -3,15 +3,15 @@ O Bases é uma projeto Nodejs que utiliza Typescript para abstrair uma série de
 
 Você pode conferir um projeto funcional que implementa em exemplos as funcionalidades deste pacote neste [link](https://github.com/lucasfernandoassiswebdev/DemoProject)
 
-##Instalação
+## Instalação
 Para utilizar o projeto basta adicioná-lo como dependência ao seu projeto com o seguinte comando:
 ```bash
 npm install https://github.com/lucasfernandoassiswebdev/Bases --save**
 ```
 
-##Uso
+## Uso
 
-###Controller
+### Controller
 
 ```typescript
 import { Controller } from 'bases';
@@ -32,7 +32,7 @@ A classe Controller exporta alguns métodos default para uso, são eles: **busca
 Por padrão, os métodos **salvar** e **salvarLista** caso não sobrescritos, irão criptografar todas as propriedades do objeto recebido que comecem com a palavra **"senha"**. 
 
 
-###Serviço
+### Serviço
 
 ```typescript
 import { Servico } from 'bases';
@@ -50,7 +50,7 @@ export default new ServiceExample();
 
 A classe **Servico** exporta os mesmos métodos default que **Controller**, porém, nesta proposta de arquitetura, caso hajam regras de negócio a serem tratadas, os métodos devem ser sobrescritos e implementados aqui.
 
-###Repositório
+### Repositório
 
 ```typescript
 import { Repositorio } from 'bases';
@@ -68,7 +68,7 @@ export default new UsuarioRepositorio();
 
 **Repositorio** exporta os mesmos métodos default que **Servico**, a forma como as operações no banco devem ser realizadas está documentada nos métodos da classe.
 
-###Rotas e Autenticação via JWT
+### Rotas e Autenticação via JWT
 A padronização de rotas se dá através da interface **RotasInterface**, os arquivos de rota de cada módulo da API deverão expor as rotas a serem mapeadas na API da seguinte forma:
 
 ```typescript
