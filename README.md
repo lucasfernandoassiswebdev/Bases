@@ -49,6 +49,7 @@ export default new ServiceExample();
 ```
 
 A classe **Servico** exporta os mesmos métodos default que **Controller**, porém, nesta proposta de arquitetura, caso hajam regras de negócio a serem tratadas, os métodos devem ser sobrescritos e implementados aqui.
+
 O construtor de **Servico** recebe uma classe que extenda **Repositorio**.
 
 ### Repositório
@@ -68,6 +69,7 @@ export default new UsuarioRepositorio();
 ```
 
 **Repositorio** exporta os mesmos métodos default que **Servico**, a forma como as operações no banco devem ser realizadas está documentada nos métodos da classe.
+
 O construtor de **Repositorio** recebe por padrão uma **Entity** do [TypeORM](https://typeorm.io/#/entities) e irá realizar as operações no banco de dados com base na classe fornecida.
 
 ### Rotas e Autenticação via JWT
@@ -130,6 +132,7 @@ export default new RotasConfig();
 ```
 
 O **ServicoAutenticacao** é a classe responsável por verificar se o usuário poderá ou não receber um JWT e utilizá-lo para acessar os recursos da API, deve obrigatoriamente conter o método **buscarPorEmail**.
+
 **TokenRotas** inicia a rota **/token** com o verbo HTTP POST pronta para receber um objeto com os dados do usuário que está tentando se autenticar na API.
 
 Por fim, fazemos a inicialização da rotas na API ao subir o servidor da seguinte forma: 
