@@ -172,7 +172,7 @@ console.log(`As variáveis conferem? ${Criptografia.hashConfere(string2_crip, st
 
 ### Tratativas
 
-É recomendado manipular os eventos da sua api utilizando a classe **Manipuladores** em conjunto com a **lodash**.
+É recomendado manipular os eventos da sua api utilizando a classe **Manipuladores** em conjunto com a biblioteca **lodash**.
 
 Exemplos:
 
