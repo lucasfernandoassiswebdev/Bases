@@ -5,12 +5,12 @@ O Bases é uma projeto Nodejs que utiliza Typescript para abstrair uma série de
 Você pode conferir um projeto funcional que implementa em exemplos as funcionalidades deste pacote neste [link](https://github.com/lucasfernandoassiswebdev/DemoProject)
 
 O projeto foi desenvolvido com a premissa de que serão utilizados os seguintes pacotes:
-- [typeorm](https://typeorm.io/#/)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
-- [lodash](https://lodash.com/)
 - [express](https://expressjs.com/pt-br/)
 - [http-status](https://www.npmjs.com/package/http-status)
 - [jwt-simple](https://www.npmjs.com/package/jwt-simple)
+- [lodash](https://lodash.com/)
+- [typeorm](https://typeorm.io/#/)
 
 ## Instalação
 Para utilizar o projeto basta adicioná-lo como dependência ao seu projeto com o seguinte comando:
