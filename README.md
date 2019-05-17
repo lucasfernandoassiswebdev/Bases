@@ -188,13 +188,13 @@ public class ExampleClass {
 
     constructor() {}
 
-    public searchSomething = async(req: Request, res: Response){
+    public searchSomething = async (req: Request, res: Response) {
         await this.service.searchSomething(req.query)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "My error message"));
     }
 
-    public doSomethingOnDatabase = async(req: Request, res: Response){
+    public doSomethingOnDatabase = async (req: Request, res: Response) {
         await this.repository.doSomethingOnDatabase(req.query)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.manipuladorErroDB, res, "My error message"));
