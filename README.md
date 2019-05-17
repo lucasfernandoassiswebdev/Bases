@@ -169,3 +169,45 @@ let string2_crip: string = Criptografia.criptografar(string2);
 console.log(`String 1 criptografada corresponde a ${Criptografia.criptografar(string1)}`);
 console.log(`As variáveis conferem? ${Criptografia.hashConfere(string2_crip, string2)}`);
 ```
+
+### Tratativas
+
+É recomendado manipular os eventos da sua api utilizando a classe **Manipuladores** em conjunto com a **lodash**.
+
+Exemplos:
+
+```typescript
+import Manipuladores from 'bases';
+import { Request, Response } from 'express';
+import { Service, Repository} from 'mypackage';
+
+public class ExampleClass {
+    
+    private service: any = new Service();
+    private repository: any = new Repository();
+
+    constructor() {}
+
+    public searchSomething = async(req: Request, res: Response){
+        await this.service.searchSomething(req.query)
+            .then(_.partial(Manipuladores.sucesso, res))
+            .catch(_.partial(Manipuladores.erro, res, "My error message"));
+    }
+
+    public doSomethingOnDatabase = async(req: Request, res: Response){
+        await this.repository.doSomethingOnDatabase(req.query)
+            .then(_.partial(Manipuladores.sucesso, res))
+            .catch(_.partial(Manipuladores.manipuladorErroDB, res, "My error message"));
+    }  
+}
+
+export default new ExampleClass();
+```
+
+É recomendado utilizar o método **manipuladorErroApi** como middleware para tratamento de erros:
+
+```typescript
+this.app.use(Manipuladores.manipuladorErroApi);
+```
+
+
