@@ -74,6 +74,7 @@ export default new UsuarioRepositorio();
 O construtor de **Repositorio** recebe por padrão uma **Entity** do [TypeORM](https://typeorm.io/#/entities) e irá realizar as operações no banco de dados com base na classe fornecida.
 
 ### Rotas e Autenticação via JWT
+
 A padronização de rotas se dá através da interface **RotasInterface**, os arquivos de rota de cada módulo da API deverão expor as rotas a serem mapeadas na API da seguinte forma:
 
 ```typescript
@@ -106,9 +107,9 @@ import ServicoAutenticacao from '../app/exemplo/autenticacao';
 
 //importação dos arquivos de rota abaixo
 import ArquivoDeRota1 from '../modulo1/rota';
-import ArquivoDeRota2 from '../modulo1/rota';
-import ArquivoDeRota3 from '../modulo1/rota';
-import ArquivoDeRota4 from '../modulo1/rota';
+import ArquivoDeRota2 from '../modulo2/rota';
+import ArquivoDeRota3 from '../modulo3/rota';
+import ArquivoDeRota4 from '../modulo4/rota';
 
 class RotasConfig {
     
@@ -144,4 +145,19 @@ import * as passport from 'passport';
 import { ServicoAutenticacao } from 'mypackage';
 
 RotasConfig.iniciarRotas(this.app, Autenticacao.configurar(passport, ServicoAutenticacao, 'chave de criptografia'));
+```
+
+### Criptografia
+
+Utilize esta classe para criar e verificar hash's de strings na sua aplicação.
+
+```typescript
+import {  Criptografia } from 'bases';
+
+let string1: string = "my string 1";
+let string2: string = "my string 2";
+let string2_crip: string = Criptografia.criptografar(string2);
+
+console.log(`String 1 criptografada corresponde a ${Criptografia.criptografar(string1)}`);
+console.log(`As variáveis conferem? ${Criptografia.hashConfere(string2_crip, string2)}`);
 ```

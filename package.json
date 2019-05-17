@@ -9,8 +9,7 @@
   },
   "author": "Lucas Fernando de Assis",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
     "@types/lodash": "^4.14.124",

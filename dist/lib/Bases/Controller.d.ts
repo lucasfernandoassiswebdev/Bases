@@ -69,10 +69,4 @@ export default abstract class Controller<T> implements IController {
      * @param res <Response> (express)
      */
     remover: (req: Request, res: Response) => Promise<void>;
-    /**
-     * Criptografa as propriedades do objeto que comecem com a palavra "senha"
-     * @param objeto <T> objeto em que as propriedades serão criptografadas
-     * @returns Promise<T> objeto com as propriedades criptografadas
-     */
-    criptografaSenhas: (objeto: T) => Promise<T>;
 }

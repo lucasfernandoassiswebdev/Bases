@@ -32,7 +32,7 @@ class Criptografia {
          * @param senhaCriptografada <string>
          * @param senha <string>
          */
-        this.senhaConfere = (senhaCriptografada, senha) => __awaiter(this, void 0, void 0, function* () {
+        this.hashConfere = (senhaCriptografada, senha) => __awaiter(this, void 0, void 0, function* () {
             return yield bcrypt.compareSync(senha, senhaCriptografada);
         });
         /**

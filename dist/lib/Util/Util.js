@@ -7,8 +7,26 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const Criptografia_1 = __importDefault(require("../Seguran\u00E7a/Criptografia"));
 class Util {
+    constructor() {
+        /**
+         * Criptografa as propriedades do objeto que comecem com a palavra "senha"
+         * @param objeto <T> objeto em que as propriedades serão criptografadas
+         * @returns Promise<T> objeto com as propriedades criptografadas
+         */
+        this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
+            yield this.executeasyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
+                if (propriedade.startsWith("senha"))
+                    objeto[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
+            }));
+            return objeto;
+        });
+    }
     /**
      *
      * @param array Array<any>

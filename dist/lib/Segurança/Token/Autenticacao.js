@@ -52,7 +52,7 @@ class Autenticacao {
      */
     sucessoAutenticacao(res, senha, usuario, chaveCriptografia) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (Criptografia_1.default.senhaConfere(senha, usuario.senha))
+            if (Criptografia_1.default.hashConfere(senha, usuario.senha))
                 res.json({
                     token: yield this.gerarToken({ id: usuario.id }, chaveCriptografia)
                 });

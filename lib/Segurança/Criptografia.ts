@@ -17,7 +17,7 @@ class Criptografia {
      * @param senhaCriptografada <string>
      * @param senha <string>
      */
-    public senhaConfere = async (senhaCriptografada: string, senha: string): Promise<boolean> => {
+    public hashConfere = async (senhaCriptografada: string, senha: string): Promise<boolean> => {
         return await bcrypt.compareSync(senha, senhaCriptografada);
     }
 

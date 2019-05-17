@@ -20,7 +20,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const _ = __importStar(require("lodash"));
 const Manipuladores_1 = __importDefault(require("../Manipuladores"));
-const Criptografia_1 = __importDefault(require("../Seguran\u00E7a/Criptografia"));
 const Util_1 = __importDefault(require("../Util/Util"));
 class Controller {
     /**
@@ -88,7 +87,7 @@ class Controller {
          * @returns <T> Retorna os dados do objeto criado
          */
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            req.body = yield this.criptografaSenhas(req.body);
+            req.body = yield Util_1.default.criptografaSenhas(req.body);
             yield this.servico.salvar(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
@@ -101,7 +100,7 @@ class Controller {
          */
         this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
             yield req.body.forEach((item) => __awaiter(this, void 0, void 0, function* () {
-                item = yield this.criptografaSenhas(item);
+                item = yield Util_1.default.criptografaSenhas(item);
             }));
             yield this.servico.salvarLista(req.body)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
@@ -119,18 +118,6 @@ class Controller {
             yield this.servico.remover(id)
                 .then(_.partial(Manipuladores_1.default.sucesso, res))
                 .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
-        });
-        /**
-         * Criptografa as propriedades do objeto que comecem com a palavra "senha"
-         * @param objeto <T> objeto em que as propriedades serão criptografadas
-         * @returns Promise<T> objeto com as propriedades criptografadas
-         */
-        this.criptografaSenhas = (objeto) => __awaiter(this, void 0, void 0, function* () {
-            yield Util_1.default.executeasyncForEach(Object.getOwnPropertyNames(objeto), (propriedade) => __awaiter(this, void 0, void 0, function* () {
-                if (propriedade.startsWith("senha"))
-                    objeto[propriedade] = yield Criptografia_1.default.criptografar(objeto[propriedade]);
-            }));
-            return objeto;
         });
     }
     /**

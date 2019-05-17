@@ -12,6 +12,12 @@ declare class Util {
      * @param callback <Function> Função de callback a ser executada após o array ser percorrido
      */
     executeasyncForEach(array: Array<any>, funcao: Function, callback?: Function): Promise<void>;
+    /**
+     * Criptografa as propriedades do objeto que comecem com a palavra "senha"
+     * @param objeto <T> objeto em que as propriedades serão criptografadas
+     * @returns Promise<T> objeto com as propriedades criptografadas
+     */
+    criptografaSenhas: (objeto: any) => Promise<any>;
 }
 declare const _default: Util;
 export default _default;

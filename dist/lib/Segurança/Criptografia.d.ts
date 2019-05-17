@@ -10,7 +10,7 @@ declare class Criptografia {
      * @param senhaCriptografada <string>
      * @param senha <string>
      */
-    senhaConfere: (senhaCriptografada: string, senha: string) => Promise<boolean>;
+    hashConfere: (senhaCriptografada: string, senha: string) => Promise<boolean>;
     /**
      * Descriptografa o conteúdo de um JWT
      * @param conteudo <string> Token
