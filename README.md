@@ -1,4 +1,5 @@
 # Bases Project
+
 O Bases é uma projeto Nodejs que utiliza Typescript para abstrair uma série de classes e interfaces com a proposta de tornar mais rápido e fácil o desenvolvimento de outros projetos node que utilizem Typescript.
 
 Você pode conferir um projeto funcional que implementa em exemplos as funcionalidades deste pacote neste [link](https://github.com/lucasfernandoassiswebdev/DemoProject)
