@@ -181,6 +181,7 @@ Exemplos:
 import Manipuladores from 'bases';
 import { Request, Response } from 'express';
 import { Service, Repository} from 'mypackage';
+import _ from 'lodash';
 
 public class ExampleClass {
     
