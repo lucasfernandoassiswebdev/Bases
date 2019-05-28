@@ -61,7 +61,7 @@ export default abstract class Controller<T> implements IController {
      */
     public buscarPorId = async (req: Request, res: Response) => {
         if (!req.params.id)
-            _.partial(Manipuladores.erro, res, "Parâmetros necessários(id) não foram fornecidos");
+            _.partial(Manipuladores.erro, res, "Parâmetro necessário(id) não foi fornecido");
 
         let id = Number.parseInt(req.params.id);
 
@@ -126,7 +126,7 @@ export default abstract class Controller<T> implements IController {
      */
     public remover = async (req: Request, res: Response) => {
         if (!req.params.id)
-            _.partial(Manipuladores.erro, res, "Parâmetros necessários(id) não foram fornecidos");
+            _.partial(Manipuladores.erro, res, "Parâmetro necessário(id) não foram fornecido");
 
         let id = Number.parseInt(req.params.id);
 
