@@ -21,6 +21,14 @@ export default abstract class Controller<T> implements IController {
      */
     iniciarRepositorio(): void;
     /**
+     * Filtro avançado, utiliza os parâmetros da query string
+     * É necessário passar nos parâmetros da url página e limite, ambos do tipo <number>
+     * Caso não fornecidos, assumem os valores 0 e 100 respectivamente como default
+     * @param <Request> (express)
+     * @param <Response> (express)
+     */
+    filtrar: (req: Request, res: Response) => Promise<void>;
+    /**
      * Deve conter uma QueryString(URL) com os dados para a busca
      * @param req <Request> (express)
      * @param res <Response> (express)

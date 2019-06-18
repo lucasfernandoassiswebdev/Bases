@@ -29,6 +29,13 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
      */
     salvar(objeto: T, transacao?: EntityManager): Promise<T>;
     /**
+     * Retorna uma página com os dados resultantes da busca de acordo com os parâmetros fornecidos
+     * @param pagina <number>
+     * @param limite <number>
+     * @param parametros <any> Objeto com os dados a serem utilizados na busca
+     */
+    filtrar(pagina: number, limite: number, parametros: any): Promise<Pagina>;
+    /**
      *
      * @param parametros <Object> Objeto com os dados a serem utilizados como parâmetro na busca
      * @param transacao <EntityManager>

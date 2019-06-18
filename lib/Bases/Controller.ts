@@ -30,6 +30,26 @@ export default abstract class Controller<T> implements IController {
     }
 
     /**
+     * Filtro avançado, utiliza os parâmetros da query string
+     * É necessário passar nos parâmetros da url página e limite, ambos do tipo <number>
+     * Caso não fornecidos, assumem os valores 0 e 100 respectivamente como default
+     * @param <Request> (express) 
+     * @param <Response> (express)
+     */
+    public filtrar = async (req: Request, res: Response) => {
+        let pagina: number = req.params.pagina ? Number.parseInt(req.params.pagina) : 0;
+        let limite: number = req.params.limite ? Number.parseInt(req.params.limite) : 100;
+        let parametros: any = req.query;
+
+        if(Object.entries(parametros).length === 0 && parametros.constructor === Object)
+            _.partial(Manipuladores.erro, res, "Nenhum parâmetro foi fornecido na query string");
+
+        await this.servico.filtrar(pagina, limite, parametros)
+            .then(_.partial(Manipuladores.sucesso, res))
+            .catch(_.partial(Manipuladores.erro, res, "Erro ao buscar dados"));
+    }
+
+    /**
      * Deve conter uma QueryString(URL) com os dados para a busca
      * @param req <Request> (express) 
      * @param res <Response> (express)

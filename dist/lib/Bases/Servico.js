@@ -16,6 +16,15 @@ class Servico {
     constructor(repositorio) {
         this.repositorio = repositorio;
         /**
+         * Filtro avançado, utiliza os parâmetros da query string
+         * @param pagina <number>
+         * @param limite <number>
+         * @param parametros <any> Query String
+         */
+        this.filtrar = (pagina, limite, parametros) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.filtrar(pagina, limite, parametros);
+        });
+        /**
          *
          * @param parametros <Object> Objeto com os dados a serem utilizados como parâmetro na busca
          * @param transacao <EntityManager>

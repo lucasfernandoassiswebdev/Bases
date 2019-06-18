@@ -1,4 +1,3 @@
-
 export class Paginavel {
     sort: any;
     offset: number;

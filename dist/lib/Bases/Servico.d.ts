@@ -22,6 +22,13 @@ export default abstract class Servico<T> implements IServico<T> {
      */
     iniciarRepositorio(): void;
     /**
+     * Filtro avançado, utiliza os parâmetros da query string
+     * @param pagina <number>
+     * @param limite <number>
+     * @param parametros <any> Query String
+     */
+    filtrar: (pagina: number, limite: number, parametros: any) => Promise<Page>;
+    /**
      *
      * @param parametros <Object> Objeto com os dados a serem utilizados como parâmetro na busca
      * @param transacao <EntityManager>

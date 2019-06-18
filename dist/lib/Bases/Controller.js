@@ -7,18 +7,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const _ = __importStar(require("lodash"));
+const lodash_1 = __importDefault(require("lodash"));
 const Manipuladores_1 = __importDefault(require("../Manipuladores"));
 const Util_1 = __importDefault(require("../Util/Util"));
 class Controller {
@@ -29,6 +22,23 @@ class Controller {
     constructor(servico) {
         this.servico = servico;
         /**
+         * Filtro avançado, utiliza os parâmetros da query string
+         * É necessário passar nos parâmetros da url página e limite, ambos do tipo <number>
+         * Caso não fornecidos, assumem os valores 0 e 100 respectivamente como default
+         * @param <Request> (express)
+         * @param <Response> (express)
+         */
+        this.filtrar = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            let pagina = req.params.pagina ? Number.parseInt(req.params.pagina) : 0;
+            let limite = req.params.limite ? Number.parseInt(req.params.limite) : 100;
+            let parametros = req.query;
+            if (Object.entries(parametros).length === 0 && parametros.constructor === Object)
+                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Nenhum parâmetro foi fornecido na query string");
+            yield this.servico.filtrar(pagina, limite, parametros)
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+        });
+        /**
          * Deve conter uma QueryString(URL) com os dados para a busca
          * @param req <Request> (express)
          * @param res <Response> (express)
@@ -36,8 +46,8 @@ class Controller {
          */
         this.buscar = (req, res) => __awaiter(this, void 0, void 0, function* () {
             yield this.servico.buscar(req.query)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
         /**
          * Deve conter uma QueryString(URL) com os dados para a busca
@@ -47,8 +57,8 @@ class Controller {
          */
         this.buscarUm = (req, res) => __awaiter(this, void 0, void 0, function* () {
             yield this.servico.buscarUm(req.params)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
         /**
          * Deve conter na URL o parâmetro "ID" para a busca do objeto desejado
@@ -58,11 +68,11 @@ class Controller {
          */
         this.buscarPorId = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
-                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(id) não foram fornecidos");
+                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetro necessário(id) não foi fornecido");
             let id = Number.parseInt(req.params.id);
             yield this.servico.buscarPorId(id)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
         /**
          * Busca todos os objetos na página desejada
@@ -73,12 +83,12 @@ class Controller {
          */
         this.buscarTodos = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.pagina || !req.params.limite)
-                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
+                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
             let pagina = Number.parseInt(req.params.pagina);
             let limite = Number.parseInt(req.params.limite);
             yield this.servico.buscarTodos(pagina, limite)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
         /**
          * Salva o objeto<T> passado no corpo da requisição
@@ -89,8 +99,8 @@ class Controller {
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
             req.body = yield Util_1.default.criptografaSenhas(req.body);
             yield this.servico.salvar(req.body)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao salvar dados fornecidos"));
         });
         /**
          * Salva a lista de objetos<T[]> passados no corpo da requisição
@@ -103,8 +113,8 @@ class Controller {
                 item = yield Util_1.default.criptografaSenhas(item);
             }));
             yield this.servico.salvarLista(req.body)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao salvar lista de dados fornecidos"));
         });
         /**
          * Remove o objeto do ID passado como parâmetro na URL
@@ -113,11 +123,11 @@ class Controller {
          */
         this.remover = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
-                _.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(id) não foram fornecidos");
+                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetro necessário(id) não foram fornecido");
             let id = Number.parseInt(req.params.id);
             yield this.servico.remover(id)
-                .then(_.partial(Manipuladores_1.default.sucesso, res))
-                .catch(_.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });
     }
     /**

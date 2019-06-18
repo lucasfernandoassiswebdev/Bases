@@ -19,7 +19,7 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
      * Inicia a classe criando o repositório da classe genérica informada
      * @param classeEntidade <any> classe do Repositório
      */
-    constructor(private classeEntidade: any) {                
+    constructor(private classeEntidade: any) {
         this.pagina = new Pagina();
     }
 
@@ -40,6 +40,184 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
         return await typeof transacao !== 'undefined'
             ? transacao.save(objeto)
             : this.repositorio.save(objeto);
+    }
+
+    /**
+     * Retorna uma página com os dados resultantes da busca de acordo com os parâmetros fornecidos
+     * @param pagina <number>
+     * @param limite <number>
+     * @param parametros <any> Objeto com os dados a serem utilizados na busca
+     */
+    public async filtrar(pagina: number, limite: number, parametros: any): Promise<Pagina> {
+        try {
+            if (!Number.isInteger(pagina))
+                pagina = Math.ceil(pagina);
+
+            if (!Number.isInteger(limite))
+                limite = Math.ceil(limite);
+
+            let filtros: string = '';
+
+            //Verifica Todos os parâmetros passados
+            let tabelas: Map<string, string> = new Map<string, string>();
+            let relation: string[] = [];
+            let ordena: any = {};
+
+            for (var propName in parametros) {
+                if (parametros.hasOwnProperty(propName)) {
+                    if (propName != 'relations' && propName != 'orderBy') {
+                        //$ é caractere especial indicando inicio de condição para o campo
+                        let field_cond: string[] = propName.split('$');
+                        let condicao: string = '=';
+
+                        //posição 0 - campo, 1 - condição
+                        let field: string = field_cond[0];
+                        let tabela_field: string[] = field.split('.');
+                        let letra: number = 97; // 97 = 'a'
+
+                        if (tabela_field.length > 1) {
+                            for (var i = 0; i < tabela_field.length - 1; i++) {
+                                let busca: string = String.fromCharCode(letra) + '.' + tabela_field[i];
+
+                                if (typeof tabelas.get(busca) === 'undefined') {
+                                    letra = 97 + tabelas.size;
+                                    tabelas.set(busca, String.fromCharCode(++letra));
+                                } else
+                                    letra = tabelas.get(busca).charCodeAt(0);
+                            }
+
+                            field = tabela_field[tabela_field.length - 1];
+                        }
+
+                        if (field_cond.length > 1) {
+                            switch (field_cond[1]) {
+                                case 'like':
+                                    condicao = 'like';
+                                    break;
+                                case 'gt':
+                                    condicao = '>';
+                                    break;
+                                case 'ge':
+                                    condicao = '>=';
+                                    break;
+                                case 'lt':
+                                    condicao = '<';
+                                    break;
+                                case 'le':
+                                    condicao = '<=';
+                                    break;
+                                case 'ne':
+                                    condicao = '<>';
+                                    break;
+                                case 'null':
+                                    condicao = 'is null';
+                                    break;
+                                case 'not_null':
+                                    condicao = 'is not null';
+                                    break;
+                                case 'in':
+                                    condicao = 'in';
+                                    break;
+                                case 'not_in':
+                                    condicao = 'not in';
+                                    break;
+                            }
+
+                            if (field_cond[1] == 'like')
+                                condicao = 'like';
+                        }
+
+                        //Verifica na metadata da tabela se o campo existe
+                        let encontrou: boolean = false;
+
+                        if (tabelas.size > 0)
+                            encontrou = true;
+                        else
+                            for (let i = 0; i < this.repositorio.metadata.columns.length; i++) {
+                                if (this.repositorio.metadata.columns[i].databaseNameWithoutPrefixes == field) {
+                                    encontrou = true;
+                                    break;
+                                }
+                            }
+
+                        //Se não encontrar retorna erro e indica campos válidos
+                        if (encontrou == false) {
+                            let erro: string = 'Campo de busca inválido: ' + field + '\n\nCampos válidos (exceto joins):\n';
+
+                            for (var i = 0; i < this.repositorio.metadata.columns.length; i++) {
+                                erro += this.repositorio.metadata.columns[i].databaseNameWithoutPrefixes + '\n';
+                            }
+
+                            console.error(erro);
+                            return null;
+                        }
+                        //monta o filtro
+                        if (filtros == '')
+                            filtros = '';
+                        else
+                            filtros += ' and ';
+
+                        if (tabela_field.length > 1)
+                            filtros += String.fromCharCode(letra) + '.';
+                        else
+                            filtros += 'a.';
+
+                        filtros += field + ' ' + condicao + (parametros[propName] != '' ? condicao == 'in' || condicao == 'not in' ? ' (' + parametros[propName].replace(/%20/g, " ") + ')' : ' \'' + parametros[propName].replace(/%20/g, " ") + '\'' : '');
+                    } else
+                        if (propName == 'relations') {
+                            let aux: string[] = parametros[propName].split(',');
+                            for (var i = 0; i < aux.length; i++) {
+                                relation.push(aux[i]);
+                            }
+                        } else if (propName == 'orderBy') {
+                            let aux: string[] = parametros[propName].split(',');
+                            for (var i = 0; i < aux.length; i++) {
+                                let ordem = aux[i].split('$');
+                                let opcao = "ASC";
+                                if (ordem.length > 1) {
+                                    opcao = ordem[1];
+                                }
+
+                                ordena[ordem[0]] = opcao;
+                            }
+                        }
+                }
+            }
+
+            limite = limite > 100 || limite <= 0 ? 100 : limite;
+            pagina = pagina <= 0 ? 0 : (pagina - 1) * limite;
+            let joins: any = {};
+
+            for (let key of Array.from(tabelas.keys())) {
+                let campo = tabelas.get(key);
+                joins[campo] = key;
+            }
+
+            let [result, count] = await this.repositorio.findAndCount({
+                skip: pagina,
+                take: limite,
+                where: filtros,
+                relations: relation,
+                order: ordena,
+                join: {
+                    alias: "a",
+                    innerJoin: joins
+                }
+            })
+
+            let paginas = Math.ceil(count / limite);
+            this.pagina.content = result;
+            this.pagina.first = pagina === 0;
+            this.pagina.last = paginas === pagina + 1;
+            this.pagina.size = limite;
+            this.pagina.numberOfElements = count;
+            this.pagina.totalPages = paginas;
+
+            return this.pagina;
+        } catch (err) {
+            console.error(err);
+            return err.message;
+        }
     }
 
     /**

@@ -30,6 +30,16 @@ export default abstract class Servico<T> implements IServico<T> {
     }
 
     /**
+     * Filtro avançado, utiliza os parâmetros da query string
+     * @param pagina <number> 
+     * @param limite <number> 
+     * @param parametros <any> Query String
+     */
+    public filtrar = async (pagina: number, limite: number, parametros: any): Promise<Page> => {
+        return await this.repositorio.filtrar(pagina, limite, parametros);
+    }
+
+    /**
      * 
      * @param parametros <Object> Objeto com os dados a serem utilizados como parâmetro na busca
      * @param transacao <EntityManager>
