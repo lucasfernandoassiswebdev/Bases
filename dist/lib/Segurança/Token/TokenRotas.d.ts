@@ -8,7 +8,7 @@ export default class TokenRotas implements RotasInterface {
      * Método que autentica as rotas necessárias
      * @param req <Request> (express)
      * @param res <Response> (express)
-     * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarPorEmail"
+     * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarUsuario"
      * @returns <Response> (express)
      */
     private auth;

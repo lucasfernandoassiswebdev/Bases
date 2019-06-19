@@ -43,6 +43,17 @@ class Autenticacao {
         res.sendStatus(http_status_1.default.UNAUTHORIZED);
     }
     /**
+     *
+     * @param req <Request> (express)
+     * @param res <Response> (express)
+     * @param mensagem <string> Mensagem do corpo da resposta
+     */
+    autenticacaoIrregular(req, res, mensagem) {
+        res.status(http_status_1.default.UNAUTHORIZED).json({
+            mensagem: mensagem
+        });
+    }
+    /**
      * Retorna o token gerado no corpo da resposta
      * @param res <Response> (express)
      * @param senha <string> Senha a ser verificada(descriptografada)
@@ -73,15 +84,14 @@ class Autenticacao {
         };
         /** Service passado deve obrigatoriamente ter o método buscarPorId */
         passport.use(new passport_jwt_1.Strategy(opts, (jwtPayload, done) => {
-            servico.buscarPorId(jwtPayload.id).then(user => {
-                if (user) {
+            servico.buscarPorId(jwtPayload.id).then((user) => {
+                if (user)
                     return done(null, {
                         id: user.id,
                         email: user.email
                     });
-                }
                 return done(null, false);
-            }).catch(error => {
+            }).catch((error) => {
                 done(error, null);
             });
         }));

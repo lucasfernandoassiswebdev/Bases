@@ -11,20 +11,20 @@ export default class TokenRotas implements RotasInterface {
      * Método que autentica as rotas necessárias
      * @param req <Request> (express)
      * @param res <Response> (express)
-     * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarPorEmail"
+     * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarUsuario"
      * @returns <Response> (express)
      */
     private auth = async (req: Request, res: Response) => {
-        const credenciais = {
-            email: req.body.email,
-            senha: req.body.senha
-        };
+        const credenciais = req.body;
 
-        if (credenciais.email) {
-            await this.servico.buscarPorEmail(credenciais.email)
+        if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object)
+            _.partial(Autenticacao.falhaAutenticacao, req, res, 'Corpo da requisição vazio');
+        else if (!credenciais.senha)
+            _.partial(Autenticacao.falhaAutenticacao, req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
+        else
+            await this.servico.buscarUsuario(credenciais)
                 .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
                 .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
-        }
     };
 
     public exporRotas(app: Application): void {

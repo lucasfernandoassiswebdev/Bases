@@ -142,7 +142,7 @@ class RotasConfig {
 export default new RotasConfig();
 ```
 
-O **ServicoAutenticacao** é a classe responsável por verificar se o usuário poderá ou não receber um JWT e utilizá-lo para acessar os recursos da API, deve obrigatoriamente conter o método **buscarPorEmail**.
+O **ServicoAutenticacao** é a classe responsável por verificar se o usuário poderá ou não receber um JWT e utilizá-lo para acessar os recursos da API, deve obrigatoriamente conter o método **buscarUsuario**.
 
 **TokenRotas** inicia a rota **/token** com o verbo HTTP POST pronta para receber um objeto com os dados do usuário que está tentando se autenticar na API.
 

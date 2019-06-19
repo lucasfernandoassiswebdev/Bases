@@ -28,19 +28,19 @@ class TokenRotas {
          * Método que autentica as rotas necessárias
          * @param req <Request> (express)
          * @param res <Response> (express)
-         * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarPorEmail"
+         * @param servico <any> Classe que extenda Servico<T> deve obrigatoriamente ter o método "buscarUsuario"
          * @returns <Response> (express)
          */
         this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            const credenciais = {
-                email: req.body.email,
-                senha: req.body.senha
-            };
-            if (credenciais.email) {
-                yield this.servico.buscarPorEmail(credenciais.email)
+            const credenciais = req.body;
+            if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object)
+                _.partial(Autenticacao_1.default.falhaAutenticacao, req, res, 'Corpo da requisição vazio');
+            else if (!credenciais.senha)
+                _.partial(Autenticacao_1.default.falhaAutenticacao, req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
+            else
+                yield this.servico.buscarUsuario(credenciais)
                     .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
-            }
         });
     }
     exporRotas(app) {

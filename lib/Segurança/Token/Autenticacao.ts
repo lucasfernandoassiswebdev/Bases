@@ -16,6 +16,18 @@ class Autenticacao {
     }
 
     /**
+     * 
+     * @param req <Request> (express)
+     * @param res <Response> (express)
+     * @param mensagem <string> Mensagem do corpo da resposta
+     */
+    public autenticacaoIrregular(req: Request, res: Response, mensagem: string): void {
+        res.status(HttpStatus.UNAUTHORIZED).json({
+            mensagem: mensagem
+        });
+    }
+
+    /**
      * Gera um JWT de acordo com o conteúdo passado
      * @param conteudoToken <Object> Objeto com os dados a serem criptografados no Token
      * @param chaveCriptografia <string> Chave a ser usada para descriptografar este Token caso necessário 
@@ -33,7 +45,7 @@ class Autenticacao {
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
      * @returns <Response> (express)
      */
-    public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {        
+    public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {
         if (Criptografia.hashConfere(senha, usuario.senha))
             res.json({
                 token: await this.gerarToken({ id: usuario.id }, chaveCriptografia)
@@ -56,16 +68,15 @@ class Autenticacao {
 
         /** Service passado deve obrigatoriamente ter o método buscarPorId */
         passport.use(new Strategy(opts, (jwtPayload, done) => {
-            servico.buscarPorId(jwtPayload.id).then(user => {
-                if (user) {
+            servico.buscarPorId(jwtPayload.id).then((user: any) => {
+                if (user)
                     return done(null, {
                         id: user.id,
                         email: user.email
                     });
-                }
 
                 return done(null, false);
-            }).catch(error => {
+            }).catch((error: any) => {
                 done(error, null);
             });
         }));

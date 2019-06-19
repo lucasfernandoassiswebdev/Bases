@@ -1390,16 +1390,16 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/autenticacao.ts": {
-        "version": "f687856e98329287441bd13256a25f27b48bab8a1534e5a0e5aba2ca3ade585b",
-        "signature": "2b25e53b20ed0df8c2e24a8565e8ddc7200eb97f593d1b18a882e45d1b1fd190"
+        "version": "74361b93c708304904e9ff4e46b815c62529f81fd4bc6b688dda79a5a3b815d5",
+        "signature": "52a931bb9a3cb7087e79b041f9103c08642c05f2a3f3b863890b8b6644023f87"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/bin/basemodule.ts": {
         "version": "5d7e14fea10d4f6d310a4e6bfb02d820a7b60d9cf740262a8d761debb4d35dd8",
         "signature": "b080efdef6a58df7e4fc8489ef083d99ea8885f971e8924515a6eeef578b578e"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/tokenrotas.ts": {
-        "version": "9d58c7443176853c14a40c83ace556c7562bcdbb080598209de94128754cfa41",
-        "signature": "b7e7170f88ba0238ec3d246602f177b5f851c74cb7cc7b6d9aa0844cf7d01ee3"
+        "version": "0e0ec0399949dd9d81a7659b0c2c2e2acbdec4ce238ef72dfb78a4f87c913ba7",
+        "signature": "f396f249372fd1fa79989dc8677ba050248131ee5c5ce14887ea6d773e555861"
       }
     },
     "options": {

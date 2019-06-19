@@ -7,6 +7,13 @@ declare class Autenticacao {
      */
     falhaAutenticacao(req: Request, res: Response): void;
     /**
+     *
+     * @param req <Request> (express)
+     * @param res <Response> (express)
+     * @param mensagem <string> Mensagem do corpo da resposta
+     */
+    autenticacaoIrregular(req: Request, res: Response, mensagem: string): void;
+    /**
      * Gera um JWT de acordo com o conteúdo passado
      * @param conteudoToken <Object> Objeto com os dados a serem criptografados no Token
      * @param chaveCriptografia <string> Chave a ser usada para descriptografar este Token caso necessário
