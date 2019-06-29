@@ -25,7 +25,7 @@ class Criptografia {
          * @returns Promise<string>
          */
         this.criptografar = (conteudo) => __awaiter(this, void 0, void 0, function* () {
-            return yield bcryptjs.hashSync(conteudo, 10);
+            return yield bcryptjs.hashSync(conteudo, bcryptjs.genSaltSync(10));
         });
         /**
          * Verifica a compatibilidade entre senha e hash

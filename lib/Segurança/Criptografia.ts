@@ -9,7 +9,7 @@ class Criptografia {
      * @returns Promise<string>
      */
     public criptografar = async (conteudo: string): Promise<string> => {
-        return await bcryptjs.hashSync(conteudo, 10);
+        return await bcryptjs.hashSync(conteudo, bcryptjs.genSaltSync(10));
     }
 
     /**
