@@ -39,10 +39,13 @@ class TokenRotas {
             else if (!credenciais.senha) {
                 Autenticacao_1.default.autenticacaoIrregular(req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
             }
-            else
+            else {
+                let senha = credenciais.senha;
+                delete credenciais.senha;
                 yield this.servico.buscarUsuario(credenciais)
-                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
+                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, senha, usuario, this.chaveCriptografia))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
+            }
         });
     }
     exporRotas(app) {

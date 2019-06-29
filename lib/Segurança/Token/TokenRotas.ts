@@ -21,10 +21,14 @@ export default class TokenRotas implements RotasInterface {
             Autenticacao.autenticacaoIrregular(req, res, 'Corpo da requisição vazio');
         } else if (!credenciais.senha) {
             Autenticacao.autenticacaoIrregular(req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
-        } else
+        } else {
+            let senha: string = credenciais.senha;
+            delete credenciais.senha;
+
             await this.servico.buscarUsuario(credenciais)
-                .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
+                .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, senha, usuario, this.chaveCriptografia))
                 .catch(_.partial(Autenticacao.falhaAutenticacao, req, res));
+        }
     };
 
     public exporRotas(app: Application): void {
