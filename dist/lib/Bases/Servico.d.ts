@@ -11,7 +11,7 @@ export interface IServico<T> {
     remover(params: any, transaction?: EntityManager): void;
 }
 export default abstract class Servico<T> implements IServico<T> {
-    private repositorio;
+    repositorio: Repositorio<T>;
     /**
      *
      * @param repositorio Repositorio<T>
