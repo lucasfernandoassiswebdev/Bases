@@ -21,9 +21,9 @@ class Autenticacao {
      * @param res <Response> (express)
      * @param mensagem <string> Mensagem do corpo da resposta
      */
-    public autenticacaoIrregular(req: Request, res: Response): void {
+    public autenticacaoIrregular(req: Request, res: Response, message: String): void {
         res.status(HttpStatus.UNAUTHORIZED).json({
-            mensagem: req.body.message
+            mensagem: message
         });
     }
 

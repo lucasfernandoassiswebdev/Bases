@@ -48,9 +48,9 @@ class Autenticacao {
      * @param res <Response> (express)
      * @param mensagem <string> Mensagem do corpo da resposta
      */
-    autenticacaoIrregular(req, res) {
+    autenticacaoIrregular(req, res, message) {
         res.status(http_status_1.default.UNAUTHORIZED).json({
-            mensagem: req.body.message
+            mensagem: message
         });
     }
     /**
