@@ -46,7 +46,7 @@ class Autenticacao {
      * @returns <Response> (express)
      */
     public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {
-        if (Criptografia.hashConfere(senha, usuario.senha))
+        if (await Criptografia.hashConfere(usuario.senha, senha))
             res.json({
                 token: await this.gerarToken({ id: usuario.id }, chaveCriptografia)
             });

@@ -1390,7 +1390,7 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
-        "version": "dcf529972861ad40afd07928c3e1fcb32482e148c3da0627f19d8694326051e0",
+        "version": "7a4275933feebd64a1b351104595b532c6562e0d5f7b641c22986ec12133ba07",
         "signature": "c9b59ae2dcb4fd0821450f1d795ba638dad30873054e4e0d3b6eefa2578b313f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": {
@@ -6497,6 +6497,7 @@
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcryptjs/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
@@ -6508,10 +6509,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-strategy/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts"
     ]
   },
   "version": "3.4.5"
