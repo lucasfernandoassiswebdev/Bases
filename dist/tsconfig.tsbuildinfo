@@ -1390,15 +1390,15 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts": {
-        "version": "3b0f5d351eb509c5b9ebc3b2e2810ea11419b6d5d96776dca2046d4c8d52b84e",
-        "signature": "cde35fd6e3d3af39cdc6a20337011c134333b82133d1742decfecefaa99a23ab"
+        "version": "6d3351f904a8f33899acc66ab7c7687f7ee3812aa7a75417fcdebd18a8bf4047",
+        "signature": "76c89cb510d402abe7d377fac5a45d19d3438707ff76b6d65c040349d381081f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts": {
         "version": "fab239f88115841a41cd0102fa015f3672874ea77e7bb402bf41893b4965fef3",
         "signature": "c6c4d4288f1b83f05a08740d2c3d6c4fb04ca6ce8503e0bc31db5407d281ee80"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts": {
-        "version": "9917b584ba3324533335bb4ca19df883d760e78b456154478d60db0246a9d11a",
+        "version": "eb6b0b6b65d8c8361f3c125ec81e1ec2cd0dce3cb8083340de42414542b3bc5c",
         "signature": "b52c4dd9e98dd5ba41d95d15f07b5433bf88f2e489d889087c166de2d6910640"
       }
     },

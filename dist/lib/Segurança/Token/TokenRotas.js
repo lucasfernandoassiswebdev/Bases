@@ -33,10 +33,14 @@ class TokenRotas {
          */
         this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const credenciais = req.body;
-            if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object)
-                _.partial(Autenticacao_1.default.autenticacaoIrregular, req, res, 'Corpo da requisição vazio');
-            else if (!credenciais.senha)
-                _.partial(Autenticacao_1.default.autenticacaoIrregular, req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
+            if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object) {
+                req.body.message = 'Corpo da requisição vazio';
+                _.partial(Autenticacao_1.default.autenticacaoIrregular, req, res);
+            }
+            else if (!credenciais.senha) {
+                req.body.message = 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.';
+                _.partial(Autenticacao_1.default.autenticacaoIrregular, req, res);
+            }
             else
                 yield this.servico.buscarUsuario(credenciais)
                     .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
