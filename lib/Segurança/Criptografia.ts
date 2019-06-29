@@ -1,5 +1,5 @@
 import * as jwt from 'jwt-simple';
-import * as bcrypt from 'bcrypt';
+import * as bcryptjs from 'bcryptjs';
 
 class Criptografia {
 
@@ -9,7 +9,7 @@ class Criptografia {
      * @returns Promise<string>
      */
     public criptografar = async (conteudo: string): Promise<string> => {
-        return await bcrypt.hashSync(conteudo, 10);
+        return await bcryptjs.hashSync(conteudo, 10);
     }
 
     /**
@@ -18,7 +18,7 @@ class Criptografia {
      * @param senha <string>
      */
     public hashConfere = async (senhaCriptografada: string, senha: string): Promise<boolean> => {
-        return await bcrypt.compareSync(senha, senhaCriptografada);
+        return await bcryptjs.compareSync(senha, senhaCriptografada);
     }
 
     /**

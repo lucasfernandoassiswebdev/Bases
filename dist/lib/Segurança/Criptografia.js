@@ -16,7 +16,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jwt = __importStar(require("jwt-simple"));
-const bcrypt = __importStar(require("bcrypt"));
+const bcryptjs = __importStar(require("bcryptjs"));
 class Criptografia {
     constructor() {
         /**
@@ -25,7 +25,7 @@ class Criptografia {
          * @returns Promise<string>
          */
         this.criptografar = (conteudo) => __awaiter(this, void 0, void 0, function* () {
-            return yield bcrypt.hashSync(conteudo, 10);
+            return yield bcryptjs.hashSync(conteudo, 10);
         });
         /**
          * Verifica a compatibilidade entre senha e hash
@@ -33,7 +33,7 @@ class Criptografia {
          * @param senha <string>
          */
         this.hashConfere = (senhaCriptografada, senha) => __awaiter(this, void 0, void 0, function* () {
-            return yield bcrypt.compareSync(senha, senhaCriptografada);
+            return yield bcryptjs.compareSync(senha, senhaCriptografada);
         });
         /**
          * Descriptografa o conteúdo de um JWT
