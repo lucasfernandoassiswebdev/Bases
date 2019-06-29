@@ -18,9 +18,9 @@ export default class TokenRotas implements RotasInterface {
         const credenciais = req.body;
 
         if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object)
-            _.partial(Autenticacao.falhaAutenticacao, req, res, 'Corpo da requisição vazio');
+            _.partial(Autenticacao.autenticacaoIrregular, req, res, 'Corpo da requisição vazio');
         else if (!credenciais.senha)
-            _.partial(Autenticacao.falhaAutenticacao, req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
+            _.partial(Autenticacao.autenticacaoIrregular, req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');
         else
             await this.servico.buscarUsuario(credenciais)
                 .then((usuario: any) => Autenticacao.sucessoAutenticacao(res, credenciais.senha, usuario, this.chaveCriptografia))
