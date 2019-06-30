@@ -65,7 +65,8 @@ class Autenticacao {
         return __awaiter(this, void 0, void 0, function* () {
             if (yield Criptografia_1.default.hashConfere(usuario.senha, senha))
                 res.json({
-                    token: yield this.gerarToken({ id: usuario.id }, chaveCriptografia)
+                    token: yield this.gerarToken({ id: usuario.id }, chaveCriptografia),
+                    usuario: usuario
                 });
             else
                 res.sendStatus(http_status_1.default.UNAUTHORIZED);

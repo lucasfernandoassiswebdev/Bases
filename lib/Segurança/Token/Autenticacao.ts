@@ -48,7 +48,8 @@ class Autenticacao {
     public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {
         if (await Criptografia.hashConfere(usuario.senha, senha))
             res.json({
-                token: await this.gerarToken({ id: usuario.id }, chaveCriptografia)
+                token: await this.gerarToken({ id: usuario.id }, chaveCriptografia),
+                usuario: usuario
             });
         else
             res.sendStatus(HttpStatus.UNAUTHORIZED);
