@@ -33,7 +33,7 @@ class Controller {
             let limite = req.params.limite ? Number.parseInt(req.params.limite) : 100;
             let parametros = req.query;
             if (Object.entries(parametros).length === 0 && parametros.constructor === Object)
-                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Nenhum parâmetro foi fornecido na query string");
+                Manipuladores_1.default.erro(res, "Nenhum parâmetro foi fornecido na query string");
             yield this.servico.filtrar(pagina, limite, parametros)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
                 .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
@@ -68,7 +68,7 @@ class Controller {
          */
         this.buscarPorId = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
-                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetro necessário(id) não foi fornecido");
+                Manipuladores_1.default.erro(res, "Parâmetro necessário(id) não foi fornecido");
             let id = Number.parseInt(req.params.id);
             yield this.servico.buscarPorId(id)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
@@ -83,7 +83,7 @@ class Controller {
          */
         this.buscarTodos = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.pagina || !req.params.limite)
-                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
+                Manipuladores_1.default.erro(res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
             let pagina = Number.parseInt(req.params.pagina);
             let limite = Number.parseInt(req.params.limite);
             yield this.servico.buscarTodos(pagina, limite)
@@ -123,7 +123,7 @@ class Controller {
          */
         this.remover = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
-                lodash_1.default.partial(Manipuladores_1.default.erro, res, "Parâmetro necessário(id) não foram fornecido");
+                Manipuladores_1.default.erro(res, "Parâmetro necessário(id) não foram fornecido");
             let id = Number.parseInt(req.params.id);
             yield this.servico.remover(id)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))

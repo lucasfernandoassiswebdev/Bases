@@ -10,8 +10,11 @@ class Manipuladores {
      * @param err <any>
      * @returns Status 500 - Internal Server Error
      */
-    erro(res: Response, message: String, err: any) {
-        res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({ payload: err });
+    erro(res: Response, message?: String, err?: any) {
+        res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({ 
+            message: message,
+            payload: err 
+        });
     }
 
     /**   

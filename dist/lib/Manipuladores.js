@@ -13,7 +13,10 @@ class Manipuladores {
      * @returns Status 500 - Internal Server Error
      */
     erro(res, message, err) {
-        res.status(http_status_1.default.INTERNAL_SERVER_ERROR).json({ payload: err });
+        res.status(http_status_1.default.INTERNAL_SERVER_ERROR).json({
+            message: message,
+            payload: err
+        });
     }
     /**
      *

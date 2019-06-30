@@ -41,8 +41,8 @@ export default abstract class Controller<T> implements IController {
         let limite: number = req.params.limite ? Number.parseInt(req.params.limite) : 100;
         let parametros: any = req.query;
 
-        if(Object.entries(parametros).length === 0 && parametros.constructor === Object)
-            _.partial(Manipuladores.erro, res, "Nenhum parâmetro foi fornecido na query string");
+        if (Object.entries(parametros).length === 0 && parametros.constructor === Object)
+            Manipuladores.erro(res, "Nenhum parâmetro foi fornecido na query string");
 
         await this.servico.filtrar(pagina, limite, parametros)
             .then(_.partial(Manipuladores.sucesso, res))
@@ -81,7 +81,7 @@ export default abstract class Controller<T> implements IController {
      */
     public buscarPorId = async (req: Request, res: Response) => {
         if (!req.params.id)
-            _.partial(Manipuladores.erro, res, "Parâmetro necessário(id) não foi fornecido");
+            Manipuladores.erro(res, "Parâmetro necessário(id) não foi fornecido");
 
         let id = Number.parseInt(req.params.id);
 
@@ -99,7 +99,7 @@ export default abstract class Controller<T> implements IController {
      */
     public buscarTodos = async (req: Request, res: Response) => {
         if (!req.params.pagina || !req.params.limite)
-            _.partial(Manipuladores.erro, res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
+            Manipuladores.erro(res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
 
         let pagina = Number.parseInt(req.params.pagina);
         let limite = Number.parseInt(req.params.limite);
@@ -146,12 +146,12 @@ export default abstract class Controller<T> implements IController {
      */
     public remover = async (req: Request, res: Response) => {
         if (!req.params.id)
-            _.partial(Manipuladores.erro, res, "Parâmetro necessário(id) não foram fornecido");
+            Manipuladores.erro(res, "Parâmetro necessário(id) não foram fornecido");
 
         let id = Number.parseInt(req.params.id);
 
         await this.servico.remover(id)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
-    }    
+    }
 }

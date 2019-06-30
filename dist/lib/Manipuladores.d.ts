@@ -7,7 +7,7 @@ declare class Manipuladores {
      * @param err <any>
      * @returns Status 500 - Internal Server Error
      */
-    erro(res: Response, message: String, err: any): void;
+    erro(res: Response, message?: String, err?: any): void;
     /**
      *
      * @param res <Response> (express)
