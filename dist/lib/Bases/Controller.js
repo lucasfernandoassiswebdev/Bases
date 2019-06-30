@@ -14,13 +14,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const lodash_1 = __importDefault(require("lodash"));
 const Manipuladores_1 = __importDefault(require("../Manipuladores"));
 const Util_1 = __importDefault(require("../Util/Util"));
+const http_status_1 = __importDefault(require("http-status"));
 class Controller {
     /**
      *
      * @param servico Servico<T> Serviço correspondente a classe do módulo
      */
-    constructor(servico) {
+    constructor(servico, paramName) {
         this.servico = servico;
+        this.paramName = paramName;
         /**
          * Filtro avançado, utiliza os parâmetros da query string
          * É necessário passar nos parâmetros da url página e limite, ambos do tipo <number>
@@ -132,11 +134,17 @@ class Controller {
         this.remover = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
                 Manipuladores_1.default.erro(res, "Parâmetro necessário(id) não foram fornecido");
-            let paramName = req.params.paramName;
             let id = Number.parseInt(req.params.id);
-            yield this.servico.remover(id, paramName)
-                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
-                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
+            try {
+                let objetoRemovido = yield this.servico.remover(id, this.paramName);
+                if (objetoRemovido != undefined)
+                    Manipuladores_1.default.sucesso(res, objetoRemovido);
+                else
+                    Manipuladores_1.default.erro(res, "Não foi encontrado objeto de acordo com os parâmetros fornecidos", null, http_status_1.default.NOT_FOUND);
+            }
+            catch (error) {
+                Manipuladores_1.default.erro(res, "Erro ao remover dados fornecidos", error);
+            }
         });
         /**
          * Remove o objeto passado no corpo da requisição(utilize o verbo HTTP POST)

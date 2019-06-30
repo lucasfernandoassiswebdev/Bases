@@ -281,13 +281,17 @@ class Repositorio {
                 const itemToRemove = (paramName != undefined && paramName.length > 0)
                     ? yield transacao.findOne(this.repositorio.target, { where: { id } })
                     : yield transacao.findOne(this.repositorio.target, { where: { [paramName]: id } });
-                return transacao.remove(itemToRemove);
+                return itemToRemove != undefined
+                    ? transacao.remove(itemToRemove)
+                    : null;
             }
             else {
                 const itemToRemove = (paramName != undefined && paramName.length > 0)
                     ? yield this.repositorio.findOne({ where: { id } })
                     : yield this.repositorio.findOne({ where: { [paramName]: id } });
-                return this.repositorio.remove(itemToRemove);
+                return itemToRemove != undefined
+                    ? this.repositorio.remove(itemToRemove)
+                    : null;
             }
         });
     }

@@ -12,11 +12,12 @@ export interface IController {
 }
 export default abstract class Controller<T> implements IController {
     servico: Servico<T>;
+    paramName?: string;
     /**
      *
      * @param servico Servico<T> Serviço correspondente a classe do módulo
      */
-    constructor(servico: Servico<T>);
+    constructor(servico: Servico<T>, paramName?: string);
     /**
      * Inicia o Repositório de acordo com T
      */
