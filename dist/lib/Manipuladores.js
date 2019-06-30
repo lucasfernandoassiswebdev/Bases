@@ -10,10 +10,11 @@ class Manipuladores {
      * @param res <Response> (express)
      * @param message <string>
      * @param err <any>
+     * @param status <number> default -> 500(Internal Server Error)
      * @returns Status 500 - Internal Server Error
      */
-    erro(res, message, err) {
-        res.status(http_status_1.default.INTERNAL_SERVER_ERROR).json({
+    erro(res, message, err, status) {
+        res.status(status != undefined ? status : http_status_1.default.INTERNAL_SERVER_ERROR).json({
             message: message,
             payload: err
         });
