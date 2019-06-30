@@ -5,7 +5,7 @@ O Bases é uma projeto Nodejs que utiliza Typescript para abstrair uma série de
 Você pode conferir um projeto funcional que implementa em exemplos as funcionalidades deste pacote neste [link](https://github.com/lucasfernandoassiswebdev/DemoProject)
 
 O projeto foi desenvolvido com a premissa de que serão utilizados os seguintes pacotes:
-- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [express](https://expressjs.com/pt-br/)
 - [http-status](https://www.npmjs.com/package/http-status)
 - [jwt-simple](https://www.npmjs.com/package/jwt-simple)
