@@ -72,7 +72,7 @@ class Controller {
             if (!req.params.id)
                 Manipuladores_1.default.erro(res, "Parâmetro necessário(id) não foi fornecido");
             let id = Number.parseInt(req.params.id);
-            yield this.servico.buscarPorId(id)
+            yield this.servico.buscarPorId(id, this.paramName)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
                 .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });

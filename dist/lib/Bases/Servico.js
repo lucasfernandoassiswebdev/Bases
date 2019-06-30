@@ -44,12 +44,13 @@ class Servico {
         });
         /**
          * Retorna o objeto do ID fornecido
-         * @param id ID do objeto a ser encontrado
+         * @param id <number> ID do objeto a ser encontrado
+         * @param paramName <string> nome do parâmetro que identifica o objeto
          * @param transacao <EntityManager>
          * @returns Promise<T>
          */
-        this.buscarPorId = (id, transacao) => __awaiter(this, void 0, void 0, function* () {
-            return yield this.repositorio.buscarPorId(id, transacao);
+        this.buscarPorId = (id, paramName, transacao) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.buscarPorId(id, paramName, transacao);
         });
         /**
          * Retorna a página desejada

@@ -5,7 +5,7 @@ import Page from '../Pagina';
 export interface IServico<T> {
     buscar(params: any, transaction?: EntityManager): Promise<T[]>;
     buscarUm(params: any, transaction?: EntityManager): Promise<T>;
-    buscarPorId(id: number, transaction?: EntityManager): Promise<T>;
+    buscarPorId(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Page>;
     salvar(params: any, transaction?: EntityManager): Promise<T>;
     salvarLista(params: any[], transaction?: EntityManager): Promise<T[]>;
@@ -62,12 +62,13 @@ export default abstract class Servico<T> implements IServico<T> {
 
     /**
      * Retorna o objeto do ID fornecido
-     * @param id ID do objeto a ser encontrado
-     * @param transacao <EntityManager>
+     * @param id <number> ID do objeto a ser encontrado
+     * @param paramName <string> nome do parâmetro que identifica o objeto
+     * @param transacao <EntityManager>      
      * @returns Promise<T>
      */
-    public buscarPorId = async (id: number, transacao?: EntityManager): Promise<T> => {
-        return await this.repositorio.buscarPorId(id, transacao);
+    public buscarPorId = async (id: number, paramName?: string, transacao?: EntityManager): Promise<T> => {
+        return await this.repositorio.buscarPorId(id, paramName, transacao);
     }
 
     /**

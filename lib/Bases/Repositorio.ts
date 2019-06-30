@@ -5,7 +5,7 @@ export interface IRepositorio<T> {
     salvar(entity: any, transaction?: EntityManager): Promise<T>;
     buscar(params: Object, transaction?: EntityManager): Promise<T[]>;
     buscarUm(params: Object, transaction?: EntityManager): Promise<T>;
-    buscarPorId(id: number, transaction?: EntityManager): Promise<T>;
+    buscarPorId(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
     remover(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>
@@ -248,13 +248,19 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
     /**
      * Retorna o objeto do ID fornecido
      * @param id ID do objeto a ser encontrado
+     * @param paramName <string> nome do parâmetro que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T>
      */
-    public async buscarPorId(id: number, transacao?: EntityManager): Promise<T> {
-        return typeof transacao !== 'undefined'
-            ? transacao.findOne(this.repositorio.metadata.target as any, { where: { id } } as any) as Promise<T>
-            : this.repositorio.findOne({ where: { id } });
+    public async buscarPorId(id: number, paramName?: string, transacao?: EntityManager): Promise<T> {
+        if (paramName != undefined && paramName.length > 0)
+            return typeof transacao !== 'undefined'
+                ? transacao.findOne(this.repositorio.metadata.target as any, { where: { [paramName]: id } } as any) as Promise<T>
+                : this.repositorio.findOne({ where: { [paramName]: id } });
+        else
+            return typeof transacao !== 'undefined'
+                ? transacao.findOne(this.repositorio.metadata.target as any, { where: { id } } as any) as Promise<T>
+                : this.repositorio.findOne({ where: { id } });
     }
 
     /**

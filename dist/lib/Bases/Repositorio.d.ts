@@ -4,7 +4,7 @@ export interface IRepositorio<T> {
     salvar(entity: any, transaction?: EntityManager): Promise<T>;
     buscar(params: Object, transaction?: EntityManager): Promise<T[]>;
     buscarUm(params: Object, transaction?: EntityManager): Promise<T>;
-    buscarPorId(id: number, transaction?: EntityManager): Promise<T>;
+    buscarPorId(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
     remover(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>;
@@ -53,10 +53,11 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
     /**
      * Retorna o objeto do ID fornecido
      * @param id ID do objeto a ser encontrado
+     * @param paramName <string> nome do parâmetro que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T>
      */
-    buscarPorId(id: number, transacao?: EntityManager): Promise<T>;
+    buscarPorId(id: number, paramName?: string, transacao?: EntityManager): Promise<T>;
     /**
      * Retorna a página desejada
      * @param pagina <number>

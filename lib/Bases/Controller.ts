@@ -87,7 +87,7 @@ export default abstract class Controller<T> implements IController {
 
         let id = Number.parseInt(req.params.id);
 
-        await this.servico.buscarPorId(id)
+        await this.servico.buscarPorId(id, this.paramName)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao buscar dados"));
     }

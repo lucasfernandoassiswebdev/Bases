@@ -229,14 +229,20 @@ class Repositorio {
     /**
      * Retorna o objeto do ID fornecido
      * @param id ID do objeto a ser encontrado
+     * @param paramName <string> nome do parâmetro que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T>
      */
-    buscarPorId(id, transacao) {
+    buscarPorId(id, paramName, transacao) {
         return __awaiter(this, void 0, void 0, function* () {
-            return typeof transacao !== 'undefined'
-                ? transacao.findOne(this.repositorio.metadata.target, { where: { id } })
-                : this.repositorio.findOne({ where: { id } });
+            if (paramName != undefined && paramName.length > 0)
+                return typeof transacao !== 'undefined'
+                    ? transacao.findOne(this.repositorio.metadata.target, { where: { [paramName]: id } })
+                    : this.repositorio.findOne({ where: { [paramName]: id } });
+            else
+                return typeof transacao !== 'undefined'
+                    ? transacao.findOne(this.repositorio.metadata.target, { where: { id } })
+                    : this.repositorio.findOne({ where: { id } });
         });
     }
     /**
