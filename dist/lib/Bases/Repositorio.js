@@ -279,16 +279,16 @@ class Repositorio {
         return __awaiter(this, void 0, void 0, function* () {
             if (typeof transacao !== 'undefined') {
                 const itemToRemove = (paramName != undefined && paramName.length > 0)
-                    ? yield transacao.findOne(this.repositorio.target, { where: { id } })
-                    : yield transacao.findOne(this.repositorio.target, { where: { [paramName]: id } });
+                    ? yield transacao.findOne(this.repositorio.target, { where: { [paramName]: id } })
+                    : yield transacao.findOne(this.repositorio.target, { where: { id } });
                 return itemToRemove != undefined
                     ? transacao.remove(itemToRemove)
                     : null;
             }
             else {
                 const itemToRemove = (paramName != undefined && paramName.length > 0)
-                    ? yield this.repositorio.findOne({ where: { id } })
-                    : yield this.repositorio.findOne({ where: { [paramName]: id } });
+                    ? yield this.repositorio.findOne({ where: { [paramName]: id } })
+                    : yield this.repositorio.findOne({ where: { id } });
                 return itemToRemove != undefined
                     ? this.repositorio.remove(itemToRemove)
                     : null;
