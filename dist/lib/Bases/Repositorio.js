@@ -271,19 +271,37 @@ class Repositorio {
     /**
      *
      * @param id <number> ID do objeto a ser removido
+     * @param paramName <string> nome da propriedade que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T> Retorna o objeto removido
      */
-    remover(id, transacao) {
+    remover(id, paramName, transacao) {
         return __awaiter(this, void 0, void 0, function* () {
             if (typeof transacao !== 'undefined') {
-                const itemToRemove = yield transacao.findOne(this.repositorio.target, { where: { id } });
+                const itemToRemove = (paramName != undefined && paramName.length > 0)
+                    ? yield transacao.findOne(this.repositorio.target, { where: { id } })
+                    : yield transacao.findOne(this.repositorio.target, { where: { [paramName]: id } });
                 return transacao.remove(itemToRemove);
             }
             else {
-                const itemToRemove = yield this.repositorio.findOne({ where: { id } });
+                const itemToRemove = (paramName != undefined && paramName.length > 0)
+                    ? yield this.repositorio.findOne({ where: { id } })
+                    : yield this.repositorio.findOne({ where: { [paramName]: id } });
                 return this.repositorio.remove(itemToRemove);
             }
+        });
+    }
+    /**
+     *
+     * @param objeto <T> objeto a ser removido
+     * @param transacao <EntityManager>
+     * @returns Promise<T> Retorna o objeto removido
+     */
+    removerObjeto(objeto, transacao) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return typeof transacao !== 'undefined'
+                ? transacao.remove(objeto)
+                : this.repositorio.remove(objeto);
         });
     }
 }

@@ -17,7 +17,7 @@ export default class TokenRotas implements RotasInterface {
     private auth = async (req: Request, res: Response) => {
         const credenciais = req.body;
 
-        if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object) {
+        if (!Object.entries(credenciais).length) {
             Autenticacao.autenticacaoIrregular(req, res, 'Corpo da requisição vazio');
         } else if (!credenciais.senha) {
             Autenticacao.autenticacaoIrregular(req, res, 'É necessário que o corpo da requisição tenha o parâmetro \"senha\" fornecido para gerar o Token.');

@@ -8,7 +8,8 @@ export interface IServico<T> {
     buscarTodos(pagina: number, limite: number): Promise<Page>;
     salvar(params: any, transaction?: EntityManager): Promise<T>;
     salvarLista(params: any[], transaction?: EntityManager): Promise<T[]>;
-    remover(params: any, transaction?: EntityManager): void;
+    remover(params: any, paramName?: string, transaction?: EntityManager): void;
+    removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>;
 }
 export default abstract class Servico<T> implements IServico<T> {
     repositorio: Repositorio<T>;
@@ -71,10 +72,18 @@ export default abstract class Servico<T> implements IServico<T> {
      */
     salvarLista: (items: T[], transacao?: EntityManager) => Promise<T[]>;
     /**
+      *
+      * @param id <number> ID do objeto a ser removido
+      * @param paramName <string> nome da propriedade que identifica o objeto
+      * @param transacao <EntityManager>
+      * @returns Promise<T> Retorna o objeto removido
+      */
+    remover: (id: number, paramName?: string, transacao?: EntityManager) => Promise<T>;
+    /**
      *
-     * @param id <number> ID do objeto a ser removido
+     * @param objeto <T> objeto a ser removido
      * @param transacao <EntityManager>
      * @returns Promise<T> Retorna o objeto removido
      */
-    remover: (id: number, transacao?: EntityManager) => Promise<T>;
+    removerObjeto: (objeto: T, transacao?: EntityManager) => Promise<T>;
 }

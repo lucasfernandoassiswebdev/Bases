@@ -97,6 +97,10 @@ class Controller {
          * @returns <T> Retorna os dados do objeto criado
          */
         this.salvar = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!Object.entries(req.body).length) {
+                Manipuladores_1.default.erro(res, 'É necessário fornecer um objeto no corpo da requisição');
+                return;
+            }
             req.body = yield Util_1.default.criptografaSenhas(req.body);
             yield this.servico.salvar(req.body)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
@@ -109,6 +113,10 @@ class Controller {
          * @returns <T[]> Retorna a lista de dados dos objetos criados
          */
         this.salvarLista = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!Object.entries(req.body).length) {
+                Manipuladores_1.default.erro(res, 'É necessário fornecer uma objeto no corpo da requisição');
+                return;
+            }
             yield req.body.forEach((item) => __awaiter(this, void 0, void 0, function* () {
                 item = yield Util_1.default.criptografaSenhas(item);
             }));
@@ -124,8 +132,24 @@ class Controller {
         this.remover = (req, res) => __awaiter(this, void 0, void 0, function* () {
             if (!req.params.id)
                 Manipuladores_1.default.erro(res, "Parâmetro necessário(id) não foram fornecido");
+            let paramName = req.params.paramName;
             let id = Number.parseInt(req.params.id);
-            yield this.servico.remover(id)
+            yield this.servico.remover(id, paramName)
+                .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
+                .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
+        });
+        /**
+         * Remove o objeto passado no corpo da requisição(utilize o verbo HTTP POST)
+         * @param req <Request> (express)
+         * @param res <Response> (express)
+         */
+        this.removerObjeto = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            if (!Object.entries(req.body).length) {
+                Manipuladores_1.default.erro(res, "Objeto a ser removido não foi encontrado no corpo da requisição");
+                return;
+            }
+            let objeto = req.body;
+            yield this.servico.removerObjeto(objeto)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
                 .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao remover dados fornecidos"));
         });

@@ -93,13 +93,23 @@ class Servico {
             }
         });
         /**
+          *
+          * @param id <number> ID do objeto a ser removido
+          * @param paramName <string> nome da propriedade que identifica o objeto
+          * @param transacao <EntityManager>
+          * @returns Promise<T> Retorna o objeto removido
+          */
+        this.remover = (id, paramName, transacao) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.remover(id, paramName, transacao);
+        });
+        /**
          *
-         * @param id <number> ID do objeto a ser removido
+         * @param objeto <T> objeto a ser removido
          * @param transacao <EntityManager>
          * @returns Promise<T> Retorna o objeto removido
          */
-        this.remover = (id, transacao) => __awaiter(this, void 0, void 0, function* () {
-            return yield this.repositorio.remover(id, transacao);
+        this.removerObjeto = (objeto, transacao) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.removerObjeto(objeto, transacao);
         });
     }
     /**

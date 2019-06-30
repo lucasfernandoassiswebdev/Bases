@@ -12,6 +12,7 @@ export interface IController {
     salvar(req: Request, res: Response): any;
     salvarLista(req: Request, res: Response): any;
     remover(req: Request, res: Response): any;
+    removerObjeto(req: Request, res: Response): any;
 }
 
 export default abstract class Controller<T> implements IController {
@@ -116,6 +117,11 @@ export default abstract class Controller<T> implements IController {
      * @returns <T> Retorna os dados do objeto criado
      */
     public salvar = async (req: Request, res: Response) => {
+        if (!Object.entries(req.body).length) {
+            Manipuladores.erro(res, 'É necessário fornecer um objeto no corpo da requisição');
+            return;
+        }
+
         req.body = await Util.criptografaSenhas(req.body);
 
         await this.servico.salvar(req.body)
@@ -130,6 +136,11 @@ export default abstract class Controller<T> implements IController {
      * @returns <T[]> Retorna a lista de dados dos objetos criados
      */
     public salvarLista = async (req: Request, res: Response) => {
+        if (!Object.entries(req.body).length) {
+            Manipuladores.erro(res, 'É necessário fornecer uma objeto no corpo da requisição');
+            return;
+        }
+
         await req.body.forEach(async (item: T) => {
             item = await Util.criptografaSenhas(item);
         });
@@ -148,9 +159,28 @@ export default abstract class Controller<T> implements IController {
         if (!req.params.id)
             Manipuladores.erro(res, "Parâmetro necessário(id) não foram fornecido");
 
+        let paramName: string = req.params.paramName;
         let id = Number.parseInt(req.params.id);
 
-        await this.servico.remover(id)
+        await this.servico.remover(id, paramName)
+            .then(_.partial(Manipuladores.sucesso, res))
+            .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
+    }
+
+    /**
+     * Remove o objeto passado no corpo da requisição(utilize o verbo HTTP POST)
+     * @param req <Request> (express)
+     * @param res <Response> (express)     
+     */
+    public removerObjeto = async (req: Request, res: Response) => {
+        if (!Object.entries(req.body).length) {
+            Manipuladores.erro(res, "Objeto a ser removido não foi encontrado no corpo da requisição");
+            return;
+        }
+
+        let objeto: T = req.body;
+
+        await this.servico.removerObjeto(objeto)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
     }

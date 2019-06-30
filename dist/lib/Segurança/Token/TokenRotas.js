@@ -33,7 +33,7 @@ class TokenRotas {
          */
         this.auth = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const credenciais = req.body;
-            if (Object.entries(credenciais).length !== 0 && credenciais.constructor !== Object) {
+            if (!Object.entries(credenciais).length) {
                 Autenticacao_1.default.autenticacaoIrregular(req, res, 'Corpo da requisição vazio');
             }
             else if (!credenciais.senha) {

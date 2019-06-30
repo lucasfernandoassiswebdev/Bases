@@ -6,7 +6,8 @@ export interface IRepositorio<T> {
     buscarUm(params: Object, transaction?: EntityManager): Promise<T>;
     buscarPorId(id: number, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
-    remover(id: number, transaction?: EntityManager): Promise<T>;
+    remover(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
+    removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>;
 }
 export default abstract class Repositorio<T> implements IRepositorio<T> {
     private classeEntidade;
@@ -66,8 +67,16 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
     /**
      *
      * @param id <number> ID do objeto a ser removido
+     * @param paramName <string> nome da propriedade que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T> Retorna o objeto removido
      */
-    remover(id: number, transacao?: EntityManager): Promise<T>;
+    remover(id: number, paramName?: string, transacao?: EntityManager): Promise<T>;
+    /**
+     *
+     * @param objeto <T> objeto a ser removido
+     * @param transacao <EntityManager>
+     * @returns Promise<T> Retorna o objeto removido
+     */
+    removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>;
 }

@@ -8,6 +8,7 @@ export interface IController {
     salvar(req: Request, res: Response): any;
     salvarLista(req: Request, res: Response): any;
     remover(req: Request, res: Response): any;
+    removerObjeto(req: Request, res: Response): any;
 }
 export default abstract class Controller<T> implements IController {
     servico: Servico<T>;
@@ -77,4 +78,10 @@ export default abstract class Controller<T> implements IController {
      * @param res <Response> (express)
      */
     remover: (req: Request, res: Response) => Promise<void>;
+    /**
+     * Remove o objeto passado no corpo da requisição(utilize o verbo HTTP POST)
+     * @param req <Request> (express)
+     * @param res <Response> (express)
+     */
+    removerObjeto: (req: Request, res: Response) => Promise<void>;
 }

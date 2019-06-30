@@ -7,7 +7,8 @@ export interface IRepositorio<T> {
     buscarUm(params: Object, transaction?: EntityManager): Promise<T>;
     buscarPorId(id: number, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
-    remover(id: number, transaction?: EntityManager): Promise<T>;
+    remover(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
+    removerObjeto(objeto: T, transacao?: EntityManager): Promise<T>
 }
 
 export default abstract class Repositorio<T> implements IRepositorio<T> {
@@ -289,16 +290,33 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
     /**
      * 
      * @param id <number> ID do objeto a ser removido
+     * @param paramName <string> nome da propriedade que identifica o objeto
      * @param transacao <EntityManager>
      * @returns Promise<T> Retorna o objeto removido
      */
-    public async remover(id: number, transacao?: EntityManager): Promise<T> {
+    public async remover(id: number, paramName?: string, transacao?: EntityManager): Promise<T> {
         if (typeof transacao !== 'undefined') {
-            const itemToRemove: T = await transacao.findOne(this.repositorio.target as any, { where: { id } } as any) as T;
+            const itemToRemove: T = (paramName != undefined && paramName.length > 0)
+                ? await transacao.findOne(this.repositorio.target as any, { where: { id } } as any) as T
+                : await transacao.findOne(this.repositorio.target as any, { where: { [paramName]: id } } as any) as T;
             return transacao.remove(itemToRemove);
         } else {
-            const itemToRemove: T = await this.repositorio.findOne({ where: { id } });
+            const itemToRemove: T = (paramName != undefined && paramName.length > 0)
+                ? await this.repositorio.findOne({ where: { id } })
+                : await this.repositorio.findOne({ where: { [paramName]: id } });
             return this.repositorio.remove(itemToRemove);
         }
+    }
+
+    /**
+     * 
+     * @param objeto <T> objeto a ser removido
+     * @param transacao <EntityManager>
+     * @returns Promise<T> Retorna o objeto removido
+     */
+    public async removerObjeto(objeto: T, transacao?: EntityManager): Promise<T> {
+        return typeof transacao !== 'undefined'
+            ? transacao.remove(objeto)
+            : this.repositorio.remove(objeto);
     }
 }
