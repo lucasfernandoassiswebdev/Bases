@@ -16,6 +16,7 @@ class Criptografia {
      * Verifica a compatibilidade entre senha e hash
      * @param senhaCriptografada <string>
      * @param senha <string>
+     * @returns <boolean>
      */
     public hashConfere = async (senhaCriptografada: string, senha: string): Promise<boolean> => {
         return await bcryptjs.compareSync(senha, senhaCriptografada);
@@ -25,6 +26,7 @@ class Criptografia {
      * Descriptografa o conteúdo de um JWT
      * @param conteudo <string> Token
      * @param chaveCriptografia <string> Chave utilizada na criptografia do Token
+     * @returns Promise<string>
      */
     public descriptografarToken = async (conteudo: string, chaveCriptografia: string): Promise<string> => {
         return await jwt.decode(conteudo, chaveCriptografia);

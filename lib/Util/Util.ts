@@ -40,6 +40,11 @@ class Util {
         return objeto;
     }
 
+    /**
+     * Validador de CPF
+     * @param cpf <string> CPF a ser verificado
+     * @returns <boolean>
+     */
     public isCpfValido = (cpf: String): boolean => {
         let soma: number = 0;
         let resto: number;
@@ -81,6 +86,11 @@ class Util {
         return true;
     }
 
+    /**
+     * Validador de CNPJ
+     * @param cnpj <string> CNPJ a ser verificado
+     * @returns <boolean>
+     */
     public icCnpjValido = (cnpj: string): boolean => {
         cnpj = cnpj.replace(/[^\d]+/g, '');
 

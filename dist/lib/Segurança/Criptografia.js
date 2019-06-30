@@ -31,6 +31,7 @@ class Criptografia {
          * Verifica a compatibilidade entre senha e hash
          * @param senhaCriptografada <string>
          * @param senha <string>
+         * @returns <boolean>
          */
         this.hashConfere = (senhaCriptografada, senha) => __awaiter(this, void 0, void 0, function* () {
             return yield bcryptjs.compareSync(senha, senhaCriptografada);
@@ -39,6 +40,7 @@ class Criptografia {
          * Descriptografa o conteúdo de um JWT
          * @param conteudo <string> Token
          * @param chaveCriptografia <string> Chave utilizada na criptografia do Token
+         * @returns Promise<string>
          */
         this.descriptografarToken = (conteudo, chaveCriptografia) => __awaiter(this, void 0, void 0, function* () {
             return yield jwt.decode(conteudo, chaveCriptografia);

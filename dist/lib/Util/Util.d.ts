@@ -18,6 +18,18 @@ declare class Util {
      * @returns Promise<T> objeto com as propriedades criptografadas
      */
     criptografaSenhas: (objeto: any) => Promise<any>;
+    /**
+     * Validador de CPF
+     * @param cpf <string> CPF a ser verificado
+     * @returns <boolean>
+     */
+    isCpfValido: (cpf: String) => boolean;
+    /**
+     * Validador de CNPJ
+     * @param cnpj <string> CNPJ a ser verificado
+     * @returns <boolean>
+     */
+    icCnpjValido: (cnpj: string) => boolean;
 }
 declare const _default: Util;
 export default _default;
