@@ -21,9 +21,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const _ = __importStar(require("lodash"));
 const Autenticacao_1 = __importDefault(require("./Autenticacao"));
 class TokenRotas {
-    constructor(servico, chaveCriptografia) {
+    constructor(servico, chaveCriptografia, paramName) {
         this.servico = servico;
         this.chaveCriptografia = chaveCriptografia;
+        this.paramName = paramName;
         /**
          * Método que autentica as rotas necessárias
          * @param req <Request> (express)
@@ -43,7 +44,7 @@ class TokenRotas {
                 let senha = credenciais.senha;
                 delete credenciais.senha;
                 yield this.servico.buscarUsuario(credenciais)
-                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, senha, usuario, this.chaveCriptografia))
+                    .then((usuario) => Autenticacao_1.default.sucessoAutenticacao(res, senha, usuario, this.chaveCriptografia, this.paramName))
                     .catch(_.partial(Autenticacao_1.default.falhaAutenticacao, req, res));
             }
         });

@@ -1330,7 +1330,7 @@
         "signature": "89ebeabdfd1ec7d87ee0c59df96a7426906a1368dd2f823c6fb72d50b22c5df6"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/servico.ts": {
-        "version": "a27953fd89a24b8c2aca1763469d63a8eab19d73ae32e29ba71a95064ca89c19",
+        "version": "6ff599cd6c77e595934124490612c0035c820b947befd6b5f39850a6aeef6e86",
         "signature": "e84e5a85a2621353d15b87cbbfcc2efe3de23c356ed3be16d4dfa8d6aa1a6e6f"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/jwt-simple/index.d.ts": {
@@ -1390,16 +1390,16 @@
         "signature": "f85fffc677c8d48bc27860d21764d6a1f81605bcf5413539c435b8d9535c7498"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/autenticacao.ts": {
-        "version": "d6f281c840aa6a941db4c3b7f453503dd8272b27e57dea46894c7eeaa21305ba",
-        "signature": "22ebd16b9b0f11dd6c327a8f7131df9405fe32436ac29a86f39822d88a1dd3a0"
+        "version": "a7c4ad09bfc6810af6f8c9b73d5216d984fc15b4058bb79726603054284dca98",
+        "signature": "5b4fc534a5ebe410a568b9b5a171cba5ca28e2bcfec0c269ea95773436e9c6ef"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/bin/basemodule.ts": {
         "version": "5d7e14fea10d4f6d310a4e6bfb02d820a7b60d9cf740262a8d761debb4d35dd8",
         "signature": "b080efdef6a58df7e4fc8489ef083d99ea8885f971e8924515a6eeef578b578e"
       },
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/tokenrotas.ts": {
-        "version": "73f048c4551d76d864d8becff14651b49f4aad5c0b20f9a77a566870290ca51d",
-        "signature": "f396f249372fd1fa79989dc8677ba050248131ee5c5ce14887ea6d773e555861"
+        "version": "01290bac026f3ff3c2228fa7fcd9fb19aaf9212b76c7ef96a2d508239a602682",
+        "signature": "9ff0a129fa878432f50de9c541d322b26cac031ec36cb261e27dea8a84329cfe"
       }
     },
     "options": {
@@ -6494,10 +6494,12 @@
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/naming-strategy/defaultnamingstrategy.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/util/promiseutils.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/index.d.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/repositorio.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/jwt-simple/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/bcryptjs/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/criptografia.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/util/util.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/controller.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/bson/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/mongodb/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/mongoose/index.d.ts",
@@ -6507,10 +6509,8 @@
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/passport-strategy/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/jsonwebtoken/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/passport-jwt/index.d.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/autenticacao.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/repositorio.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/servico.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/controller.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/autenticacao.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/bin/basemodule.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/tokenrotas.ts"
     ]

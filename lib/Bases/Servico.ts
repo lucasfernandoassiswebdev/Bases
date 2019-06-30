@@ -19,9 +19,7 @@ export default abstract class Servico<T> implements IServico<T> {
      * 
      * @param repositorio Repositorio<T>
      */
-    constructor(public repositorio: Repositorio<T>) {
-
-    }
+    constructor(public repositorio: Repositorio<T>) { }
 
     /**
      * Método que inicia o repositório

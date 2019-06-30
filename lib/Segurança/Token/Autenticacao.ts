@@ -43,12 +43,13 @@ class Autenticacao {
      * @param senha <string> Senha a ser verificada(descriptografada)
      * @param usuario <any> Dados do usuário que está tentando se autenticar no sistema (deve conter as propriedades id e senha)
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
+     * @param paramName <string> propriedade que identifica o usuário, default -> id
      * @returns <Response> (express)
      */
-    public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string) {
+    public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string, paramName?: string) {
         if (await Criptografia.hashConfere(usuario.senha, senha))
             res.json({
-                token: await this.gerarToken({ id: usuario.id }, chaveCriptografia),
+                token: await this.gerarToken({ id: (paramName != undefined && paramName.length > 0) ? usuario[paramName] : usuario.id }, chaveCriptografia),
                 usuario: usuario
             });
         else
@@ -71,10 +72,7 @@ class Autenticacao {
         passport.use(new Strategy(opts, (jwtPayload, done) => {
             servico.buscarPorId(jwtPayload.id).then((user: any) => {
                 if (user)
-                    return done(null, {
-                        id: user.id,
-                        email: user.email
-                    });
+                    return done(null, user);
 
                 return done(null, false);
             }).catch((error: any) => {

@@ -3,7 +3,8 @@ import { RotasInterface } from '../../../bin/BaseModule';
 export default class TokenRotas implements RotasInterface {
     private servico;
     private chaveCriptografia;
-    constructor(servico: any, chaveCriptografia: string);
+    private paramName?;
+    constructor(servico: any, chaveCriptografia: string, paramName?: string);
     /**
      * Método que autentica as rotas necessárias
      * @param req <Request> (express)

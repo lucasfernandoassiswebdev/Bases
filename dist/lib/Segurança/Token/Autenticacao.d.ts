@@ -26,9 +26,10 @@ declare class Autenticacao {
      * @param senha <string> Senha a ser verificada(descriptografada)
      * @param usuario <any> Dados do usuário que está tentando se autenticar no sistema (deve conter as propriedades id e senha)
      * @param chaveCriptografia <string> Chave a ser usada para criptografar os dados do Token
+     * @param paramName <string> propriedade que identifica o usuário, default -> id
      * @returns <Response> (express)
      */
-    sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string): Promise<void>;
+    sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string, paramName?: string): Promise<void>;
     /**
      * Configura a estratégia de autenticação da API
      * @param servico <any> Classe que extenda Servico<T>, deve conter o método "buscarPorId"
