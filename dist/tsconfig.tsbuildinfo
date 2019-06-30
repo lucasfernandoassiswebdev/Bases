@@ -6493,10 +6493,13 @@
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/naming-strategy/defaultnamingstrategy.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/util/promiseutils.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/typeorm/index.d.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/repositorio.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/servico.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/jwt-simple/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/bcryptjs/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/criptografia.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/util/util.ts",
+      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/controller.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/bson/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/mongodb/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/mongoose/index.d.ts",
@@ -6507,9 +6510,6 @@
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/jsonwebtoken/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/node_modules/@types/passport-jwt/index.d.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/autenticacao.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/repositorio.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/servico.ts",
-      "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/bases/controller.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/bin/basemodule.ts",
       "c:/users/lucasfernandodeassis/documents/projetos/nodejs/bases/lib/segurança/token/tokenrotas.ts"
     ]
