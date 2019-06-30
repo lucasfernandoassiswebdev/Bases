@@ -3,6 +3,7 @@ import _ from 'lodash';
 import Manipuladores from '../Manipuladores';
 import Servico from './Servico';
 import Util from '../Util/Util';
+import HttpStatus from 'http-status';
 
 export interface IController {
     buscar(req: Request, res: Response): any;
@@ -21,7 +22,7 @@ export default abstract class Controller<T> implements IController {
      * 
      * @param servico Servico<T> Serviço correspondente a classe do módulo
      */
-    constructor(public servico: Servico<T>) { }
+    constructor(public servico: Servico<T>, public paramName?: string) { }
 
     /**
      * Inicia o Repositório de acordo com T
@@ -159,12 +160,18 @@ export default abstract class Controller<T> implements IController {
         if (!req.params.id)
             Manipuladores.erro(res, "Parâmetro necessário(id) não foram fornecido");
 
-        let paramName: string = req.params.paramName;
         let id = Number.parseInt(req.params.id);
 
-        await this.servico.remover(id, paramName)
-            .then(_.partial(Manipuladores.sucesso, res))
-            .catch(_.partial(Manipuladores.erro, res, "Erro ao remover dados fornecidos"));
+        try {
+            let objetoRemovido = await this.servico.remover(id, this.paramName);
+
+            if (objetoRemovido != undefined)
+                Manipuladores.sucesso(res, objetoRemovido);
+            else
+                Manipuladores.erro(res, "Não foi encontrado objeto de acordo com os parâmetros fornecidos", null, HttpStatus.NOT_FOUND);
+        } catch (error) {
+            Manipuladores.erro(res, "Erro ao remover dados fornecidos", error);
+        }
     }
 
     /**

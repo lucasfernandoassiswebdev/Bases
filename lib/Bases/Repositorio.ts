@@ -299,12 +299,17 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
             const itemToRemove: T = (paramName != undefined && paramName.length > 0)
                 ? await transacao.findOne(this.repositorio.target as any, { where: { id } } as any) as T
                 : await transacao.findOne(this.repositorio.target as any, { where: { [paramName]: id } } as any) as T;
-            return transacao.remove(itemToRemove);
+
+            return itemToRemove != undefined
+                ? transacao.remove(itemToRemove)
+                : null;
         } else {
             const itemToRemove: T = (paramName != undefined && paramName.length > 0)
                 ? await this.repositorio.findOne({ where: { id } })
                 : await this.repositorio.findOne({ where: { [paramName]: id } });
-            return this.repositorio.remove(itemToRemove);
+            return itemToRemove != undefined
+                ? this.repositorio.remove(itemToRemove)
+                : null;
         }
     }
 
