@@ -1326,7 +1326,7 @@
         "signature": "6d152fbea5ba8000f6ce64ed48f704e3fe6fc72cc13fff53e82f446ca476c1e1"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts": {
-        "version": "951dc10e079beb96e6be9677c9e3415247fe1e318b5cc9943fab3f1fc18f7885",
+        "version": "7e5bbc3853259a6b06498f7a22905ad3f0d291bd05a9c8f98f75123911bca78a",
         "signature": "6912d7a36c6c0d28e3eae3f6091d305f9b9ad579096a3045eb2a7c166c237f9f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts": {
@@ -6494,10 +6494,12 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/naming-strategy/DefaultNamingStrategy.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/util/PromiseUtils.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcryptjs/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
@@ -6508,11 +6510,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts"
     ]
   },
   "version": "3.4.5"

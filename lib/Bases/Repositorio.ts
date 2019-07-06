@@ -286,15 +286,24 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
             return typeof transacao !== 'undefined'
                 ? transacao.findOne(this.repositorio.metadata.target as any, {
                     where: {
-                        [paramName]: id,
                         relations: relations
-                    }
+                    },
+                    [paramName]: id
                 } as any) as Promise<T>
-                : this.repositorio.findOne({ where: { [paramName]: id } });
+                : this.repositorio.findOne({
+                    where: { [paramName]: id },
+                    relations: relations
+                });
         else
             return typeof transacao !== 'undefined'
-                ? transacao.findOne(this.repositorio.metadata.target as any, { where: { id } } as any) as Promise<T>
-                : this.repositorio.findOne({ where: { id } });
+                ? transacao.findOne(this.repositorio.metadata.target as any, {
+                    where: { id },
+                    relations: relations
+                } as any) as Promise<T>
+                : this.repositorio.findOne({
+                    where: { id },
+                    relations: relations
+                });
     }
 
     /**

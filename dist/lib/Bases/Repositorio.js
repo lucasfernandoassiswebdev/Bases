@@ -264,15 +264,24 @@ class Repositorio {
                 return typeof transacao !== 'undefined'
                     ? transacao.findOne(this.repositorio.metadata.target, {
                         where: {
-                            [paramName]: id,
                             relations: relations
-                        }
+                        },
+                        [paramName]: id
                     })
-                    : this.repositorio.findOne({ where: { [paramName]: id } });
+                    : this.repositorio.findOne({
+                        where: { [paramName]: id },
+                        relations: relations
+                    });
             else
                 return typeof transacao !== 'undefined'
-                    ? transacao.findOne(this.repositorio.metadata.target, { where: { id } })
-                    : this.repositorio.findOne({ where: { id } });
+                    ? transacao.findOne(this.repositorio.metadata.target, {
+                        where: { id },
+                        relations: relations
+                    })
+                    : this.repositorio.findOne({
+                        where: { id },
+                        relations: relations
+                    });
         });
     }
     /**
