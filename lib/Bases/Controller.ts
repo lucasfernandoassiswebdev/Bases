@@ -58,7 +58,7 @@ export default abstract class Controller<T> implements IController {
      * @returns Lista de objetos encontrados de acordo com os parâmetros fornecidos
      */
     public buscar = async (req: Request, res: Response) => {
-        await this.servico.buscar(req.query)
+        await this.servico.buscar(req.query, undefined, req.params.pagina, req.params.limite)
             .then(_.partial(Manipuladores.sucesso, res))
             .catch(_.partial(Manipuladores.erro, res, "Erro ao buscar dados"));
     }

@@ -47,7 +47,7 @@ class Controller {
          * @returns Lista de objetos encontrados de acordo com os parâmetros fornecidos
          */
         this.buscar = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            yield this.servico.buscar(req.query)
+            yield this.servico.buscar(req.query, undefined, req.params.pagina, req.params.limite)
                 .then(lodash_1.default.partial(Manipuladores_1.default.sucesso, res))
                 .catch(lodash_1.default.partial(Manipuladores_1.default.erro, res, "Erro ao buscar dados"));
         });
