@@ -206,11 +206,36 @@ class Repositorio {
      * @param transacao <EntityManager>
      * @returns Promise<T[]> Objetos encontrados
      */
-    buscar(parametros, transacao) {
+    buscar(parametros, transacao, pagina, limite) {
         return __awaiter(this, void 0, void 0, function* () {
-            return typeof transacao !== 'undefined'
-                ? transacao.find(this.repositorio.metadata.target, parametros)
-                : this.repositorio.find(parametros);
+            let result;
+            let count;
+            let paginas;
+            if (pagina != undefined && limite != undefined) {
+                parametros.skip = pagina;
+                parametros.take = limite;
+                [result, count] = yield this.repositorio.findAndCount(parametros);
+                paginas = Math.ceil(count / limite);
+                this.pagina.content = result;
+                this.pagina.first = pagina === 0;
+                this.pagina.last = paginas === pagina + 1;
+                this.pagina.size = limite;
+                this.pagina.numberOfElements = count;
+                this.pagina.totalPages = paginas;
+            }
+            else {
+                result = typeof transacao !== 'undefined'
+                    ? transacao.find(this.repositorio.metadata.target, parametros)
+                    : yield this.repositorio.find(parametros);
+                paginas = 1;
+                this.pagina.content = result;
+                this.pagina.first = true;
+                this.pagina.last = true;
+                this.pagina.size = result.length;
+                this.pagina.numberOfElements = result.length;
+                this.pagina.totalPages = 1;
+            }
+            return this.pagina;
         });
     }
     /**

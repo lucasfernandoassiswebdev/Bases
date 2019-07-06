@@ -3,7 +3,7 @@ import Pagina from '../Pagina';
 
 export interface IRepositorio<T> {
     salvar(entity: any, transaction?: EntityManager): Promise<T>;
-    buscar(params: Object, transaction?: EntityManager): Promise<T[]>;
+    buscar(params: any, transaction?: EntityManager, pagina?: number, limite?: number): Promise<Pagina>;
     buscarUm(params: Object, transaction?: EntityManager): Promise<T>;
     buscarPorId(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Pagina>;
@@ -227,10 +227,39 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
      * @param transacao <EntityManager>
      * @returns Promise<T[]> Objetos encontrados
      */
-    public async buscar(parametros: Object, transacao?: EntityManager): Promise<T[]> {
-        return typeof transacao !== 'undefined'
-            ? transacao.find(this.repositorio.metadata.target as any, parametros as any) as Promise<T[]>
-            : this.repositorio.find(parametros);
+    public async buscar(parametros: any, transacao?: EntityManager, pagina?: number, limite?: number): Promise<Pagina> {
+        let result: any;
+        let count: number;
+        let paginas: number;
+
+        if (pagina != undefined && limite != undefined) {
+            parametros.skip = pagina;
+            parametros.take = limite;
+
+            [result, count] = await this.repositorio.findAndCount(parametros);
+
+            paginas = Math.ceil(count / limite);
+            this.pagina.content = result;
+            this.pagina.first = pagina === 0;
+            this.pagina.last = paginas === pagina + 1;
+            this.pagina.size = limite;
+            this.pagina.numberOfElements = count;
+            this.pagina.totalPages = paginas;
+        } else {
+            result = typeof transacao !== 'undefined'
+                ? transacao.find(this.repositorio.metadata.target as any, parametros as any) as Promise<T[]>
+                : await this.repositorio.find(parametros);
+
+            paginas = 1;
+            this.pagina.content = result;
+            this.pagina.first = true;
+            this.pagina.last = true;
+            this.pagina.size = result.length;
+            this.pagina.numberOfElements = result.length;
+            this.pagina.totalPages = 1;
+        }
+
+        return this.pagina;
     }
 
     /**

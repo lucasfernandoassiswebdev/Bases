@@ -30,8 +30,8 @@ class Servico {
          * @param transacao <EntityManager>
          * @returns Promise<T[]> Objetos encontrados
          */
-        this.buscar = (parametros, transacao) => __awaiter(this, void 0, void 0, function* () {
-            return yield this.repositorio.buscar(parametros, transacao);
+        this.buscar = (parametros, transacao, pagina, limite) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.buscar(parametros, transacao, pagina, limite);
         });
         /**
          * Retorna o primeiro objeto encontrado de acordo com os parâmetros fornecidos

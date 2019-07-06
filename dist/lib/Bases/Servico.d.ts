@@ -2,7 +2,7 @@ import Repositorio from './Repositorio';
 import { EntityManager } from 'typeorm';
 import Page from '../Pagina';
 export interface IServico<T> {
-    buscar(params: any, transaction?: EntityManager): Promise<T[]>;
+    buscar(params: any, transaction?: EntityManager, pagina?: number, limite?: number): Promise<Page>;
     buscarUm(params: any, transaction?: EntityManager): Promise<T>;
     buscarPorId(id: number, paramName?: string, transaction?: EntityManager): Promise<T>;
     buscarTodos(pagina: number, limite: number): Promise<Page>;
@@ -35,7 +35,7 @@ export default abstract class Servico<T> implements IServico<T> {
      * @param transacao <EntityManager>
      * @returns Promise<T[]> Objetos encontrados
      */
-    buscar: (parametros: Object, transacao?: EntityManager) => Promise<T[]>;
+    buscar: (parametros: Object, transacao?: EntityManager, pagina?: number, limite?: number) => Promise<Page>;
     /**
      * Retorna o primeiro objeto encontrado de acordo com os parâmetros fornecidos
      * @param parametros <Object> parametros utilizados na busca(Object)
