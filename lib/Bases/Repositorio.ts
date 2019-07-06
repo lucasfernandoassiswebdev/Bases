@@ -240,7 +240,7 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
 
             paginas = Math.ceil(count / limite);
             this.pagina.content = result;
-            this.pagina.first = pagina === 0;
+            this.pagina.first = pagina === 1;
             this.pagina.last = paginas === pagina + 1;
             this.pagina.size = limite;
             this.pagina.numberOfElements = count;
@@ -310,7 +310,7 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
 
             let paginas = Math.ceil(count / limite);
             this.pagina.content = result;
-            this.pagina.first = pagina === 0;
+            this.pagina.first = pagina === 1;
             this.pagina.last = paginas === pagina + 1;
             this.pagina.size = limite;
             this.pagina.numberOfElements = count;

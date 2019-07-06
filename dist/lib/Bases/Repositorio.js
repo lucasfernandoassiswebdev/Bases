@@ -217,7 +217,7 @@ class Repositorio {
                 [result, count] = yield this.repositorio.findAndCount(parametros);
                 paginas = Math.ceil(count / limite);
                 this.pagina.content = result;
-                this.pagina.first = pagina === 0;
+                this.pagina.first = pagina === 1;
                 this.pagina.last = paginas === pagina + 1;
                 this.pagina.size = limite;
                 this.pagina.numberOfElements = count;
@@ -286,7 +286,7 @@ class Repositorio {
                 let [result, count] = yield this.repositorio.findAndCount({ skip: pagina, take: limite });
                 let paginas = Math.ceil(count / limite);
                 this.pagina.content = result;
-                this.pagina.first = pagina === 0;
+                this.pagina.first = pagina === 1;
                 this.pagina.last = paginas === pagina + 1;
                 this.pagina.size = limite;
                 this.pagina.numberOfElements = count;
