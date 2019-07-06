@@ -49,8 +49,8 @@ class Servico {
          * @param transacao <EntityManager>
          * @returns Promise<T>
          */
-        this.buscarPorId = (id, paramName, transacao) => __awaiter(this, void 0, void 0, function* () {
-            return yield this.repositorio.buscarPorId(id, paramName, transacao);
+        this.buscarPorId = (id, paramName, transacao, relations) => __awaiter(this, void 0, void 0, function* () {
+            return yield this.repositorio.buscarPorId(id, paramName, transacao, relations);
         });
         /**
          * Retorna a página desejada

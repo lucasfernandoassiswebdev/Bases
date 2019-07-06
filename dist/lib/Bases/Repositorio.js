@@ -258,11 +258,16 @@ class Repositorio {
      * @param transacao <EntityManager>
      * @returns Promise<T>
      */
-    buscarPorId(id, paramName, transacao) {
+    buscarPorId(id, paramName, transacao, relations) {
         return __awaiter(this, void 0, void 0, function* () {
             if (paramName != undefined && paramName.length > 0)
                 return typeof transacao !== 'undefined'
-                    ? transacao.findOne(this.repositorio.metadata.target, { where: { [paramName]: id } })
+                    ? transacao.findOne(this.repositorio.metadata.target, {
+                        where: {
+                            [paramName]: id,
+                            relations: relations
+                        }
+                    })
                     : this.repositorio.findOne({ where: { [paramName]: id } });
             else
                 return typeof transacao !== 'undefined'
