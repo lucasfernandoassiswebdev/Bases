@@ -234,10 +234,8 @@ export default abstract class Repositorio<T> implements IRepositorio<T> {
 
         if (pagina != undefined && limite != undefined) {
             parametros.skip = pagina;
-            parametros.take = limite;
-            parametros.relations = parametros.relations;
-
-            console.log('parametros', parametros);
+            parametros.take = limite;            
+            
             [result, count] = await this.repositorio.findAndCount(parametros);
 
             paginas = Math.ceil(count / limite);
