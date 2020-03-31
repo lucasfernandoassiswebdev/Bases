@@ -47,12 +47,14 @@ class Autenticacao {
      * @returns <Response> (express)
      */
     public async sucessoAutenticacao(res: Response, senha: string, usuario: any, chaveCriptografia: string, paramName?: string) {
-        if (await Criptografia.hashConfere(usuario.senha, senha))
+        if (await Criptografia.hashConfere(usuario.senha, senha)) {
+            delete usuario.senha;
+
             res.json({
                 token: await this.gerarToken({ id: (paramName != undefined && paramName.length > 0) ? usuario[paramName] : usuario.id }, chaveCriptografia),
                 usuario: usuario
             });
-        else
+        } else
             res.sendStatus(HttpStatus.UNAUTHORIZED);
     }
 

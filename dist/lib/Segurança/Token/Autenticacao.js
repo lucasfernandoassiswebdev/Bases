@@ -64,11 +64,13 @@ class Autenticacao {
      */
     sucessoAutenticacao(res, senha, usuario, chaveCriptografia, paramName) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (yield Criptografia_1.default.hashConfere(usuario.senha, senha))
+            if (yield Criptografia_1.default.hashConfere(usuario.senha, senha)) {
+                delete usuario.senha;
                 res.json({
                     token: yield this.gerarToken({ id: (paramName != undefined && paramName.length > 0) ? usuario[paramName] : usuario.id }, chaveCriptografia),
                     usuario: usuario
                 });
+            }
             else
                 res.sendStatus(http_status_1.default.UNAUTHORIZED);
         });
