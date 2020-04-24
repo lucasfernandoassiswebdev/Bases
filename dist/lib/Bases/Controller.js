@@ -84,8 +84,10 @@ class Controller {
          * @returns Promise<T[]> Retorna os objetos encontrados na página informada
          */
         this.buscarTodos = (req, res) => __awaiter(this, void 0, void 0, function* () {
-            if (!req.params.pagina || !req.params.limite)
-                Manipuladores_1.default.erro(res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
+            if (!req.params.pagina || !req.params.limite) {
+                req.params.pagina = 0;
+                req.params.limite = 10000;
+            }
             let pagina = Number.parseInt(req.params.pagina);
             let limite = Number.parseInt(req.params.limite);
             yield this.servico.buscarTodos(pagina, limite)

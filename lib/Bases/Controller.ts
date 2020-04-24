@@ -100,8 +100,10 @@ export default abstract class Controller<T> implements IController {
      * @returns Promise<T[]> Retorna os objetos encontrados na página informada
      */
     public buscarTodos = async (req: Request, res: Response) => {
-        if (!req.params.pagina || !req.params.limite)
-            Manipuladores.erro(res, "Parâmetros necessários(pagina e limite) não foram fornecidos");
+        if (!req.params.pagina || !req.params.limite) {
+            req.params.pagina = 0;
+            req.params.limite = 10000;
+        }
 
         let pagina = Number.parseInt(req.params.pagina);
         let limite = Number.parseInt(req.params.limite);
