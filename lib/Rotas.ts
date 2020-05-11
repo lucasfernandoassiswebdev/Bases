@@ -1,5 +1,6 @@
 import { Application } from 'express';
 import RotasInterface from './RotasInterface';
+import Controller from './Bases/Controller';
 
 class Rotas {
 
@@ -13,7 +14,8 @@ class Rotas {
         await rotas.forEach(async (rota) => {
             rota.exporRotas(app, aut);
             rota.exporControllers().forEach((controller: any) => {
-                controller.iniciarRepositorio();
+                if (controller instanceof Controller)
+                    controller.iniciarRepositorio();
             });
         });
     }

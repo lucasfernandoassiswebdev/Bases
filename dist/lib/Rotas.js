@@ -7,7 +7,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const Controller_1 = __importDefault(require("./Bases/Controller"));
 class Rotas {
     constructor() {
         /**
@@ -20,7 +24,8 @@ class Rotas {
             yield rotas.forEach((rota) => __awaiter(this, void 0, void 0, function* () {
                 rota.exporRotas(app, aut);
                 rota.exporControllers().forEach((controller) => {
-                    controller.iniciarRepositorio();
+                    if (controller instanceof Controller_1.default)
+                        controller.iniciarRepositorio();
                 });
             }));
         });

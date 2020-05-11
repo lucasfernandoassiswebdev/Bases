@@ -329,10 +329,6 @@
         "version": "da590143eb8c082bfabd510f68a4743b364b7e2ce476ecaa832c8cefa1af9dde",
         "signature": "60e749a4b634a7daefe0bae7bcbaf6b75b4ee2f487cbd847c842c110120afded"
       },
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
-        "version": "b655e577d544a2582b964c9da8f468317412a13eff13fd7e8c146293e2462f8d",
-        "signature": "ad642691ef4eb2db3f70feebef82e7049cd619b7696c7c68984bddf633bb0697"
-      },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts": {
         "version": "826e226ef4293d2e692c796d7cc81c94f353c57fd6016685b79d68134e5df047",
         "signature": "826e226ef4293d2e692c796d7cc81c94f353c57fd6016685b79d68134e5df047"
@@ -1353,6 +1349,10 @@
         "version": "b1c1e11ee48950d18af99cb7721f2c0325bc5d2170f2010f899d0bbc0e4ab2d5",
         "signature": "e1d527163de8a8c52af3b7014c35d72a24f94ae8b0093632951857702784a727"
       },
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": {
+        "version": "0199c426227a085e30303d74811bf2f67c1baa853fd3df19f5b6a4dfd439f354",
+        "signature": "ad642691ef4eb2db3f70feebef82e7049cd619b7696c7c68984bddf633bb0697"
+      },
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": {
         "version": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253",
         "signature": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253"
@@ -1863,12 +1863,6 @@
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3730,6 +3724,13 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
@@ -4252,10 +4253,6 @@
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts"
-      ],
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
-        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
-        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
       ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/index.d.ts",
@@ -6094,6 +6091,10 @@
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts"
       ],
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts": [
+        "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/express/index.d.ts",
+        "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts"
+      ],
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts": [
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/node/util.d.ts",
@@ -6253,7 +6254,6 @@
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Manipuladores.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Pagina.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/RotasInterface.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/common.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/array.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/lodash/common/collection.d.ts",
@@ -6508,6 +6508,7 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcryptjs/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongoose/index.d.ts",
@@ -6521,7 +6522,7 @@
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Services/Mail.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts"
     ]
   },
   "version": "3.4.5"
