@@ -64,7 +64,7 @@ class Util {
          * @param cnpj <string> CNPJ a ser verificado
          * @returns <boolean>
          */
-        this.icCnpjValido = (cnpj) => {
+        this.isCnpjValido = (cnpj) => {
             cnpj = cnpj.replace(/[^\d]+/g, '');
             if (cnpj == '' || cnpj.length != 14)
                 return false;

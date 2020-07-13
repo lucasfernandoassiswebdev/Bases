@@ -91,7 +91,7 @@ class Util {
      * @param cnpj <string> CNPJ a ser verificado
      * @returns <boolean>
      */
-    public icCnpjValido = (cnpj: string): boolean => {
+    public isCnpjValido = (cnpj: string): boolean => {
         cnpj = cnpj.replace(/[^\d]+/g, '');
 
         if (cnpj == '' || cnpj.length != 14)

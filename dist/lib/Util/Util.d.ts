@@ -29,7 +29,7 @@ declare class Util {
      * @param cnpj <string> CNPJ a ser verificado
      * @returns <boolean>
      */
-    icCnpjValido: (cnpj: string) => boolean;
+    isCnpjValido: (cnpj: string) => boolean;
 }
 declare const _default: Util;
 export default _default;
