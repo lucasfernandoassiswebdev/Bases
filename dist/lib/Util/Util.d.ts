@@ -30,6 +30,7 @@ declare class Util {
      * @returns <boolean>
      */
     isCnpjValido: (cnpj: string) => boolean;
+    isEmailValido: (email: string) => boolean;
 }
 declare const _default: Util;
 export default _default;
