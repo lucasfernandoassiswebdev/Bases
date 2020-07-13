@@ -6507,6 +6507,8 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcryptjs/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Criptografia.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Rotas.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bson/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/mongodb/index.d.ts",
@@ -6518,11 +6520,9 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/jsonwebtoken/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/passport-jwt/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Services/Mail.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Util/Util.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Controller.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Services/Mail.ts"
     ]
   },
   "version": "3.4.5"
