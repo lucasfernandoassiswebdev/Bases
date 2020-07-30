@@ -1322,7 +1322,7 @@
         "signature": "6d152fbea5ba8000f6ce64ed48f704e3fe6fc72cc13fff53e82f446ca476c1e1"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts": {
-        "version": "3553397b9c3d2746c78278e20e7569a6d45151242a8902f49e2b5feddeb74a68",
+        "version": "69887214fc61934252a26127a34a069e4bf905aac60e378d0f6c668488933fc9",
         "signature": "6912d7a36c6c0d28e3eae3f6091d305f9b9ad579096a3045eb2a7c166c237f9f"
       },
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts": {
@@ -6502,7 +6502,6 @@
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/naming-strategy/DefaultNamingStrategy.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/util/PromiseUtils.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/typeorm/index.d.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Servico.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/jwt-simple/index.d.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/node_modules/@types/bcryptjs/index.d.ts",
@@ -6522,7 +6521,8 @@
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/Autenticacao.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/bin/BaseModule.ts",
       "/home/lucas/Documentos/NodeProjects/Bases/lib/Segurança/Token/TokenRotas.ts",
-      "/home/lucas/Documentos/NodeProjects/Bases/lib/Services/Mail.ts"
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Services/Mail.ts",
+      "/home/lucas/Documentos/NodeProjects/Bases/lib/Bases/Repositorio.ts"
     ]
   },
   "version": "3.4.5"

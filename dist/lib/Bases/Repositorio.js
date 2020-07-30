@@ -212,7 +212,7 @@ class Repositorio {
             let count;
             let paginas;
             if (pagina != undefined && limite != undefined) {
-                parametros.skip = pagina;
+                parametros.skip = pagina == 1 ? 0 : (pagina - 1) * limite;
                 parametros.take = limite;
                 [result, count] = yield this.repositorio.findAndCount(parametros);
                 paginas = Math.ceil(count / limite);
