@@ -24,7 +24,7 @@
     "jwt-simple": "^0.5.6",
     "lodash": "^4.17.11",
     "mongoose": "^5.5.2",
-    "typeorm": "^0.2.16",
+    "typeorm": "^0.2.25",
     "typescript": "^3.4.5"
   }
 }
